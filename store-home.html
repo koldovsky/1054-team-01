@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CaliWines - store</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CaliWines - store</title>
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    </head>
 
-  <body>
-    <header data-include="partials/header-vysokovskiy.partial.html"></header>
-    <main></main>
-    <footer data-include="partials/footer-anishchenko.partial.html"></footer>
-    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
-  </body>
+    <body>
+        <header data-include="partials/header-vysokovskiy.partial.html"></header>
+        <main>
+            <h3 class="storehome__title">Store homepage (<span class="storehome__title-span">8</span>)</h3>
+            <h3 class="storehome__subtitle">Products (<span class="storehome__subtitle-span">8</span>)</h3>
+            <div class="storehome__productcard"> <!--This div to be populated as many times as required-->
+                <!-- ADD HERE LATER -->
+            </div>
+            <div class="storehome__pagestyle-container">
+                <p class="storehome__pagestyle-text">Products per page</p>
+                <select class="storehome__pagestyle-selector">
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+            <div class="storehome__pagenav-container">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#DFE2E8" d="M6.6 7.99992L10.8 12.1999C11.0667 12.4666 11.0667 12.8666 10.8 13.1333C10.5333 13.3999 10.1333 13.3999 9.86667 13.1333L5.2 8.46659C5.06667 8.33325 5 8.13325 5 7.99992C5 7.79992 5.06667 7.66659 5.2 7.53325L9.86667 2.86659C10 2.73325 10.2 2.66659 10.3333 2.66659C10.4667 2.66659 10.6667 2.73325 10.8 2.86659C11.0667 3.13325 11.0667 3.53325 10.8 3.79992L6.6 7.99992Z"></path>
+                </svg>
+                <span class="storehome__pageindex">1</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#DFE2E8" d="M6.6 7.99992L10.8 12.1999C11.0667 12.4666 11.0667 12.8666 10.8 13.1333C10.5333 13.3999 10.1333 13.3999 9.86667 13.1333L5.2 8.46659C5.06667 8.33325 5 8.13325 5 7.99992C5 7.79992 5.06667 7.66659 5.2 7.53325L9.86667 2.86659C10 2.73325 10.2 2.66659 10.3333 2.66659C10.4667 2.66659 10.6667 2.73325 10.8 2.86659C11.0667 3.13325 11.0667 3.53325 10.8 3.79992L6.6 7.99992Z"></path>
+                </svg>
+            </div>
+        </main>
+        <footer data-include="partials/footer-anishchenko.partial.html"></footer>
+        <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    </body>
 </html>
