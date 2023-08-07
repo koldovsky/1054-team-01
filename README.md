@@ -13,7 +13,7 @@ HTML files with 'partial.html' suffix will be ignored, so validator is compatibl
 * **Cover** - Vysokovskiy
 * **Collections** of Wines - Novitska
 * **Advantages** - Samokhvalov
-* **Discover** Our Wines - Holod
+* **Discover Our Wines** - Holod
 * **Best Deals** - Shaposhnikova
 * **History** - Shchyrba
 * **About** - Ostapav
@@ -25,7 +25,7 @@ HTML files with 'partial.html' suffix will be ignored, so validator is compatibl
 * **Blog** - Ostapav
 * **FAQ** - Barannik
 * **Features** - Novitska
-* **Contact** Form - Shchyrba
+* **Contact Form** - Shchyrba
 * **Footer** - Anishchenko
 * **Confirm (Age proofer)** - Holod
 * **Forbiddance (if age proof failed)** - Holod
