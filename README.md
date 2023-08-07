@@ -29,3 +29,5 @@ HTML files with 'partial.html' suffix will be ignored, so validator is compatibl
 * **Footer** - Anishchenko
 * **Confirm (Age proofer)** - Holod
 * **Forbiddance (if age proof failed)** - Holod
+* **Store (home / all products)** - Anishchenko
+* **Store (single product)** - Anishchenko
