@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CaliWines - store</title>
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+      </head>
+
+    <body>
+        <header data-include="partials/header-vysokovskiy.partial.html"></header>
+        <main>
+            <a href="store-home.html" class="storeproduct__link"><p class="storeproduct__linktext">Store homepage</p></a>
+            <div class="storeproduct__imgcontainer">
+                <svg class="storeproduct__leftarrow" width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 2L1.5 13L12.5 24" stroke="#464C5C" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path></svg>
+                <a href="#" class="storeproduct__link"><img width="388" class="storeproduct__image" src="img/best-deals-cabernet.jpeg" alt="Bottle of Cabernet"></a>
+                <svg class="storeproduct__rightarrow"  width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 24L12.5 13L1.5 2" stroke="#464C5C" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path></svg>
+                <a href="#" class="storeproduct__link"><img width="92" class="storeproduct__thumbnail" src="img/best-deals-cabernet.jpeg" alt="Bottle of Cabernet"></a>
+            </div>
+            <div class="storeproduct__maincontainer">
+                <p class="storeproduct__instokindicator">In stock</p>
+                <h4 class="storeproduct__productname">Cabernet (<span class="storeproduct__productnamecode">093049</span>)</h4>
+                <h4 class="storeproduct__productcodetext">Product code <span class="storeproduct__productcode">18</span></h4>
+                <p class="storeproduct__pricetext"><span class="storeproduct__price">17,00</span>USD</p>
+                <hr class="storeproduct__divider">
+                <form action="" class="storeproduct__form">
+                    <div class="storeproduct__form-inputcontainer">
+                        <input class="storeproduct__form-input" type="text" name="quantity" value="1" required>
+                        <svg class="storeproduct__form-uparrow" width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.35.156a.474.474 0 00-.701 0L.111 5.264a.437.437 0 00-.111.29C0 5.8.207 6 .462 6h9.076c.11 0 .217-.038.3-.107a.435.435 0 00.05-.629L5.352.156z" fill="#9199AB"></path></svg>
+                        <svg class="storeproduct__form-downarrow" width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.35.156a.474.474 0 00-.701 0L.111 5.264a.437.437 0 00-.111.29C0 5.8.207 6 .462 6h9.076c.11 0 .217-.038.3-.107a.435.435 0 00.05-.629L5.352.156z" fill="#9199AB"></path></svg>
+                    </div>
+                    <div class="storeproduct__form-submitcontainer">
+                        <input class="storeproduct__form-submit" type="submit" value="Add to cart">
+                    </div>
+                </form>
+                <p class="storeproduct__subtitle">DESCRIPTION</p>
+                <hr class="storeproduct__divider">
+                <p class="storeproduct__description">If you don't want which red wine to buy, think of this Cabernet. It has a very deep dark purple color and opens with boysenberry, bourbon, and vanilla aromas. Then you'll feel brown sugar, cocoa, spices, and currants. It's a wine with a really rich taste.</p>
+            </div>
+        </main>
+        <footer data-include="partials/footer-anishchenko.partial.html"></footer>
+        <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    </body>
+</html>
