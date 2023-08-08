@@ -16,9 +16,6 @@
     --font-h: 'Prata', serif;
     --font-p: 'Rubik', sans-serif;
     --font-cursive: 'Great Vibes', cursive;
-}
-
-body {
     scroll-behavior: smooth;
     color: var(--text-color);
 }
