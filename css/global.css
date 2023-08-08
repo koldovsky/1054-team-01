@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    :root {
+        --ui-brand-color: #c8693a;
+        --background-color: #261e1c;
+        --text-color: rgb(255, 255, 255);
+        --font-h: 'Prata', serif;
+        --font-p: 'Rubik', sans-serif;
+        --font-cursive: 'Great Vibes', cursive;
+    }
+    
+    body {
+        scroll-behavior: smooth;
+        color: var(--text-color);
+    }
+
+img {
+    max-width: 100%;
+    display: block;
+}
