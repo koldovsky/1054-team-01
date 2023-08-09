@@ -18,9 +18,18 @@
     --font-cursive: 'Great Vibes', cursive;
     scroll-behavior: smooth;
     color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 img {
     max-width: 100%;
     display: block;
+}
+
+p, a {
+    font-family: var(--font-p);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-h);
 }
