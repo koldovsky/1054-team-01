@@ -3,6 +3,7 @@
 ## Tasks for the Benefit of Entire Team
 * 07.08.2023 - Anishchenko - Remove surnames from names of files ".partial", updated links to these files in index.html
 * 08.08.2023 - Novitska - Add global styles
+* 08.08.2023 - Samokhvalov - Remove multiple vine-decor duplicate images in folder 'img'
 
 
 ## Sections & Responsibilities

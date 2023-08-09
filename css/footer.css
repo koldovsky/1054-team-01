@@ -1,0 +1,20 @@
+.footer__container {
+  background-color: rgb(27, 22, 19);
+}
+
+.footer__subtitle {
+    font-family: var(--font-h);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.footer__divider {
+    background-color: var(--ui-brand-color);
+    width: 28px;
+    height: 2px;
+    border: none;
+}
+
+.footer_copyright-container {
+    background-color: rgb(19, 15, 14);
+}
