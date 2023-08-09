@@ -14,3 +14,7 @@
     height: 2px;
     border: none;
 }
+
+.footer_copyright-container {
+    background-color: rgb(19, 15, 14);
+}
