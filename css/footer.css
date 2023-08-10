@@ -76,5 +76,22 @@
 }
 
 .footer_copyright-text {
-    margin: 7px;;
+    margin: 7px;
+    font-size: 14px;
+}
+
+.footer__instagram-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer__button {
+    border: none;
+    cursor: pointer;
+    /* justify-self: stretch; */
+}
+
+.footer__thumbnail {
+    object-fit: cover;
+    width: inherit;
 }
