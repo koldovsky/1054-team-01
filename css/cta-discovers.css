@@ -7,12 +7,12 @@
   overflow: hidden;
 }
 
-.parallax-image {
+/* .parallax-image {
   transform: translateZ(0);
 }
 .parallax-text {
   transform: translateZ(-2px);
-}
+} */
 .discover__tagline {
   font-family: "Great Vibes";
   font-size: 14px;
