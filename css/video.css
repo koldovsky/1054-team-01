@@ -10,6 +10,7 @@
     
 }
 
+
 .video__block-history {
     font-family: var(--font-cursive);
     font-size: 14px;
@@ -23,20 +24,24 @@
 }
 
 .video__block-text {
-    display: flex;
+    display:inline;
     font-family: var(--font-p);
-    align-self: baseline;
     font-weight: 400;
     font-stretch: 100%;
     line-height: 25.6px;
     overflow-wrap: break-word;
-    text-align: left;
     vertical-align: baseline;
     word-wrap: break-word;
 }
 
 .video__youtube-link {
     font-weight: 700;
+    text-decoration: none;
+    color: var(--text-color) ;
+}
+
+.video__youtube-link:hover {
+    text-decoration: underline;
 }
 
 .play__button {
@@ -47,21 +52,16 @@
 }
 
 .video__play {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    align-self: baseline;
     margin: 50px 0px;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .play__icon {
     display: grid;
-    grid-template-columns: 1fr;
+    min-height: 50px;
 }
 
 .play__text {
     font-weight: 700;
     font-family: var(--font-p);
+    padding-top: 31px;
 }
