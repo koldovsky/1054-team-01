@@ -1,5 +1,5 @@
 .discover__info{
-    display: flex;
+    display: relative;
     background-image: url(../img/discover-people-drink-wine.jpeg);
     height: 100vh;
     background-size: cover;
@@ -8,8 +8,13 @@
 .discover__tagline{
     font-family: "Great Vibes";
     font-size: 14px;
+    color: var(--ui-brand-color);
 }
 .discover__title{
     font-family: Prata, serif;
     font-size: 58px;
+}
+.discover__description{
+    font-family: Rubik, sans-serif;
+    font-size: 18px;
 }
