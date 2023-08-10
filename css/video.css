@@ -23,15 +23,16 @@
     font-weight: 400;
 }
 
+.video__block-image {
+    margin-top: 35px;
+}
+
 .video__block-text {
     display:inline;
     font-family: var(--font-p);
-    font-weight: 400;
+    font-weight: 500;
     font-stretch: 100%;
     line-height: 25.6px;
-    overflow-wrap: break-word;
-    vertical-align: baseline;
-    word-wrap: break-word;
 }
 
 .video__youtube-link {
