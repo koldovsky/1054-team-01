@@ -1,62 +1,24 @@
-.advantages {
-    background-color: var(--background-color);
-    display: grid;
-    grid-template-areas: 
-     "topic topic topic"
-     "pic text text";
-} 
-
-.advantages__block {
-    grid-area: topic;
-    text-align: center;
-   
-}
-
-.advantages__block-image {
-    margin: 0 auto;
-}
-
-
-.advantages__wine-img {
-    grid-area: pic;
-    display: block;
-    justify-self: flex-end;
-    max-width: 50%;
-    height: auto;
-}
-
-.advantages__block-description {
-    color: var(--ui-brand-color);
+.advantages__title-description {
     font-family: var(--font-cursive);
-    font-size: 2rem;
+    font-size: 14px;
+    color: var(--ui-brand-color);
 }
 
-.advantages__block-title {
-    font-family: var(--font-h);
-    font-size: 3rem;
+.advantages__title-head {
+    font-size: 34px;
+    color: var(--text-color);
 }
 
-.advantages__block-info {
-    grid-area: text;
-    font-family: var(--font-p);
-    font-size: 18px;
-}
-
-
-.advantages__block-info-topic {
-    display: block;
-    margin: 0 auto;
+.advantages__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    margin: 0px 15px;
 }
 
-.topic__title {
-    color: var( --text-color);
-    font-family: var(--font-h);
-    font-size: 1.375rem;
-}
-
-.topic__text {
-    color: var(--text-color-dark);
-    font-family: var(--font-p);
-    font-size: 1rem;
+.advantages__info {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 15px;
 }
