@@ -1,0 +1,24 @@
+.cover {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    height: 100vh;
+    background-image: url("../img/header-backgroung.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.cover span {
+    font-size: 28px;
+    color: #c8693a;
+    font-family: "Great Vibes", undefined;
+}
+
+.cover h1 {
+    font-family: "Prata", serif;
+    font-size: 84px;
+}
+
+.cover div a {
+    font-size: 18px;
+}

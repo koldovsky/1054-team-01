@@ -1,1 +1,5 @@
 @import url(global.css);
+
+.forbiddance{
+    background-color: var(--background-color);
+}
