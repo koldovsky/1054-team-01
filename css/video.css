@@ -1,0 +1,15 @@
+.video {
+    display: grid;
+    padding: 100px 24px;
+    background-image: url(../img/video-bg.png); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.video__block-history {
+    font-family: var(--font-cursive);
+    font-size: 14px;
+}

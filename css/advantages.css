@@ -16,9 +16,9 @@
 .advantages__title {
     display: flex;
     flex-direction: column;
+    box-orient: vertical;
     align-items: center;
     text-align: center;
-    max-width: 100%;
 }
 
 .advantages__title-info {
@@ -35,10 +35,6 @@
     grid-template-columns: 1fr;
     margin: 45px 15px 0px 15px;
     padding: 0px 15px;
-}
-
-.advantages__info-img {
-
 }
 
 .topic__title {

@@ -23,6 +23,7 @@
     background-position: center;
     display: flex;
     flex-direction: column-reverse;
+    padding: 0px 24px;
 }
 .collections__special-events3 {
     background-image: url(../img/collections-of-vines-img3.jpg);
@@ -32,6 +33,7 @@
     background-position: center;
     display: flex;
     flex-direction: column-reverse;
+    padding: 0px 24px;
 }
 .collections__special-events-h3 {
     margin: 15px;
