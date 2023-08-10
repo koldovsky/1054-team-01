@@ -6,6 +6,7 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    align-items: center;
 }
 .discover__info {
     position: absolute;
@@ -14,6 +15,7 @@
     transform: translate(-50%, -50%);
     background-color: rgba(55, 44, 44, 0.3); 
     color: white; 
+    text-align: center;
 }
 
 .discover__tagline {
@@ -30,10 +32,6 @@
   font-size: 18px;
 }
 
-.button {
-  margin-right: 15px;
-}
-
 .button-learn {
   display: flex;
   flex-direction: column;
@@ -47,6 +45,5 @@
   font-weight: 700;
   font-size: 15px;
   text-decoration: none;
-  text-align: center;
   box-sizing: border-box;
 }
