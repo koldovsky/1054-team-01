@@ -1,0 +1,6 @@
+.discover__info{
+    display: flex;
+    background-image: url(../img/discover-people-drink-wine.jpeg);
+    background-size: cover;
+    background-position: center;
+}
