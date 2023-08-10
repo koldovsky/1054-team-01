@@ -1,0 +1,100 @@
+.contact-form {
+    padding-top: 90px;
+    padding-bottom: 15px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.contact-form__content {
+    padding: 0 15px;
+}
+
+.contact-form__input-wrapper {
+    padding: 0 15px;
+    margin-top: 50px;
+}
+
+.contact-form__title {
+    color: var(--ui-brand-color);
+    font-family: var(--font-cursive);
+    font-size: 14px;
+}
+
+.contact-form__subtitle {
+    margin-top: 20px;
+    font-family: var(--font-h);
+    font-size: 28px;
+}
+
+.contact-form__description {
+    margin-top: 25px;
+    font-family: var(--font-p);
+    font-size: 16px;
+}
+
+.contact-form__input-wrapper {
+    padding: 0 15px;
+    margin-top: 50px;
+}
+
+.contact-form__email-input {
+    margin-top: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    --w-get-input-background-color:rgba(73, 73, 73, 0.24);
+    background-color:rgba(73, 73, 73, 0.24);
+    border: 0;
+    border-color: #f2efe9;
+    border-top-color: rgb(242, 239, 233);
+    border-right-color: rgb(242, 239, 233);
+    border-bottom-color: rgb(242, 239, 233);
+    border-left-color: rgb(242, 239, 233);
+    font-size: 15px;
+    width: 100%;
+    font-family: inherit;
+}
+
+.contact-form__submit-button {
+    margin-top: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: var(--ui-brand-color);
+    color: var(--text-color);
+    border: 0;
+    width: 100%;
+    font-weight: 700;
+    font-family: var(--font-p);
+}
+
+.contact-form__divider {
+    margin-top: 45px;
+    padding: 0 15px;
+}
+
+.contact-form__divider-div {
+    height:1px;
+    width:100%;
+    background-color:rgba(255, 255, 255, 0.14);
+}
+
+@media (min-width: 770px) {
+    .contact-form__cont {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .contact-form__input-wrapper {
+        margin-top: 0;
+        max-width: 370px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact-form__content {
+        width: 770px;
+    }
+}
