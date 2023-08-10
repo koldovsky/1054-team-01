@@ -21,6 +21,11 @@
     background-color: var(--background-color);
 }
 
+.container{
+    max-width: 1361px;
+    margin: auto;
+}
+
 img {
     max-width: 100%;
     display: block;
