@@ -1,3 +1,7 @@
+.advantages {
+    padding: 50px 0px 90px;
+}
+
 .advantages__title-description {
     font-family: var(--font-cursive);
     font-size: 14px;
@@ -21,4 +25,30 @@
     display: grid;
     grid-template-columns: 1fr;
     margin: 0px 15px;
+}
+
+.topic__title {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.topic__divider {
+    padding: 15px 0;
+}
+
+.topic__text {
+    color: var(--text-color-dark);
+}
+
+.topic__spacer {
+    height:30px;
+    background-color: transparent;
+}
+
+.advantages__info-mider {
+    padding: 50px 0px 0px;
+    }
+
+.advantages__info-right {
+    padding: 50px 0px 0px;
 }
