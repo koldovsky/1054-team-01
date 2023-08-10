@@ -13,9 +13,5 @@
         border: 3px solid white;
         line-height: 15px;
         box-sizing: border-box;
-        border-top-left-radius: 2px;
-        border-top-right-radius: 2px;
-}
-.button{
-    margin-right: 15px;
+        border-radius: 2px;
 }

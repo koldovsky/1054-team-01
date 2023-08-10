@@ -27,6 +27,9 @@
   font-family: Prata, serif;
   font-size: 58px;
 }
+.discover__decor{
+    margin: 20px auto;
+}
 .discover__description {
   font-family: Rubik, sans-serif;
   font-size: 18px;
@@ -37,7 +40,6 @@
   flex-direction: column;
   width: 135px;
   padding: 15px 10px 15px 10px;
-  margin-top: 15px;
   border: 3px solid white;
   border-radius: 2px;
   font-family: "Rubik", sans-serif;
@@ -46,4 +48,5 @@
   font-size: 15px;
   text-decoration: none;
   box-sizing: border-box;
+  margin: 15px auto;
 }
