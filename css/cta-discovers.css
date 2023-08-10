@@ -1,18 +1,21 @@
+.discover__image{
+    position: relative;
+    display: block;
+    background-image: url(../img/discover-people-drink-wine.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
 .discover__info {
-  display: relative;
-  background-image: url(../img/discover-people-drink-wine.jpeg);
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(55, 44, 44, 0.3); 
+    color: white; 
 }
 
-/* .parallax-image {
-  transform: translateZ(0);
-}
-.parallax-text {
-  transform: translateZ(-2px);
-} */
 .discover__tagline {
   font-family: "Great Vibes";
   font-size: 14px;
@@ -26,29 +29,24 @@
   font-family: Rubik, sans-serif;
   font-size: 18px;
 }
-.button-learn{
-        display: inline-block;
-        max-width: 100%;
-        width: auto;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        font-family: 'Rubik', sans-serif;
-        font-weight: 700;
-        font-size: 15px;
-        display: inline-block;
-        padding: 13px 25px 13px 25px;
-        border: 3px solid white;
-        line-height: 15px;
-        box-sizing: border-box;
-    }
 
-    @media (max-width: 320px) {
-        .button-learn{
-            display: flex;
-            flex-direction: column;
-            width: 135px;
-            padding: 15px 10px 15px 10px;
-            margin-top: 15px;
-        }
-      }
+.button {
+  margin-right: 15px;
+}
+
+.button-learn {
+  display: flex;
+  flex-direction: column;
+  width: 135px;
+  padding: 15px 10px 15px 10px;
+  margin-top: 15px;
+  border: 3px solid white;
+  border-radius: 2px;
+  font-family: "Rubik", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+}
