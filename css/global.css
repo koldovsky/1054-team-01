@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 
 * {
     margin: 0;
@@ -22,7 +23,7 @@
 }
 
 .container {
-    max-width: 1361px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -34,8 +35,10 @@ img {
 p, a {
     font-family: var(--font-p);
     font-size: 1rem;
+    font-weight: lighter;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h* {
     font-family: var(--font-h);
+    font-weight: lighter;
 }
