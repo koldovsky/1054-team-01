@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+  max-width: 100%;
+  width: auto;
+  text-decoration: none;
+  background-color: var(--ui-brand-color);
+  color: var(--text-color);
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 16px 25px 16px 25px;
+  border-radius: 2px;
+  line-height: 15px;
+}
+
+.button:hover {
+  background-color: #af572b;
+}

@@ -1,0 +1,80 @@
+.collections {
+    padding: 90px 0px 60px;
+}
+.collect {
+    display:flex; 
+    flex-direction: column; 
+    align-items:center;
+    padding: 0px 24px;
+}
+.collections__special-events1 {
+    background-image: url(../img/collections-of-vines-img1.jpg);
+    min-height: 430px;
+    min-width: 272px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px 15px;
+}
+.collections__special-events2 {
+    background-image: url(../img/collections-of-vines-img2.jpg);
+    min-height: 430px;
+    min-width: 272px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px 15px;
+    margin: 50px 0px 0px;
+}
+.collections__special-events3 {
+    background-image: url(../img/collections-of-vines-img3.jpg);
+    min-height: 430px;
+    min-width: 272px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px 15px;
+    margin: 50px 0px 0px;
+}
+@media (min-width: 1000px) {
+    .collections {
+        padding: 120px 0px 60px;
+    }
+    .collect {
+        flex-direction: row;
+        padding: 0px 40px;
+    }
+    .collections__special-events2 {
+        margin: 0px 0px 0px;
+    }
+    .collections__special-events3 {
+        margin: 0px 0px 0px;
+    }
+
+}
+
+.collections__special-events-h3 {
+    margin: 15px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+.divider-component_1aY {
+    margin: 15px;
+}
+.collections__special-events-p {
+    margin: 15px;
+    color: var(--text-color-dark);
+}
+.collections__special-events-a {
+    margin: 15px;
+    text-decoration:none;
+    color: var(--text-color);
+    font-weight:bold
+}
+.collections__special-events-a:hover {
+    text-decoration: underline;
+}
+

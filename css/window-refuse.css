@@ -1,1 +1,39 @@
 @import url(global.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Edu+SA+Beginner&family=Rubik:wght@300;400&family=Satisfy&display=swap");
+
+.forbiddance {
+  background-color: var(--background-color);
+  width: 320px;
+  height: 582px;
+  padding: 150px 0;
+}
+
+.forbiddance__container {
+  text-align: center;
+  padding: 0 15px;
+}
+.forbiddance__container-title {
+  font-family: --font-h;
+  font-size: 57px;
+  transform: scale(1.2083);
+  font-weight: lighter;
+  transform-origin: top center;
+  width: 255px;
+  height: 427px;
+  margin: 0 15px 0 17px;
+  padding: 0 10px;
+  line-height: 1;
+}
+
+.forbiddance-decor {
+  margin: 30px auto 20px;
+}
+.forbiddance__container-description {
+  font-family: var(--font-p);
+  text-align: center;
+  line-height: 1.5;
+  color: var(--text-color-dark);
+  width: 235px;
+  margin: auto;
+}
