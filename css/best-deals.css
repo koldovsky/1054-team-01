@@ -1,68 +1,87 @@
 .best-deals {
-    height: 320px;
-    width: 780px;
-    padding: 90 0 50 0;
+    height: auto;
+    width: 320px;
+    padding: 90px 0 50px 0;
+    margin: 0 auto;
 }
 .best-deals__header {
     width: 272px;
     height: 297px;
-    padding: 0 15 0 15;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    text-align: center;
 }
 .best-deals__header-title {
-    width: 272px;
+    width: 100%;
     height: 20px;
     text-align: center;
     font-family: var(--font-cursive);
     color: var(--ui-brand-color);
+    margin: 0;
+    font-size: 14px;
     
 }
 .best-deals__header-heading {
-    width: 272px;
+    width: 100%;
     height: 88px;
     font-family: var(--font-h);
     font-size: 34px;
     font-weight: 400;
     text-align: center;
+    margin: 0;
 }
 .best-deals__header-decor {
-    padding-top: 7.5;
+    display: block; 
+    margin: 0 auto; 
+    padding-top: 7.5px; 
     
 }
 .best-deals__header-text {
-    width: 272px;
-    height: 92px;
+    width: 100%;
+    height: 82px;
     font-size: 18px;
     font-weight: 400;
     text-align: center;
+    margin-top: 20px;
+    font-family: var(--font-p);
+    line-height: 30.4px;
 }
 .best-deals__products {
-    width: 242px;
-    height: 374px;
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 30px; 
+    height: 439px;
+    width: auto;
 }
 .best-deals__product {
+    text-align: center;
 }
 .product {
 }
 .product__image {
     width: 242px;
     height: 242px;
+    object-fit: cover; 
 }
 .product__name {
-    text-align: center;
-    width: 242px;
+    width: 100%; 
     height: 26px;
-    margin: 8 0 0 0;
+    margin-top: 8px;
     font-family: var(--font-p);
     font-weight: 400;
 }
 .product__price {
-    width: 242px;
+    width: 100%;
     height: 26px;
     text-align: center;
     font-family: var(--font-p);
     font-weight: bold;
 }
 .button {
-    margin: 28 0 0 0;
-    align-items: center;
+    display: inline-block;
+    max-width: 100%;
+    width: auto;
+    text-align: center; 
+    margin: 8px 0; 
 }
