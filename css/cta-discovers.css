@@ -1,20 +1,83 @@
-.discover__info{
-    display: relative;
-    background-image: url(../img/discover-people-drink-wine.jpeg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Edu+SA+Beginner&family=Rubik:wght@300;400&family=Satisfy&display=swap");
+
+.discover__image {
+  position: relative;
+  display: block;
+  background-image: url(../img/discover-people-drink-wine.jpeg);
+  width: 320px;
+  height: 761px;
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  align-items: center;
 }
-.discover__tagline{
-    font-family: "Great Vibes";
-    font-size: 14px;
-    color: var(--ui-brand-color);
+
+.discover__image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/discover-people-drink-wine.jpeg);
+  background-size: cover;
+  background-position: center;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
 }
-.discover__title{
-    font-family: Prata, serif;
-    font-size: 58px;
+
+.discover__info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(45, 42, 42, 0.5);
+  color: white;
+  text-align: center;
+  width: 320px;
+  height: 761px;
+  padding: 100px 24px;
 }
-.discover__description{
-    font-family: Rubik, sans-serif;
-    font-size: 18px;
+
+.discover__tagline {
+  font-family: "Great Vibes";
+  font-size: 14px;
+  color: var(--ui-brand-color);
+  font-weight: bold;
+}
+
+.discover__title {
+  font-family: Prata, serif;
+  font-size: 58px;
+  font-weight: lighter;
+  padding-top: 20px;
+  line-height: 1.2;
+}
+
+.discover__decor {
+  margin: 35px auto 20px;
+}
+
+.discover__description {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+}
+.discover__buttons {
+  margin-top: 55px;
+}
+.button-learn {
+  display: flex;
+  flex-direction: column;
+  width: 135px;
+  padding: 10px 10px 15px 10px;
+  border: 3px solid white;
+  border-radius: 2px;
+  font-family: "Rubik", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 20px auto;
 }

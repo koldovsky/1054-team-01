@@ -1,0 +1,93 @@
+.categories__container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 15% 2% 15% 20px;
+  padding-top: 90px;
+  padding-bottom: 110px;
+}
+
+.categories__container:first-of-type {
+  background-image: url(../img/categories-redwines.jpg);
+  background-size: cover;
+}
+
+.categories__container:nth-of-type(2) {
+  background-image: url(../img/categories-whitewines.jpg);
+  background-size: cover;
+}
+
+.categories__container:last-of-type {
+  background-image: url(../img/categories-field.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-color: rgba(200, 105, 58, 1);
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.categories__inner-container * {
+  margin: 3% 0;
+}
+
+.categories__inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 0% 10% 0% 10%;
+}
+
+
+.categories__inner-container h3 {
+  font-family: var(--font-h);
+  font-size: 1.75rem;
+  font-weight: lighter;
+}
+
+.categories__inner-container h2 {
+  font-family: var(--font-h);
+  font-size: 2.125rem;
+  font-weight: lighter;
+}
+
+.categories__text:last-of-type {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 30.6px;
+}
+
+.categories__divider {
+  width: 15%;
+  padding: 1px;
+  height: 2px;
+  background-color: var(--ui-brand-color);
+  border: none;
+}
+
+#white_wines_btn {
+  padding: 16px 0px 16px 0px !important;
+}
+
+.categories__button:hover {
+  background-color: #af572b;
+}
+
+.categories__container:last-of-type .categories__button {
+  text-decoration: none;
+  width: 120px;
+  font-size: 16.5px;
+  color: var(--text-color);
+  padding: 0 10px 0 10px;
+  background-color: var(--ui-brand-color);
+  text-align: center;
+  font-weight: 700;
+  border-radius: 2px;
+  border: 3px solid var(--text-color);
+}
+
+.categories__container:last-of-type .categories__button:hover {
+  color: var(--background-color);
+  background-color: var(--text-color);
+}

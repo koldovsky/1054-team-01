@@ -11,23 +11,30 @@
 .advantages__title-head {
     font-size: 34px;
     color: var(--text-color);
+    font-family: var(--font-h);
+}
+
+.advantages__title-info {
+    font-weight: 400;
+    font-family: var(--font-p);
+    justify-self: center;
+    overflow-wrap: break-word;
 }
 
 .advantages__title {
     display: flex;
     flex-direction: column;
-    box-orient: vertical;
     align-items: center;
     text-align: center;
 }
 
 .advantages__title-info {
     font-size: 18px;
+    text-align: center;
 }
 
 .advantages__title-head {
     font-weight: 400;
-    font-stretch: 100%;
 }
 
 .advantages__info {
