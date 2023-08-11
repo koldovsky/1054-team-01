@@ -18,13 +18,22 @@
 }
 
 .categories__container:last-of-type {
-  background-image: url(../img/categories-field.png);
+  /*background-image: url(../img/categories-field.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center;*/
+  background-color: rgba(200, 105, 58, 0.82);
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.categories__container:last-of-type .categories__inner-container {
+  /* check ext line with the mentor */
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    url(../img/categories-field.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position-y: center;
-  background-color: rgba(200, 105, 58, 1);
-  padding-top: 30px;
-  padding-bottom: 60px;
 }
 
 .categories__inner-container * {
@@ -38,7 +47,6 @@
   align-items: left;
   padding: 0% 10% 0% 10%;
 }
-
 
 .categories__inner-container h3 {
   font-family: var(--font-h);
