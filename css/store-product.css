@@ -1,1 +1,142 @@
 @import url(global.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(controls.css);
+
+main {
+  background-color: var(--text-color);
+  padding: 90px 7.5%;
+}
+
+.storeproduct__outer-container,
+.storeproduct__imgcontainer,
+.storeproduct__largeimg {
+  display: flex;
+}
+
+.storeproduct__outer-container,
+.storeproduct__imgcontainer {
+  flex-direction: column;
+}
+
+.storeproduct__largeimg {
+  align-items: center;
+}
+
+.storeproduct__outer-container {
+  margin: 50px 0;
+}
+
+.storeproduct__imgcontainer .storeproduct__link {
+  margin: 10px 0;
+  width: 9.25vw;
+  min-width: 33px;
+  max-width: 102px;
+}
+
+.storeproduct__arrow {
+  width: 14px;
+  height: 26px;
+}
+
+.storeproduct__image {
+  width: 64vw;
+  min-width: 204px;
+  max-width: 428px;
+}
+.storeproduct__maincontainer {
+  margin-top: 50px;
+}
+
+.storeproduct__instokindicator {
+  color: #61a854;
+  font-weight: 400;
+}
+
+.storeproduct__productname {
+  color: var(--background-color);
+  font-size: 1.375rem;
+  font-family: var(--font-h);
+  font-weight: lighter;
+  line-height: 33px;
+}
+
+.storeproduct__productcodetext {
+  margin-top: 8px;
+  color: var(--background-color);
+  font-family: var(--font-cursive);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.storeproduct__pricetext {
+  padding: 24px 0 48px 0;
+  border-bottom: 1px solid lightgray;
+  color: var(--background-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.storeproduct__form {
+  margin: 24px 0 36px 0;
+  display: flex;
+}
+
+.storeproduct__form-inputcontainer {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  padding: 8px 0;
+  width: 90px;
+  height: 47px;
+  border: 1px solid lightgray;
+}
+
+.storeproduct__form-input {
+  width: 20px;
+  border: none;
+}
+
+.storeproduct__input-arrows-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.storeproduct__form-uparrow,
+.storeproduct__form-downarrow {
+  cursor: pointer;
+}
+.storeproduct__form-uparrow {
+  margin-bottom: 4px;
+}
+
+.storeproduct__form-downarrow {
+  margin-top: 4px;
+  rotate: 180deg;
+}
+
+.storeproduct__form-submit {
+  border: none;
+  min-width: 197px;
+}
+
+.storeproduct__subtitle {
+  padding: 0 10px 10px 0px;
+  color: var(--background-color);
+  font-size: 0.75rem;
+  font-family: var(--font-p);
+  font-weight: 600;
+}
+
+/* check this! the divider is not visible on the page*/
+.storeproduct__divider {
+  height: 2px;
+  width: 102px;
+  background-color: var(ui-brand-color);
+  border: none;
+  padding: 1px;
+}
+
+.storeproduct__description {
+  color: var(--background-color);
+}
