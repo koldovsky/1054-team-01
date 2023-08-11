@@ -1,18 +1,19 @@
 .button {
-    display: inline-block;
-    max-width: 100%;
-    width: auto;
-    text-decoration: none;
-    background-color: rgb(175, 87, 43);
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    display: inline-block;
-    padding: 16px 25px 16px 25px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    line-height: 15px;
-    box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  width: auto;
+  text-decoration: none;
+  background-color: var(--ui-brand-color);
+  color: var(--text-color);
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 16px 25px 16px 25px;
+  border-radius: 2px;
+  line-height: 15px;
+}
+
+.button:hover {
+  background-color: #af572b;
 }
