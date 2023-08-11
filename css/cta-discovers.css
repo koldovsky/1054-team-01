@@ -33,7 +33,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(45, 42, 42, 0.5);
-  color: white;
+  color: var(--text-color);
   text-align: center;
   width: 320px;
   height: 761px;
@@ -74,7 +74,7 @@
   border: 3px solid white;
   border-radius: 2px;
   font-family: "Rubik", sans-serif;
-  color: rgb(255, 255, 255);
+  color: var(--text-color);
   font-weight: 700;
   font-size: 15px;
   text-decoration: none;
