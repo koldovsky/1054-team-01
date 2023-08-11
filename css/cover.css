@@ -1,13 +1,19 @@
+
 .cover {
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     height: 100vh;
     background-image: url("../img/header-backgroung.jpg");
     background-size: cover;
+    display: block;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-
+.cover__block{
+    
+}
 .cover span {
     font-size: 28px;
     color: #c8693a;
@@ -20,5 +26,8 @@
 }
 
 .cover div a {
-    font-size: 18px;
+    font-size: 16.5px;
+    font-family: Rubik, sans-serif;
+    color: white;
+    text-decoration: none;
 }
