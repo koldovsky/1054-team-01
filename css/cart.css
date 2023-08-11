@@ -1,0 +1,124 @@
+.cart h3, h4 {
+    font-family: var(--font-p);
+}
+
+/* * {
+    outline: 1px solid red;
+} */
+
+.cart {
+    background-color: rgb(255, 255, 255);
+    color: #261e1c;
+}
+
+.cart__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:end;
+    width: 100%;
+    padding: 16px;
+    background-color: rgb(247, 248, 250);
+    font-family: var(--font-p);
+    
+}
+
+.cart__header-title {
+    font-size: 18px;
+}
+
+.cart__header-close {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    top: -5px;
+    height: 16px;
+    width: auto;
+}
+
+.cart__order {
+    display: block;
+    padding: 24px 15px;
+}
+
+.cart__order-topic {
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.cart__preview {
+    display: flex;
+    justify-content: baseline;
+    width: 100%;
+}
+
+.info__quantity-change {
+    max-width: 50%;
+    
+}
+
+.cart__preview-info {
+    display: flex;
+    width: 100%;
+    padding: 0px 20px 0px 8px;
+    flex-direction: column;
+}
+
+.info__quantity-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-preview-remove {
+    max-width: 40px;
+    height: auto;
+}
+
+.cart__order-sum {
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    
+}
+.cart__order-sum p {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.cart__buyer-title {
+    font-size: 12px;
+    color: rgb(38, 30, 28);
+    font-weight: 700;
+}
+
+.cart__buyer-details-sub {
+    margin: 16px 0px 24px;
+}
+
+.cart__buyer-details-subhead {
+    margin: 0px 0px 4px;
+}
+
+.cart__buyer-details-input, .cart__buyer-details-text {
+    display: block;
+    background-color: rgba(38, 30, 28, 0.12);
+    font-size: 15px;
+    font-family: var(--font-p);
+    color: rgb(38, 30, 28);
+    padding: 16px 25px;
+    margin: 12px 0px 0px;
+    border-radius: 2;
+    width: 282px;
+    text-overflow:ellipsis;
+    text-rendering: auto;
+    overflow-wrap: break-word;
+}
+
+.cart__buyer-details-text {
+    min-height: 114px;
+    text-align: start;
+    column-count: auto;
+    writing-mode: horizontal-tb;
+    
+}
