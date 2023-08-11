@@ -38,7 +38,7 @@ p, a {
     font-weight: lighter;
 }
 
-h* {
+h1,h2,h3,h4,h5,h6 {
     font-family: var(--font-h);
     font-weight: lighter;
 }
