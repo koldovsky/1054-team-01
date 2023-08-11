@@ -1,26 +1,68 @@
 .best-deals {
+    height: 320px;
+    width: 780px;
+    padding: 90 0 50 0;
 }
 .best-deals__header {
+    width: 272px;
+    height: 297px;
+    padding: 0 15 0 15;
 }
-.best-deals__header-itle {
+.best-deals__header-title {
+    width: 272px;
+    height: 20px;
+    text-align: center;
+    font-family: var(--font-cursive);
+    color: var(--ui-brand-color);
+    
 }
 .best-deals__header-heading {
+    width: 272px;
+    height: 88px;
+    font-family: var(--font-h);
+    font-size: 34px;
+    font-weight: 400;
+    text-align: center;
 }
 .best-deals__header-decor {
+    padding-top: 7.5;
+    
 }
 .best-deals__header-text {
+    width: 272px;
+    height: 92px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
 }
 .best-deals__products {
+    width: 242px;
+    height: 374px;
 }
 .best-deals__product {
 }
 .product {
 }
 .product__image {
+    width: 242px;
+    height: 242px;
 }
 .product__name {
+    text-align: center;
+    width: 242px;
+    height: 26px;
+    margin: 8 0 0 0;
+    font-family: var(--font-p);
+    font-weight: 400;
 }
 .product__price {
+    width: 242px;
+    height: 26px;
+    text-align: center;
+    font-family: var(--font-p);
+    font-weight: bold;
 }
 .button {
+    margin: 28 0 0 0;
+    align-items: center;
 }
