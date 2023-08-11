@@ -1,3 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Edu+SA+Beginner&family=Rubik:wght@300;400&family=Satisfy&display=swap");
+
+.confirm {
+  background-color: var(--background-color);
+  height: 561px;
+  width: 320px;
+  padding: 80px 0;
+}
+
+.confirm__window {
+  height: 401px;
+  width: 320px;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.confirm__window-title {
+  font-family: var(--font-h);
+  font-size: 34px;
+  font-weight: lighter;
+}
+
+.confirm-modal-window__decor {
+  margin: 25px auto;
+}
+
+.confirm__window-description {
+  font-family: var(--font-p);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 45px;
+}
+
 .confirm-button {
   display: inline-block;
   max-width: 100%;
@@ -14,4 +47,5 @@
   line-height: 15px;
   box-sizing: border-box;
   border-radius: 2px;
+  margin-top: 20px;
 }
