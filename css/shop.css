@@ -1,5 +1,5 @@
 .shop {
-    height: auto;
+    height: 2032px;
     width: auto;
     padding: 90px 0 90px 0;
     margin: 0 auto;
@@ -12,12 +12,9 @@
     text-align: center;
 }
 .shop__header-title {
-    width: 100%;
-    height: 20px;
-    text-align: center;
     font-family: var(--font-cursive);
+    font-size: 14px;
     color: var(--ui-brand-color);
-    margin: 0;
 }
 .shop__header-heading {
     width: 100%;
@@ -26,7 +23,7 @@
     font-size: 34px;
     font-weight: 400;
     text-align: center;
-    margin: 0;
+    margin: 20px 0 20px 0;
 }
 .shop__header-decor {
     display: block; 
@@ -34,12 +31,13 @@
     padding-top: 7.5px; 
 }
 .shop__header-text {
-    width: 100%;
+    width: 272px;
     height: 62px;
     font-size: 18px;
     font-weight: 400;
     text-align: center;
-    margin-top: 20px;
+    padding-top: 20px;
+    margin: 0 auto;
     font-family: var(--font-p);
     line-height: 30.4px;
 }
