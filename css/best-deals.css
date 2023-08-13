@@ -78,6 +78,9 @@
     font-family: var(--font-p);
     font-weight: bold;
 }
+.button {
+    margin-top: 24px;
+}
 
 @media (min-width: 768px) {
     .best-deals__products {
