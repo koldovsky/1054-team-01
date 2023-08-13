@@ -42,55 +42,53 @@
     font-family: var(--font-p);
     line-height: 30.4px;
 }
-.best-deals__product {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    flex-basis: 100%; 
-    max-width: 100%;
-    margin: 0 auto;
-}
-.product {
-    width: 100%;
-    min-width: 240px;
+.best-deals__products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
     text-align: center;
-    margin-bottom: 20px;
 }
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .product__image {
     width: 100%;
-    max-width: 242px;
     height: auto;
-    display: block;
-    margin: 0 auto;
+    max-width: 242px;
+    max-height: 242px;
+    object-fit: cover;
 }
+
 .product__name {
+    width: 100%;
+    text-align: center;
     margin-top: 8px;
     font-family: var(--font-p);
     font-weight: 400;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
+
 .product__price {
-    margin-top: 8px;
+    width: 100%;
+    text-align: center;
     font-family: var(--font-p);
     font-weight: bold;
 }
 
-
 @media (min-width: 768px) {
-    .product {
-      flex-basis: 50%; 
-      max-width: 50%;
+    .best-deals__products {
+        grid-template-columns: 1fr 1fr;
     }
-  }
-  
-  @media (min-width: 1024px) {
-    .product {
-      flex-basis: 33.33%;
-      max-width: 33.33%;
+}
+
+
+@media (min-width: 1023px) {
+    .best-deals__products {
+        grid-template-columns: 1fr 1fr 1fr;
     }
-  }
+}
   
