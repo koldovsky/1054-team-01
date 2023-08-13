@@ -58,7 +58,16 @@ header {
     border-radius: 2px;
 }
 
+.storehome__storenav-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "pagenav"
+        "prods-per-page";
+}
+
 .storehome__pagestyle-container {
+    grid-area: prods-per-page;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,6 +85,7 @@ header {
 }
 
 .storehome__pagenav-container {
+    grid-area: pagenav;
     display: flex;
     justify-content: center;
 }
