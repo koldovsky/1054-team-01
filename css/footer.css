@@ -36,7 +36,7 @@
 .footer__info-menuitem,
 .footer__shop-menuitem,
 .footer__button {
-    margin: 5px;
+    margin: 10px 5px;
 }
 
 .footer__subtitle {
@@ -88,7 +88,6 @@
 .footer__button {
     border: none;
     cursor: pointer;
-    /* justify-self: stretch; */
 }
 
 .footer__thumbnail {
