@@ -1,14 +1,16 @@
 .best-deals {
-    height: auto;
-    width: 320px;
+    max-width: 1200px;
     padding: 90px 0 50px 0;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 .best-deals__header {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 297px;
-    margin: 0 auto;
-    padding: 0 15px 0 15px;
+    padding: 0 15px;
     text-align: center;
 }
 .best-deals__header-title {
@@ -18,8 +20,6 @@
     
 }
 .best-deals__header-heading {
-    width: 272px;
-    height: 88px;
     font-family: var(--font-h);
     font-size: 34px;
     font-weight: 400;
@@ -33,7 +33,7 @@
     
 }
 .best-deals__header-text {
-    width: 257px;
+    max-width: 90%;
     height: 83px;
     font-size: 18px;
     font-weight: 400;
@@ -43,41 +43,52 @@
     line-height: 30.4px;
 }
 .best-deals__products {
-    display: flex; 
-    justify-content: center; 
-    gap: 20px; 
-    margin-top: 30px; 
-    height: 439px;
-    width: auto;
-}
-.best-deals__product {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
     text-align: center;
 }
+
 .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .product__image {
-    width: 242px;
-    height: 242px;
-    object-fit: cover; 
+    width: 100%;
+    height: auto;
+    max-width: 242px;
+    max-height: 242px;
+    object-fit: cover;
 }
+
 .product__name {
-    width: 100%; 
-    height: 26px;
+    width: 100%;
+    text-align: center;
     margin-top: 8px;
     font-family: var(--font-p);
     font-weight: 400;
 }
+
 .product__price {
     width: 100%;
-    height: 26px;
     text-align: center;
     font-family: var(--font-p);
     font-weight: bold;
 }
-.button {
-    display: inline-block;
-    max-width: 100%;
-    width: auto;
-    text-align: center; 
-    margin: 8px 0; 
+
+@media (min-width: 768px) {
+    .best-deals__products {
+        grid-template-columns: 1fr 1fr;
+    }
 }
+
+
+@media (min-width: 1023px) {
+    .best-deals__products {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+  

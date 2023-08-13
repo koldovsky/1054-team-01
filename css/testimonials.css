@@ -1,0 +1,34 @@
+.testimonials {
+    text-align: center;
+    padding: 50xp 24px 50px 24px;
+    background-image: url("../img/testimonials-grape-font-decor.webp");
+}
+.testimonials__block-name {
+    font-family: var(--font-cursive);
+    color: var(--ui-brand-color);
+    font-size: 14px;
+}
+.testimonials__title {
+    padding: 20px 0px 0px 0px;
+    font-size: 34px;
+    font-family: var(--font-h);
+}
+.testimonials__grape-logo {
+    padding: 25px 0px 0px 0px;
+}
+.testimonials__subtitle {
+    padding: 20px 0px 0px 0px;
+    font-size: 18px;
+    font-family: var(--font-p);
+}
+.testimonials__carrousel {
+    padding: 45px 0px 0px 30px;
+}
+.testimonials__list {
+    font-family: var(--font-p);
+    color: var(--text-color-dark);
+    font-size: 16px;
+}
+.indicator-nav {
+    color:rgb(38, 30, 28);
+}

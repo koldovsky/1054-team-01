@@ -1,14 +1,16 @@
 .shop {
-    height: 2032px;
-    width: auto;
+    max-width: 1200px;
     padding: 90px 0 90px 0;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 .shop__header {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 272px;
-    margin: 0 auto;
-    padding: 0 15px 0 15px;
+    padding: 0 15px;
     text-align: center;
 }
 .shop__header-title {
@@ -17,8 +19,6 @@
     color: var(--ui-brand-color);
 }
 .shop__header-heading {
-    width: 100%;
-    height: 44px;
     font-family: var(--font-h);
     font-size: 34px;
     font-weight: 400;
@@ -31,55 +31,70 @@
     padding-top: 7.5px; 
 }
 .shop__header-text {
-    width: 272px;
-    height: 62px;
+    max-width: 90%;
+    height: 83px;
     font-size: 18px;
     font-weight: 400;
     text-align: center;
-    padding-top: 20px;
-    margin: 0 auto;
+    margin-top: 20px;
     font-family: var(--font-p);
     line-height: 30.4px;
 }
 .shop__products {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    gap: 20px; 
-    margin-top: 30px; 
-    height: 1765px;
-    width: auto;
-}
-.shop__product {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
     text-align: center;
 }
 .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .product__image {
-    width: 242px;
-    height: 242px;
+    width: 100%;
+    height: auto;
+    max-width: 242px;
+    max-height: 242px;
     object-fit: cover;
 }
 .product__name {
-    width: 100%; 
-    height: 26px;
+    width: 100%;
     margin-top: 8px;
+    text-align: center;
     font-family: var(--font-p);
     font-weight: 400;
 }
 .product__price {
     width: 100%;
-    height: 26px;
     text-align: center;
     font-family: var(--font-p);
     font-weight: bold;
 }
-.button {
-    display: inline-block;
-    max-width: 100%;
-    width: auto;
-    text-align: center; 
-    margin: 8px 0; 
-}
+
 .shop__view-all {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .shop__products {
+        grid-template-columns: 1fr 1fr;
+    }
+    .shop__view-all {
+        grid-column: span 3;
+        justify-self: end;
+    }
+}
+
+
+@media (min-width: 1023px) {
+    .shop__products {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .shop__view-all {
+        grid-column: span 4;
+        justify-self: end;
+    }
 }
