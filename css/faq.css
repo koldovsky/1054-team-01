@@ -1,13 +1,16 @@
 .faq {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  max-width: 100%;
+  margin: 0 auto; 
+  padding-left: 20px;
+  padding-right: 20px;
 
 }
 
 .accordion {
-    max-width: 678px;
+    max-width: 767px;
     flex-direction: column;
     justify-content: center;
     display: flex;
@@ -85,4 +88,28 @@
   .accordion__item[open] .accordion__body {
     display: block;
   }
- 
+
+  .faq__wino {
+    display: grid;
+    max-width: 450px;
+    max-height: 657px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+.faq .accordion {
+  max-width: 767px;
+}
+
+@media (max-width: 768px) {
+  .faq {
+    grid-template-columns: 1fr;
+  }
+  
+  .faq__wino {
+    margin-left: auto; 
+    margin-right: 20px; 
+    min-height: 398px;
+  }
+}
+
