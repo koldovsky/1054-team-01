@@ -1,1 +1,12 @@
 @import url(global.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(controls.css);
+
+main {
+  background-color: var(--text-color);
+  padding: 90px 7.5%;
+}
+header {
+  position: initial;
+}
