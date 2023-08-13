@@ -72,6 +72,9 @@
     font-family: var(--font-p);
     font-weight: bold;
 }
+.button {
+    margin-top: 24px;
+}
 
 .shop__view-all {
     text-align: center;
