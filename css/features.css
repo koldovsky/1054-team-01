@@ -33,3 +33,11 @@
 .features__block-description {
     color: var(--text-color-dark);
 }
+
+@media (min-width: 768px) {
+    .features {
+        padding: 50px 32px 105px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
