@@ -2,6 +2,9 @@
     text-align: center;
     padding: 50px 24px 50px 24px;
     background-image: url("../img/testimonials-grape-font-decor.webp");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .testimonials__header {
     padding: 0 15px;
@@ -19,9 +22,8 @@
 }
 .testimonials__grape-logo {
 display: block;
-object-position: 50%;
     padding-top: 7.4375px;
-    margin-top: 25px auto;
+    margin: 25px auto;
 }
 .testimonials__subtitle {
     display: block;
