@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Edu+SA+Beginner&family=Rubik:wght@300;400&family=Satisfy&display=swap");
 
 * {
     margin: 0;
@@ -38,7 +39,7 @@ p, a {
     font-weight: lighter;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-h);
     font-weight: lighter;
 }

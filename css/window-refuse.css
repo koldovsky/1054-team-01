@@ -1,7 +1,5 @@
 @import url(global.css);
 
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Edu+SA+Beginner&family=Rubik:wght@300;400&family=Satisfy&display=swap");
-
 .forbiddance {
   background-color: var(--background-color);
   width: 320px;
@@ -13,6 +11,7 @@
   text-align: center;
   padding: 0 15px;
 }
+
 .forbiddance__container-title {
   font-family: --font-h;
   font-size: 57px;
@@ -29,6 +28,7 @@
 .forbiddance-decor {
   margin: 30px auto 20px;
 }
+
 .forbiddance__container-description {
   font-family: var(--font-p);
   text-align: center;
