@@ -2,10 +2,13 @@
     text-align: center;
     padding: 50px 24px 50px 24px;
     background-image: url("../img/testimonials-grape-font-decor.webp");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .testimonials__header {
-    padding: 0px 15px 0px 15px;
-    margin: 0px -15px 0px -15px;
+    padding: 0 15px;
+    margin: 0 -15px;
 }
 .testimonials__part-name {
     font-family: var(--font-cursive);
@@ -19,9 +22,8 @@
 }
 .testimonials__grape-logo {
 display: block;
-margin:auto;
     padding-top: 7.4375px;
-    margin-top: 25px auto;
+    margin: 25px auto;
 }
 .testimonials__subtitle {
     display: block;
@@ -31,7 +33,7 @@ margin:auto;
     font-family: var(--font-p);
 }
 .testimonials__carrousel {
-    padding: 45px 15px 0px 15px;
+    padding: 45px 15px 0 15px;
 }
 .testimonials__list {
     margin: auto;
