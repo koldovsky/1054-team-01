@@ -7,7 +7,6 @@
     background-size: cover;
     position: relative;
     flex-basis: 100%;
-
 }
 
 .video__section-inner {
@@ -67,7 +66,7 @@
 }
 
 .video__play {
-    margin: 50px 0px;
+    margin: 50px 0;
 }
 
 .play__icon {
@@ -121,22 +120,22 @@
         height: 70px;
         max-width: 100%;
     }
+}
 
-    @media (min-width: 992px) {
-        .video {
-            padding: 165px 0;
-        }
+@media (min-width: 992px) {
+    .video {
+        padding: 165px 0;
+    }
 
-        .video__section-inner {
-            padding: 0 40px;
-        }
+    .video__section-inner {
+        padding: 0 40px;
+    }
 
-        .video__block-history {
-            font-size: 28px;
-        }
+    .video__block-history {
+        font-size: 28px;
+    }
 
-        .video__block-title {
-            font-size: 84px;
-        }
+    .video__block-title {
+        font-size: 84px;
     }
 }

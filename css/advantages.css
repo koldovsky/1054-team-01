@@ -1,6 +1,5 @@
 .advantages {
     padding: 50px 24px 90px 24px;
-    max-width: 1200px;
 }
 
 .advantages__title-description {
@@ -52,8 +51,8 @@
 .advantages__info {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 45px 0px 0px;
-    padding: 0px 15px;
+    margin: 45px 0 0;
+    padding: 0 15px;
 }
 
 .topic__title {
@@ -70,7 +69,7 @@
 }
 
 .topic__spacer {
-    height:30px;
+    height: 30px;
     background-color: transparent;
 }
 
@@ -79,11 +78,11 @@
     padding: 0 15px;
     word-wrap: break-word;
     max-width: 100%;
-    }
+}
 
 .advantages__info-right {
     margin-top: 50px;
-    padding: 0px 15px;
+    padding: 0 15px;
 }
 
 .topic__text {
@@ -116,11 +115,11 @@
     }
 
     .advantages__info-mider {
-        margin-top: 0px;
-        }
-    
+        margin-top: 0;
+    }
+
     .advantages__info-right {
-        margin-top: 0px;
+        margin-top: 0;
     }
 }
 
