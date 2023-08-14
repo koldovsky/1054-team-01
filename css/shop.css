@@ -52,12 +52,8 @@
     justify-content: center;
     align-items: center;
 }
-.product__image {
-    width: 100%;
-    height: auto;
-    max-width: 242px;
-    max-height: 242px;
-    object-fit: cover;
+.shop__product-image {
+    min-height: 242px;
 }
 .product__name {
     width: 100%;
@@ -86,7 +82,7 @@
         grid-template-columns: 1fr 1fr;
     }
     .shop__view-all {
-        grid-column: span 3;
+        grid-column: span 2;
         justify-self: center;
     }
 }
