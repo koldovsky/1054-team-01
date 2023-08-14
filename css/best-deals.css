@@ -1,44 +1,40 @@
 .best-deals {
-    height: auto;
-    width: 320px;
+    max-width: 1200px;
     padding: 90px 0 50px 0;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 .best-deals__header {
-    width: 272px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 297px;
-    margin: 0 auto;
-    padding: 0 15px 0 15px;
+    padding: 0 15px;
     text-align: center;
 }
 .best-deals__header-title {
-    width: 100%;
-    height: 20px;
-    text-align: center;
     font-family: var(--font-cursive);
-    color: var(--ui-brand-color);
-    margin: 0;
     font-size: 14px;
+    color: var(--ui-brand-color);
     
 }
 .best-deals__header-heading {
-    width: 100%;
-    height: 88px;
     font-family: var(--font-h);
     font-size: 34px;
     font-weight: 400;
     text-align: center;
-    margin: 0;
+    margin: 20px 0 20px 0;
 }
 .best-deals__header-decor {
     display: block; 
     margin: 0 auto; 
-    padding-top: 7.5px; 
+    padding-top: 7.5px;  
     
 }
 .best-deals__header-text {
-    width: 100%;
-    height: 82px;
+    max-width: 90%;
+    height: 83px;
     font-size: 18px;
     font-weight: 400;
     text-align: center;
@@ -47,41 +43,51 @@
     line-height: 30.4px;
 }
 .best-deals__products {
-    display: flex; 
-    justify-content: center; 
-    gap: 20px; 
-    margin-top: 30px; 
-    height: 439px;
-    width: auto;
-}
-.best-deals__product {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
     text-align: center;
 }
+
 .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.product__image {
-    width: 242px;
-    height: 242px;
-    object-fit: cover; 
+
+.best-deals__product-image {
+    min-height: 242px;
 }
+
 .product__name {
-    width: 100%; 
-    height: 26px;
+    width: 100%;
+    text-align: center;
     margin-top: 8px;
     font-family: var(--font-p);
     font-weight: 400;
 }
+
 .product__price {
     width: 100%;
-    height: 26px;
     text-align: center;
     font-family: var(--font-p);
     font-weight: bold;
 }
 .button {
-    display: inline-block;
-    max-width: 100%;
-    width: auto;
-    text-align: center; 
-    margin: 8px 0; 
+    margin-top: 24px;
 }
+
+@media (min-width: 767px) {
+    .best-deals__products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (min-width: 990px) {
+    .best-deals__products {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+  

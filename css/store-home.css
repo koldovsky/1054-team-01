@@ -1,1 +1,105 @@
 @import url(global.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(controls.css);
+
+main {
+  background-color: var(--text-color);
+  padding: 90px 15px;
+}
+header {
+  position: initial;
+}
+
+.storehome__products-container {
+    display: grid;
+    font-family: var(--font-p);
+    color: var(--ui-brand-color);
+    font-size: 1.125rem;
+    font-weight: 900;
+}
+
+.storehome__productcard {
+    margin: 13%;
+}
+
+.storehome__title,
+.storehome__subtitle,
+.storehome__pagenav-container,
+.storehome__pagestyle-container {
+    color: var(--background-color);
+}
+
+.storehome__title,
+.storehome__subtitle {
+    font-family: var(--font-h);
+    font-size: 1.75rem;
+    padding: 0 15px;
+}
+
+.storehome__title {
+    margin-bottom: 90px;
+}
+
+.storehome__caption {
+    padding: 5px 0;
+    font-size: 1.125rem;
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.storehome__price {
+    padding-bottom: 25px;
+}
+
+.storehome__button {
+    border: 1px solid var(--ui-brand-color);
+    border-radius: 2px;
+}
+
+.storehome__storenav-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "pagenav"
+        "prods-per-page";
+}
+
+.storehome__pagestyle-container {
+    grid-area: prods-per-page;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storehome__pagestyle-text {
+    font-size: 0.75rem;
+    padding-right: 15px;
+}
+
+.storehome__pagestyle-selector {
+    padding: 5px 10px;
+    border-color: lightgray;
+    border-radius: 2px;
+}
+
+.storehome__pagenav-container {
+    grid-area: pagenav;
+    display: flex;
+    justify-content: center;
+}
+
+.storehome__pageindex {
+    padding: 5px 10px;
+    margin: 10px;
+    background-color: var(--ui-brand-color);
+    border-radius: 10%;
+    font-family: var(--font-p);
+    color: var(--text-color);
+    font-size: 0.75rem;
+}
+
+.storehome__pagenav-rightarrow {
+    rotate: 180deg;
+}
