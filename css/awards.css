@@ -1,5 +1,5 @@
-.awards {
-    padding-top: 50px 24px 60px 24px;
+#awards {
+    padding: 50px 24px 20px 24px;
 }
 
 .awards__header {
@@ -17,13 +17,44 @@
     font-family: var(--font-h);
     font-size: 34px;
 }
+
 .awards__grape-logo-decor {
-    display:block;
+    display: block;
     margin: 25px auto 0 auto;
     padding-top: 7.438px;
 }
+
 .awards__subtitle {
-    margin-top:20px;
+    margin-top: 20px;
     font-family: 18px;
     font-family: var(--font-p);
+}
+
+.awards__prizes {
+    margin-top: 45px;
+}
+
+.awards__prizes__list {
+    margin: 0 -15px;
+    padding: 0 15px;
+    list-style: none;
+}
+
+.awards__award-name {
+    margin-top: 50px;
+    font-size: 18px;
+    font-family: var(--font-p);
+}
+
+.awards__year-take-award {
+    margin-top: 50px;
+    font-size: 22px;
+    font-family: var(--font-h);
+}
+
+.awards__text-about-award {
+    margin: 50px 0 50px 0;
+    font-size: 16px;
+    font-family: var(--font-p);
+    color: var(--text-color-dark);
 }
