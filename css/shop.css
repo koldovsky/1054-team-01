@@ -87,17 +87,17 @@
     }
     .shop__view-all {
         grid-column: span 3;
-        justify-self: end;
+        justify-self: center;
     }
 }
 
 
-@media (min-width: 1023px) {
+@media (min-width: 992px) {
     .shop__products {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .shop__view-all {
         grid-column: span 4;
-        justify-self: end;
+        justify-self: center;
     }
 }
