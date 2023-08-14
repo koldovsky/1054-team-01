@@ -52,12 +52,8 @@
     justify-content: center;
     align-items: center;
 }
-.product__image {
-    width: 100%;
-    height: auto;
-    max-width: 242px;
-    max-height: 242px;
-    object-fit: cover;
+.shop__product-image {
+    min-height: 242px;
 }
 .product__name {
     width: 100%;
