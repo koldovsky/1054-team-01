@@ -98,6 +98,6 @@
     }
     .shop__view-all {
         grid-column: span 4;
-        justify-self: end;
+        justify-self: center;
     }
 }
