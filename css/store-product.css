@@ -196,8 +196,13 @@ main > a:first-of-type {
     justify-content: center;
   }
 
+  .storeproduct__largeimg .storeproduct__link {
+    display: flex;
+    justify-content: center;
+  }
+
   .storeproduct__image {
-    width: 90%;
+    width: 100%;
   }
 
   .storeproduct__imgs-container,
