@@ -1,15 +1,18 @@
 .video {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 100px 24px;
+    padding: 100px 0;
     background-image: url(../img/video-bg.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    position: relative;
+    flex-basis: 100%;
 }
 
+.video__section-inner {
+    display: block;
+    padding: 0 24px;
+}
 
 .video__block-history {
     font-family: var(--font-cursive);
@@ -19,20 +22,30 @@
 
 .video__block-title {
     font-family: var(--font-h);
+    margin-top: 20px;
     font-size: 58px;
     font-weight: 400;
 }
 
 .video__block-image {
+    display: flex;
     margin-top: 35px;
 }
 
 .video__block-text {
-    display: inline;
+    display: block;
+    margin-top: 20px;
     font-family: var(--font-p);
     font-weight: 500;
     font-stretch: 100%;
     line-height: 25.6px;
+}
+
+.video__youtube {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 35px;
+    align-content: center;
 }
 
 .video__youtube-link {
@@ -46,14 +59,14 @@
 }
 
 .play__button {
-    display: inline;
+    display: inline-block;
     color: var(--ui-brand-color);
     height: 50px;
     max-width: 100%;
 }
 
 .video__play {
-    margin: 50px 0px;
+    margin: 50px 0;
 }
 
 .play__icon {
@@ -68,24 +81,61 @@
 }
 
 @media (min-width: 768px) {
-
     .video {
-        grid-template-columns: 35% 15% 50%;
-        grid-template-areas:
-            "leftside . rightside";
+        padding: 132.5px 0;
+    }
+
+    .video__section-inner {
+        padding: 0 32px;
+    }
+
+    .inner__grid {
+        display: grid;
+        grid-template-columns: 33% 16% 50%;
     }
 
     .video__block-history {
-        grid-area: leftside;
+        font-size: 21px;
     }
 
-    .play__icon {
-        justify-items: start;
-        align-items: center;
+    .video__block-title {
+        font-size: 71px;
+        text-align: left;
+    }
+
+    .video__youtube-link {
+        display: inline-block;
+        margin: 10px;
     }
 
     .video__play {
-        grid-area: rightside;
-        align-items: center;
+        margin: 0;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .play__button {
+        height: 70px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .video {
+        padding: 165px 0;
+    }
+
+    .video__section-inner {
+        padding: 0 40px;
+    }
+
+    .video__block-history {
+        font-size: 28px;
+    }
+
+    .video__block-title {
+        font-size: 84px;
     }
 }
