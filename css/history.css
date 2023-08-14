@@ -1,5 +1,8 @@
 .history {
-    padding: 0 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 120px;
+    padding-top: 60px;
 }
 
 .history__image--img {
@@ -43,7 +46,7 @@
 .history__event-line-line {
     height: 2px;
     width: 15%;
-    background-color: #c8693a;
+    background-color: var(--ui-brand-color);
 }
 
 .history__event-description {

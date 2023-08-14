@@ -56,12 +56,8 @@
     align-items: center;
 }
 
-.product__image {
-    width: 100%;
-    height: auto;
-    max-width: 242px;
-    max-height: 242px;
-    object-fit: cover;
+.best-deals__product-image {
+    min-height: 242px;
 }
 
 .product__name {
@@ -82,14 +78,14 @@
     margin-top: 24px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .best-deals__products {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 
-@media (min-width: 1023px) {
+@media (min-width: 990px) {
     .best-deals__products {
         grid-template-columns: 1fr 1fr 1fr;
     }
