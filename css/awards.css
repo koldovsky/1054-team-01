@@ -1,0 +1,29 @@
+.awards {
+    padding-top: 50px 24px 60px 24px;
+}
+
+.awards__header {
+    text-align: center;
+}
+
+.awards__part-name {
+    color: var(--ui-brand-color);
+    font-family: var(--font-cursive);
+    font-size: 14px;
+}
+
+.awards__title {
+    margin-top: 20px;
+    font-family: var(--font-h);
+    font-size: 34px;
+}
+.awards__grape-logo-decor {
+    display:block;
+    margin: 25px auto 0 auto;
+    padding-top: 7.438px;
+}
+.awards__subtitle {
+    margin-top:20px;
+    font-family: 18px;
+    font-family: var(--font-p);
+}
