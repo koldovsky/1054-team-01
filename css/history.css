@@ -46,7 +46,7 @@
 .history__event-line-line {
     height: 2px;
     width: 15%;
-    background-color: #c8693a;
+    background-color: var(--ui-brand-color);
 }
 
 .history__event-description {
