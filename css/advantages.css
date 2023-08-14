@@ -73,19 +73,11 @@
     background-color: transparent;
 }
 
-.advantages__info-img {
-    overflow: visible;
-    width: 100%;
-}
-    
-
-
 .advantages__info-mider {
     margin-top: 50px;
     padding: 0 15px;
     word-wrap: break-word;
     max-width: 100%;
-    
     }
 
 .advantages__info-right {
