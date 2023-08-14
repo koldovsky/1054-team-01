@@ -15,6 +15,11 @@
     --background-color: #261e1c;
     --text-color: rgb(255, 255, 255);
     --text-color-dark: rgb(137,128,130);
+    --cart-background-color: rgb(255, 255, 255);
+    --cart-text-color: #261e1c;
+    --cart-header-background-color: rgb(247, 248, 250);
+    --cart-buyers-input-color: rgb(38, 30, 28);
+    --cart-buyers-background-color: rgba(38, 30, 28, 0.12);
     --font-h: 'Prata', serif;
     --font-p: 'Rubik', sans-serif;
     --font-cursive: 'Great Vibes', cursive;

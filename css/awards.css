@@ -1,27 +1,29 @@
 .awards {
-    text-align: center;
-    padding: 50px 0px 60px 0px;
-    }
-.awards__header {
-    padding: 0px 24px 0px 24px;
+    padding-top: 50px 24px 60px 24px;
 }
+
+.awards__header {
+    text-align: center;
+}
+
 .awards__part-name {
-    font-family: var(--font-cursive);
     color: var(--ui-brand-color);
+    font-family: var(--font-cursive);
     font-size: 14px;
 }
+
 .awards__title {
-    margin: 20px 0px 0px 0px;
-    font-size: 34px;
+    margin-top: 20px;
     font-family: var(--font-h);
+    font-size: 34px;
 }
 .awards__grape-logo-decor {
-   
-    margin: auto;
+    display:block;
+    margin: 25px auto 0 auto;
+    padding-top: 7.438px;
 }
 .awards__subtitle {
-    display:flex;
-    margin: 20px 0px 0px 0px;
-    font-size: 18px;
+    margin-top:20px;
+    font-family: 18px;
     font-family: var(--font-p);
 }
