@@ -7,7 +7,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px 40px;
 }
+
 
 nav {
 display: flex;
@@ -31,4 +33,29 @@ color: orange ;
 .nav__links li a {
     color: white;
     text-decoration: none;
+}
+@media screen and (max-width: 991px){
+    .nav__links li a {
+        display: none;
+    }
+    .social{
+        display: none;
+    }
+    header {
+        background-color: transparent;
+        
+    }
+    .burger-menu {
+        width: 24px;
+        height: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .line {
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+    }
 }

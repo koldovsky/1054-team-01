@@ -1,17 +1,29 @@
 
 .cover {
     font-family: "Rubik", sans-serif;
+    overflow: hidden;
     font-size: 18px;
     height: 100vh;
+    width: 100%;
     background-image: url("../img/header-backgroung.jpg");
     background-size: cover;
-    display: block;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+  
+    
+}
+.text-cover{
+    padding: 15px;
+    
 }
 .cover__block{
+   
+    width: 365px;
+    height: 475px;
+    padding: 15px;
+
     
 }
 .cover span {
@@ -23,11 +35,75 @@
 .cover h1 {
     font-family: "Prata", serif;
     font-size: 84px;
+    
 }
 
-.cover div a {
+#button__shop {
+    
     font-size: 16.5px;
     font-family: Rubik, sans-serif;
-    color: white;
     text-decoration: none;
+    background-color:  #c8693a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    }
+    
+    #button__shop:hover {
+        background-color:  #ad5d35;
+    }
+    #button__learn {
+    
+        font-size: 16.5px;
+        font-family: Rubik, sans-serif;
+        text-decoration: none;
+        background-color: none;
+        color: white;
+        border: 3px solid white; 
+        padding: 12px 29px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: bold;
+        }
+        
+        #button__learn:hover {
+            background-color:  #ffffff;
+            color: black;
+        }
+
+@media screen and (max-width: 991px){
+    .cover span{
+    font-size: 21px;
+    }
+    .cover h1 {
+    font-size: 71px;
+    }
+    .cover p{
+    font-size: 18px;
+    }
+
+}
+@media screen and (max-width: 767px){
+    .cover span{
+        font-size: 14px;
+        }
+    .cover h1 {
+        font-size: 58px;
+    }
+    .cover__block{
+        display: none;
+    }
+ .text-cover{
+    padding: 0px 24px;
+ }
+    .cover{
+       justify-content: flex-start;
+      
+    }
 }
