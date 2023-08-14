@@ -1,6 +1,6 @@
 .footer article:first-of-type {
-    background-color: rgb(27, 22, 19);
-    padding-bottom: 30px;
+  background-color: rgb(27, 22, 19);
+  padding-bottom: 30px;
 }
 .footer__container {
   display: flex;
@@ -57,7 +57,7 @@
 }
 
 .footer article:last-of-type {
-    background-color: rgb(19, 15, 14);
+  background-color: rgb(19, 15, 14);
 }
 
 .footer__link,
@@ -131,7 +131,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .footer__instagram-container {
-        grid-template-columns: 1fr 1fr 1fr;
-    
+  .footer__instagram-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
