@@ -1,5 +1,5 @@
 .footer article:first-of-type {
-  background-color: rgb(27, 22, 19);
+  background-color: var(--alternative-background-color);
   padding-bottom: 30px;
 }
 .footer__container {
@@ -57,7 +57,7 @@
 }
 
 .footer article:last-of-type {
-  background-color: rgb(19, 15, 14);
+  background-color: var(--copyright-background-color);
 }
 
 .footer__link,

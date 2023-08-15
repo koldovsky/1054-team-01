@@ -2,49 +2,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Edu+SA+Beginner&family=Rubik:wght@300;400&family=Satisfy&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Edu+SA+Beginner&family=Rubik:wght@300;400&family=Satisfy&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --ui-brand-color: #c8693a;
-    --background-color: #261e1c;
-    --text-color: rgb(255, 255, 255);
-    --text-color-dark: rgb(137,128,130);
-    --cart-background-color: rgb(255, 255, 255);
-    --cart-text-color: #261e1c;
-    --cart-header-background-color: rgb(247, 248, 250);
-    --cart-buyers-input-color: rgb(38, 30, 28);
-    --cart-buyers-background-color: rgba(38, 30, 28, 0.12);
-    --font-h: 'Prata', serif;
-    --font-p: 'Rubik', sans-serif;
-    --font-cursive: 'Great Vibes', cursive;
-    scroll-behavior: smooth;
-    color: var(--text-color);
-    background-color: var(--background-color);
+  --ui-brand-color: #c8693a;
+  --background-color: #261e1c;
+  --copyright-background-color: #130f0e;
+  --alternative-background-color: #1b1613;
+  --button-on-hover-color: #af572b;
+  --text-color: rgb(255, 255, 255);
+  --text-color-dark: rgb(137, 128, 130);
+  --text-color-darker: #1f1917;
+  --text-color-instock-indicator: #61a854;
+  --cart-background-color: rgb(255, 255, 255);
+  --cart-text-color: #261e1c;
+  --cart-header-background-color: rgb(247, 248, 250);
+  --cart-buyers-input-color: rgb(38, 30, 28);
+  --cart-buyers-background-color: rgba(38, 30, 28, 0.12);
+  --font-h: 'Prata', serif;
+  --font-p: 'Rubik', sans-serif;
+  --font-cursive: 'Great Vibes', cursive;
+  --section-divider-light-color: lightgray;
+  scroll-behavior: smooth;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 .container {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
-p, a {
-    font-family: var(--font-p);
-    font-size: 1rem;
-    font-weight: lighter;
+p,
+a {
+  font-family: var(--font-p);
+  font-size: 1rem;
+  font-weight: lighter;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-h);
-    font-weight: lighter;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-h);
+  font-weight: lighter;
 }

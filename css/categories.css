@@ -79,10 +79,6 @@
   max-width: 190px;
 }
 
-.categories__button:hover {
-  background-color: #af572b;
-}
-
 .categories__container:last-of-type .categories__button {
   text-decoration: none;
   width: 120px;
