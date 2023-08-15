@@ -1,5 +1,6 @@
 #awards {
     padding: 50px 24px 20px 24px;
+    font-weight: 600;
 }
 
 .awards__header {
@@ -28,10 +29,12 @@
     margin-top: 20px;
     font-size: 18px;
     font-family: var(--font-p);
+    line-height: 26px;
 }
 
 .awards__prizes {
     margin-top: 45px;
+    line-height: 26px;
 }
 
 .awards__prizes__list {
@@ -57,4 +60,61 @@
     font-size: 16px;
     font-family: var(--font-p);
     color: var(--text-color-dark);
+}
+
+@media (min-width: 768px) {
+    .awards__part-name {
+        font-size: 21px;
+    }
+
+    .awards__title {
+        font-size: 41px;
+    }
+
+    .awards__fine-wines {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 3fr;
+        gap: 15px;
+        text-align: left;
+        align-items: center;
+    }
+
+
+    .awards__orange-wine-fund {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 3fr;
+        gap: 15px;
+        text-align: left;
+        align-items: center;
+    }
+
+    .awards__wine-corporation {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 3fr;
+        gap: 15px;
+        text-align: left;
+        align-items: center;
+    }
+
+    .awards__wine-finds {
+        margin-top: 30px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 3fr;
+        gap: 15px;
+        text-align: left;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .awards__part-name {
+        font-size: 28px;
+    }
+
+    .awards__title {
+        font-size: 48px;
+    }
 }
