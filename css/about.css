@@ -1,7 +1,9 @@
 .about-section {
     position: relative;
     width: 100%;
-    height: 981.562px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
@@ -16,15 +18,39 @@
     background-image: url("../img/about-background.jpg");
     background-size: cover;
     background-position: center;
-    z-index: -1;
+    z-index: 0;
+}
+
+@media (min-width: 320px) {
+    .about-background-image {
+        background-position: right;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-background-image {
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 .about-section-content {
-    padding: 110px 0 110px 0;
-    height: 100vh;
+    padding: 110px 0;
     display: flex;
     position: relative;
     z-index: 1;
+}
+
+@media (min-width: 320px) {
+    .about-section-content {
+        padding: 90px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-section-content {
+        padding: 100px 0;
+    }
 }
 
 .about-text {
@@ -34,24 +60,58 @@
     flex: 1;
 }
 
+@media (min-width: 320px) {
+    .about-text {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .about-text {
+        display: block;
+    }
+
+}
+
 .about-text-right {
     text-align: left;
     padding-left: 15px;
     padding-right: 15px;
     flex: 1;
+}
 
+@media (min-width: 320px) {
+    .about-text-right {
+        display: flex;
+        flex-direction: column;
+        width: 272px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-text-right {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .about-text-header-p {
-    width: 470px;
     font-size: 28px;
-    line-height: 29.4px;
     color: var(--ui-brand-color);
     font-family: var(--font-cursive);
 }
 
+@media (min-width: 320px) {
+    .about-text-header-p {
+        font-size: 14px;
+    }
+
+}
+
 .about-text-to-img-p {
-    width: 470px;
     margin-top: 20px;
     font-size: 48px;
     font-weight: 400;
@@ -59,6 +119,17 @@
     letter-spacing: -0.82px;
     font-family: var(--font-h);
     color: var(--text-color)
+}
+
+@media (min-width: 320px) {
+    .about-text-to-img-p {
+        margin-top: 20px;
+        font-size: 34px;
+        letter-spacing: -0.68px;
+        line-height: 44.2px;
+        font-weight: 400;
+    }
+
 }
 
 .about-img-vine {
@@ -70,7 +141,6 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30.6px;
-    width: 570px;
     font-family: var(--font-p);
     color: var(--text-color)
 }
@@ -78,7 +148,6 @@
 .about-text-red-vine-header {
     margin-top: 25px;
     font-weight: 400;
-    width: 570px;
     font-family: var(--font-h);
     font-size: 22px;
 
@@ -88,7 +157,6 @@
     margin-top: 22px;
     font-weight: 400;
     line-height: 33px;
-    width: 570px;
     font-family: var(--font-h);
     font-size: 22px;
 }
@@ -99,13 +167,11 @@
 
 .text-line-about {
     font-size: 16px;
-    width: 570px;
     color: var(--ui-brand-color);
 }
 
 .about-text-vine-span {
     font-size: 16px;
     line-height: 25.6px;
-    width: 570px;
     color: var(--text-color-dark);
 }
