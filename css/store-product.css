@@ -3,16 +3,13 @@
 @import url(footer.css);
 @import url(controls.css);
 
-:root {
-  background-color: var(--text-color);
-}
-
 header {
   position: initial;
 }
 
 .store-product__main {
   padding: 90px 7.5%;
+  background-color: var(--text-color);
 }
 
 .storeproduct__outer-container,
