@@ -98,6 +98,7 @@ max-width: 767px;
 @media (min-width: 768px) {
   .faq {
     grid-template-columns: 1fr 1fr;
+    padding: 32px;
   }
 
   .accordion {
@@ -130,6 +131,9 @@ max-width: 767px;
 }
 
 @media (min-width: 991px) {
+  .faq {
+    padding: 40px;
+  }
   .text__FAQ {
     font-size: 28px;
   }
@@ -137,10 +141,19 @@ max-width: 767px;
   .text__FAQ-title {
     font-size: 48px;
   }
+
+  .faq__wino-image {
+    max-width: 80%;
+  }
 }
 
 @media (min-width: 1200px) {
+  .faq__wino {
+    display: flex;
+    justify-content: center;
+  }
+  
   .faq__wino-image {
-    max-width: 420px;
+    max-width: 420px; 
   }
 }
