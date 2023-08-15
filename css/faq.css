@@ -51,7 +51,7 @@
 }
 
 .accordion__title {
-  font-size: 22px;
+  font-size: 24px;
   line-height: 33px;
   letter-spacing: -0.44px;
   display: flex;
@@ -70,13 +70,13 @@
 .accordion__title::after {
   content: "+";
   margin-left: auto;
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 .accordion__item[open] .accordion__title::after {
   content: "-";
   margin-left: auto;
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 .accordion__item[open] .accordion__body {
