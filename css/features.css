@@ -2,11 +2,13 @@
     padding: 0px 40px 90px;
     display: block;
 }
+
 .features__block {
     margin: 50px 0px 0px;
 }
-.features__block-ikon-box {
-    background-color: #342e2e;
+
+.features__block-icon-box {
+    background-color: var(--feautures-background-icon);
     height: 50px;
     width: 50px;
     box-sizing: border-box;
@@ -16,18 +18,24 @@
     align-items: center;
 }
 
-.features__block-ikon {
+.features__block-icon {
     color: var(--ui-brand-color);
     height: 26px;
     width: 26px;
 }
+
 .features__block-title {
     font-size: 22px;
     margin-top: 20px;
 }
+
 .features__block-divider {
+    height: 2px;
+    width: 15%;
+    background-color: var(--ui-brand-color);
     margin: 15px 0px;
 }
+
 .features__block-description {
     color: var(--text-color-dark);
 }

@@ -1,9 +1,10 @@
 .shop {
     max-width: 1200px;
-    padding: 90px 0 90px 0;
-    margin: 0 auto;
+    padding: 90px 0;
+    margin: auto;
     box-sizing: border-box;
 }
+
 .shop__header {
     display: flex;
     flex-direction: column;
@@ -13,61 +14,71 @@
     padding: 0 15px;
     text-align: center;
 }
+
 .shop__header-title {
     font-family: var(--font-cursive);
     font-size: 14px;
     color: var(--ui-brand-color);
+    line-height: 19.6px;
 }
+
 .shop__header-heading {
     font-family: var(--font-h);
     font-size: 34px;
-    font-weight: 400;
     text-align: center;
-    margin: 20px 0 20px 0;
+    margin-top: 20px;
+    line-height: 44.2px;
+    letter-spacing: -0.68px;
 }
+
 .shop__header-decor {
     display: block; 
-    margin: 0 auto; 
+    margin-top: 25px; 
     padding-top: 7.5px; 
 }
+
 .shop__header-text {
     max-width: 90%;
     height: 83px;
     font-size: 18px;
-    font-weight: 400;
     text-align: center;
     margin-top: 20px;
     font-family: var(--font-p);
     line-height: 30.4px;
 }
+
 .shop__products {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
     text-align: center;
 }
+
 .product {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .shop__product-image {
     min-height: 242px;
 }
+
 .product__name {
     width: 100%;
     margin-top: 8px;
     text-align: center;
     font-family: var(--font-p);
-    font-weight: 400;
 }
+
 .product__price {
     width: 100%;
     text-align: center;
     font-family: var(--font-p);
     font-weight: bold;
 }
+
 .button {
     margin-top: 24px;
 }
@@ -78,20 +89,37 @@
 }
 
 @media (min-width: 768px) {
+    .shop__header-title {
+        font-size: 21px;
+    }
+
+    .shop__header-heading {
+        font-size: 41px;
+    }
+
     .shop__products {
         grid-template-columns: 1fr 1fr;
     }
+
     .shop__view-all {
         grid-column: span 2;
         justify-self: center;
     }
 }
 
-
 @media (min-width: 992px) {
+    .shop__header-title {
+        font-size: 28px;
+    }
+
+    .shop__header-heading {
+        font-size: 48px;
+    }
+
     .shop__products {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
     .shop__view-all {
         grid-column: span 4;
         justify-self: center;

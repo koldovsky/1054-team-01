@@ -1,6 +1,7 @@
 .collections {
     padding: 40px 0px 60px;
 }
+
 .collect {
     display:flex; 
     flex-direction: column; 
@@ -8,60 +9,93 @@
     padding: 0px 24px;
     justify-content: space-around;
 }
-.card {
+
+.card-event {
     min-height: 430px;
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
     margin: 50px 15px 0px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 200px; 
 }
+
 .collections__special-events1 {
     background-image: url(../img/collections-of-vines-img1.jpg);
     background-size: cover;
     background-position: center;
 }
+
 .collections__special-events2 {
     background-image: url(../img/collections-of-vines-img2.jpg);
     background-size: cover;
     background-position: center;
 }
+
 .collections__special-events3 {
     background-image: url(../img/collections-of-vines-img3.jpg);
     background-size: cover;
     background-position: center;
 }
+
+.collections__special-events-divh3 {
+    height: 60px;
+}
+
 .collections__special-events-h3 {
     margin: 15px;
     font-size: 22px;
     font-weight: lighter;
 }
-.divider-component_1aY {
-    margin: 15px;
-}
+
 .collections__special-events-p {
     margin: 15px;
     color: var(--text-color-dark);
 }
+
 .collections__special-events-a {
     margin: 15px;
     text-decoration:none;
     color: var(--text-color);
     font-weight:bold
 }
+
 .collections__special-events-a:hover {
     text-decoration: underline;
 }
 
-/* @media (min-width: 768px) {
+.collections__special-events-line {
+    height: 2px;
+    width: 15%;
+    background-color: var(--ui-brand-color);
+    margin: 15px;
+}
 
-}     */
+@media (min-width: 768px) {
+    .collections {
+        padding: 75px 0px 60px;
+    }
+    .collect {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0px 15px;
+    }
+    .card-event {
+        width: 45.5%;
+        margin: 30px 15px 0px;
+    }
+}    
 
 @media (min-width: 1000px) {
     .collections {
-        padding: 70px 0px 60px;
+        padding: 90px 0px 60px;
     }
     .collect {
         flex-direction: row;
         padding: 0px 40px;
+    }
+    .card-event {
+        width: 30%;
     }
 }

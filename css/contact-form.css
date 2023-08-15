@@ -3,7 +3,7 @@
     padding-bottom: 15px;
     padding-left: 24px;
     padding-right: 24px;
-    background-color: #1a1512;
+    background-color: var(--alternative-background-color);
 }
 
 .contact-form__content {
@@ -44,17 +44,12 @@
     padding-bottom: 16px;
     padding-left: 25px;
     padding-right: 25px;
-    --w-get-input-background-color:rgba(73, 73, 73, 0.24);
-    background-color:rgba(73, 73, 73, 0.24);
+    background-color: var(--email-input-background-color);
     border: 0;
-    border-color: #f2efe9;
-    border-top-color: rgb(242, 239, 233);
-    border-right-color: rgb(242, 239, 233);
-    border-bottom-color: rgb(242, 239, 233);
-    border-left-color: rgb(242, 239, 233);
     font-size: 15px;
     width: 100%;
     font-family: inherit;
+    color: var(--text-color);
 }
 
 .contact-form__submit-button {
@@ -69,6 +64,11 @@
     width: 100%;
     font-weight: 700;
     font-family: var(--font-p);
+    cursor: pointer;
+}
+
+.contact-form__submit-button:hover {
+    background-color: var(--button-on-hover-color);
 }
 
 .contact-form__divider {
@@ -79,7 +79,7 @@
 .contact-form__divider-div {
     height:1px;
     width:100%;
-    background-color:rgba(255, 255, 255, 0.14);
+    background-color: var(--contact-form-divider-color);
 }
 
 @media (min-width: 770px) {

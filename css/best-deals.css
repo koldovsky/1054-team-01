@@ -1,9 +1,10 @@
 .best-deals {
     max-width: 1200px;
     padding: 90px 0 50px 0;
-    margin: 0 auto;
+    margin: auto;
     box-sizing: border-box;
 }
+
 .best-deals__header {
     display: flex;
     flex-direction: column;
@@ -13,22 +14,26 @@
     padding: 0 15px;
     text-align: center;
 }
+
 .best-deals__header-title {
     font-family: var(--font-cursive);
     font-size: 14px;
     color: var(--ui-brand-color);
-    
+    line-height: 19.6px;
 }
+
 .best-deals__header-heading {
     font-family: var(--font-h);
     font-size: 34px;
-    font-weight: 400;
     text-align: center;
-    margin: 20px 0 20px 0;
+    margin-top: 20px;
+    line-height: 44.2px;
+    letter-spacing: -0.68px;
 }
+
 .best-deals__header-decor {
     display: block; 
-    margin: 0 auto; 
+    margin-top: 25px; 
     padding-top: 7.5px;  
     
 }
@@ -36,12 +41,12 @@
     max-width: 90%;
     height: 83px;
     font-size: 18px;
-    font-weight: 400;
     text-align: center;
     margin-top: 20px;
     font-family: var(--font-p);
     line-height: 30.4px;
 }
+
 .best-deals__products {
     display: grid;
     grid-template-columns: 1fr;
@@ -65,7 +70,6 @@
     text-align: center;
     margin-top: 8px;
     font-family: var(--font-p);
-    font-weight: 400;
 }
 
 .product__price {
@@ -74,11 +78,20 @@
     font-family: var(--font-p);
     font-weight: bold;
 }
+
 .button {
     margin-top: 24px;
 }
 
 @media (min-width: 767px) {
+    .best-deals__header-title {
+        font-size: 21px;
+    }
+
+    .best-deals__header-heading {
+        font-size: 41px;
+    }
+
     .best-deals__products {
         grid-template-columns: 1fr 1fr;
     }
@@ -86,6 +99,14 @@
 
 
 @media (min-width: 990px) {
+    .best-deals__header-title {
+        font-size: 28px;
+    }
+
+    .best-deals__header-heading {
+        font-size: 48px;
+    }
+
     .best-deals__products {
         grid-template-columns: 1fr 1fr 1fr;
     }
