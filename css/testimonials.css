@@ -44,12 +44,42 @@
 
 .testimonials__list {
     margin: auto;
+    padding: 0 15px;
     font-family: var(--font-p);
     color: var(--text-color-dark);
     font-size: 16px;
+    max-width: 460px;
 }
 
 .testimonials__text {
-    display: flex;
+    display: block;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .testimonials__part-name {
+        font-size: 21px;
+    }
+
+    .testimonials__title {
+        font-size: 41px;
+    }
+
+    .testimonials__list {
+        max-width: 460px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .testimonials__part-name {
+        font-size: 28px;
+    }
+
+    .testimonials__title {
+        font-size: 48px;
+    }
+
+    .testimonials__list {
+        max-width: 770px;
+    }
 }
