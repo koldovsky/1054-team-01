@@ -26,7 +26,6 @@
 .text__FAQ-title {
   font-family: var(--font-h);
   font-size: 36px;
-  font-weight: 400;
   letter-spacing: -0.68px;
   line-height: 44.2px;
 }
@@ -52,8 +51,7 @@
 }
 
 .accordion__title {
-  font-weight: 400;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 33px;
   letter-spacing: -0.44px;
   display: flex;
@@ -72,13 +70,13 @@
 .accordion__title::after {
   content: "+";
   margin-left: auto;
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 .accordion__item[open] .accordion__title::after {
   content: "-";
   margin-left: auto;
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 .accordion__item[open] .accordion__body {
@@ -87,7 +85,7 @@
 
 .faq__wino {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: start;
   max-width: 100%;
   height: auto;
@@ -100,6 +98,11 @@ max-width: 767px;
 @media (min-width: 768px) {
   .faq {
     grid-template-columns: 1fr 1fr;
+    padding: 32px;
+  }
+
+  .accordion {
+    min-width: 398px;
   }
 
   .text__FAQ {
@@ -115,11 +118,22 @@ max-width: 767px;
   }
 
   .faq__wino-image {
-    max-width: 75%; 
+    max-width: 85%; 
+  }
+
+  .accordion__title::after {
+    padding-left: 40px;
+  }
+
+  .accordion__item[open] .accordion__title::after {
+    padding-left: 40px;
   }
 }
 
 @media (min-width: 991px) {
+  .faq {
+    padding: 40px;
+  }
   .text__FAQ {
     font-size: 28px;
   }
@@ -127,10 +141,19 @@ max-width: 767px;
   .text__FAQ-title {
     font-size: 48px;
   }
+
+  .faq__wino-image {
+    max-width: 80%;
+  }
 }
 
 @media (min-width: 1200px) {
+  .faq__wino {
+    display: flex;
+    justify-content: center;
+  }
+  
   .faq__wino-image {
-    max-width: 420px;
+    max-width: 420px; 
   }
 }
