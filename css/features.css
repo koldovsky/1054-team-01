@@ -30,6 +30,9 @@
 }
 
 .features__block-divider {
+    height: 2px;
+    width: 15%;
+    background-color: var(--ui-brand-color);
     margin: 15px 0px;
 }
 
