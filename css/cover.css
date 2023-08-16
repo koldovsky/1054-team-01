@@ -28,7 +28,7 @@
 }
 .cover span {
     font-size: 28px;
-    color: #c8693a;
+    color: var(--ui-brand-color);
     font-family: "Great Vibes", undefined;
 }
 
@@ -43,9 +43,9 @@
     font-size: 16.5px;
     font-family: Rubik, sans-serif;
     text-decoration: none;
-    background-color:  #c8693a;
+    background-color: var(--cover--button--shop--first--color);
     border: none;
-    color: white;
+    color: var(--text-color);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -55,7 +55,7 @@
     }
     
     #button__shop:hover {
-        background-color:  #ad5d35;
+        background-color: var(--cover--button--shop--second--color);
     }
     #button__learn {
     
@@ -63,8 +63,8 @@
         font-family: Rubik, sans-serif;
         text-decoration: none;
         background-color: none;
-        color: white;
-        border: 3px solid white; 
+        color: var(--text-color);
+        border: 3px solid var(--button--learn--frame); 
         padding: 12px 29px;
         text-align: center;
         text-decoration: none;
@@ -73,8 +73,8 @@
         }
         
         #button__learn:hover {
-            background-color:  #ffffff;
-            color: black;
+            background-color:  var(--button--learn--color);
+            color: var(--button--learn--text--color);
         }
 
 @media screen and (max-width: 991px){

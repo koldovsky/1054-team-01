@@ -11,6 +11,15 @@
 }
 
 :root {
+  --header--container--color:rgba(0, 0, 0, 0.5);
+  --burger--menu--color:#FFFFFF;
+  --header--nav--links--first--color:#FFFFFF;
+  --header--nav--links--second--color: #c8693a;
+  --cover--button--shop--first--color: #c8693a;
+  --cover--button--shop--second--color:#ad5d35;
+  --button--learn--frame: #FFFFFF;
+  --button--learn--color: #FFFFFF;
+  --button--learn--text--color: #000000;
   --ui-brand-color: #c8693a;
   --background-color: #261e1c;
   --copyright-background-color: #130f0e;
