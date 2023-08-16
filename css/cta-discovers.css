@@ -2,7 +2,7 @@
   position: relative;
   display: block;
   background-image: url(../img/discover-people-drink-wine.jpeg);
-  width: 320px;
+  width: 100%;
   height: 761px;
   padding: 100px 0;
   background-size: cover;
@@ -34,21 +34,21 @@
   background-color: rgba(45, 42, 42, 0.5);
   color: var(--text-color);
   text-align: center;
-  width: 320px;
+  width: 100%;
   height: 761px;
   padding: 100px 24px;
   z-index: 2;
 }
 
 .discover__tagline {
-  font-family: "Great Vibes";
+  font-family: var(--font-cursive);
   font-size: 14px;
   color: var(--ui-brand-color);
   font-weight: bold;
 }
 
 .discover__title {
-  font-family: Prata, serif;
+  font-family: var(--font-h);
   font-size: 58px;
   font-weight: lighter;
   padding-top: 20px;
@@ -60,12 +60,12 @@
 }
 
 .discover__description {
-  font-family: Rubik, sans-serif;
+  font-family: var(--font-p);
   font-size: 18px;
 }
 
 .discover__buttons {
-  margin-top: 55px;
+  margin-top: 43px;
 }
 
 .button-learn {
@@ -75,11 +75,72 @@
   padding: 10px 10px 15px 10px;
   border: 3px solid white;
   border-radius: 2px;
-  font-family: "Rubik", sans-serif;
+  font-family: var(--font-p);
   color: var(--text-color);
   font-weight: 700;
   font-size: 15px;
   text-decoration: none;
   box-sizing: border-box;
   margin: 20px auto;
+}
+
+@media (min-width: 768px) {
+  .discover__image {
+    height: 619px;
+  }
+
+  .discover__info {
+    height: 619px;
+  }
+
+  .discover__tagline {
+    font-size: 21px;
+  }
+
+  .discover__title {
+    font-size: 71px;
+  }
+
+  .discover__description {
+    padding: 0 150px;
+  }
+
+  .discover__decor {
+    margin-bottom: 30px;
+  }
+
+  .discover__buttons {
+    display: inline-flex;
+    margin: 30px;
+  }
+
+  .button-learn {
+    margin: 24px auto;
+  }
+
+  .discover__buttons-buy {
+    margin: auto 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .discover__image {
+    height: 725px;
+  }
+
+  .discover__info {
+    height: 725px;
+  }
+
+  .discover__tagline {
+    font-size: 28px;
+  }
+
+  .discover__title {
+    font-size: 84px;
+  }
+
+  .discover__description {
+    padding: 0 200px;
+  }
 }
