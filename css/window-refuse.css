@@ -44,7 +44,7 @@
   }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .forbiddance__container-title {
     font-size: 84px;
     height: 256px;
@@ -52,4 +52,3 @@
     padding: 0 100px;
   }
 }
-

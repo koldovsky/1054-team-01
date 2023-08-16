@@ -137,6 +137,7 @@
   }
 
   .discover__title {
+    font-family: var(--font-h);
     font-size: 84px;
   }
 
