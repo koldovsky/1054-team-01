@@ -4,3 +4,8 @@
 function move (position, roll) {
     return position + 2 * roll;
 }
+
+//Mariia
+function move (position, roll) {
+    return position + roll*2;
+  }
