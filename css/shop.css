@@ -65,7 +65,8 @@
     min-height: 242px;
 }
 
-.product__name {
+.shop__product .product__name {
+    text-decoration: none;
     width: 100%;
     margin-top: 8px;
     text-align: center;
@@ -74,14 +75,14 @@
     font-size: 18px;
 }
 
-.product__price {
+.shop__product .product__price {
     width: 100%;
     text-align: center;
     font-family: var(--font-p);
     font-weight: bold;
 }
 
-.button {
+.shop__product .button {
     margin-top: 24px;
 }
 
@@ -108,7 +109,7 @@
         justify-self: center;
     }
 
-    .product__name {
+    .shop__product .product__name {
         font-size: 19px;
     }
 }
@@ -131,7 +132,7 @@
         justify-self: center;
     }
 
-    .product__name {
+    .shop__product .product__name {
         margin-top: 24px;
         font-size: 20px;
     }
