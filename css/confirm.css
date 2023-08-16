@@ -34,7 +34,7 @@
   text-decoration: none;
   color: var(--text-color);
   text-align: center;
-  font-family: "Rubik", sans-serif;
+  font-family: var(--font-p);
   font-weight: 700;
   font-size: 15px;
   display: inline-block;
