@@ -9,7 +9,7 @@ header {
 
 .store-home__main {
   background-color: var(--text-color);
-  padding: 90px 15px;
+  padding: 130px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,14 +58,11 @@ header {
   margin-bottom: 90px;
 }
 
-.storehome__figure,
-.storehome__figure * {
+.storehome__link {
   text-decoration: none;
 }
 
 .storehome__caption {
-  text-decoration: none;
-  text-decoration-thickness: 0;
   padding: 5px 0;
   font-size: 1.125rem;
   color: var(--background-color);
