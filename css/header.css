@@ -26,12 +26,12 @@ justify-content: flex-end;
 }
 
 .header__nav__links li a {
-    color: var(--header__nav__links__first_color);
+    color: var(--header--nav--links--first--color);
     text-decoration: none;
 }
 
 .header__nav__links li a:hover {
-color: var(--header__nav__links__second_color);
+color: var(--header--nav--links--second--color);
 }
 
 .social{
