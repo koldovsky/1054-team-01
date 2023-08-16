@@ -4,3 +4,9 @@
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
     return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
+
+//Mariia
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  const total = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+  return total
+}
