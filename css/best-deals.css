@@ -32,11 +32,12 @@
 }
 
 .best-deals__header-decor {
-    display: block; 
-    margin-top: 25px; 
-    padding-top: 7.5px;  
-    
+    display: block;
+    margin-top: 25px;
+    padding-top: 7.5px;
+
 }
+
 .best-deals__header-text {
     max-width: 90%;
     height: 83px;
@@ -111,4 +112,3 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-  
