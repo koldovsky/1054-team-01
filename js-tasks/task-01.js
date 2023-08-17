@@ -32,3 +32,6 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   const goals = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
   return goals;
 }
+//Dmytro
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
