@@ -26,3 +26,9 @@ function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
+
+//Vatrych
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  const goals = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+  return goals;
+}
