@@ -17,3 +17,11 @@ function makeNegative(num) {
       return -1*num
     }
   }
+
+//Olesia
+function makeNegative(num) {
+  if (num < 0) {
+    return num;
+  }
+    return -num;
+}
