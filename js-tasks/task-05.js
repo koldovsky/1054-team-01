@@ -9,3 +9,8 @@ function litres(time) {
 function litres(time) {
     return Math.floor(time * 0.5);
   }
+
+//Olesia
+function litres(time) {
+    return (time / 2) | 0 ;
+  }
