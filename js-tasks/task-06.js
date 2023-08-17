@@ -36,3 +36,8 @@ function lovefunc(flower1, flower2) {
     return false; // They are not in love
   }
 }
+
+//Dmytro 
+function lovefunc(flower1, flower2){
+  return flower1 % 2 !== flower2 % 2;
+}
