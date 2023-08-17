@@ -14,3 +14,8 @@ function move (position, roll) {
 function move (position, roll) {
     return position + (roll * 2);
   }
+
+  //Yuliia
+  function move(position, roll) {
+    return position + roll * 2;
+  }

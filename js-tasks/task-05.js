@@ -14,3 +14,8 @@ function litres(time) {
 function litres(time) {
     return (time / 2) | 0 ;
   }
+
+//Yuliia
+function litres(time) {
+    return Math.floor(time * 0.5);
+}

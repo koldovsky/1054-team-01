@@ -25,3 +25,11 @@ function greet (name, owner) {
   }
   return 'Hello guest';
 }
+
+//Yuliia
+function greet(name, owner) {
+  if (name === owner) {
+    return "Hello boss";
+  }
+  return "Hello guest";
+}
