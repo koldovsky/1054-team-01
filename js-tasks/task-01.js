@@ -10,3 +10,8 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   const total = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
   return total
 }
+
+//Olesia
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
