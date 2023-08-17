@@ -27,3 +27,8 @@ function litres(time) {
 function litres(time) {
   return Math.floor(time * 0.5);
 }
+
+//Vatrych
+function litres(time) {
+   return Math.floor(time * 0.5);
+}
