@@ -40,3 +40,8 @@ function makeNegative(num) {
   }
   return num;
 }
+
+//Vatrych
+function makeNegative(num) {
+ return -Math.abs(num);
+} 
