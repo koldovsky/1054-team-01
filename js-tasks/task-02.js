@@ -2,26 +2,34 @@
 
 // Slava
 function makeNegative(num) {
-    if (num < 0) {
-        return num;
-    } else {
-        return -num;
-    }
+  if (num < 0) {
+    return num;
+  } else {
+    return -num;
+  }
 }
 
 //Mariia
 function makeNegative(num) {
-    if (num <= 0) {
-      return num
-    } else {
-    return -1*num
-    }
+  if (num <= 0) {
+    return num
+  } else {
+    return -1 * num
   }
+}
 
 //Olesia
 function makeNegative(num) {
   if (num < 0) {
     return num;
   }
+  return -num;
+}
+
+//OstapAV
+function makeNegative(num) {
+  if (num > 0) {
     return -num;
+  }
+  return num;
 }
