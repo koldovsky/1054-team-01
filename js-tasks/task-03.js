@@ -19,3 +19,9 @@ function move (position, roll) {
   function move(position, roll) {
     return position + roll * 2;
   }
+
+  //Lesia
+  function move(position, roll) {
+    let nextPosition = position + roll * 2;
+    return nextPosition;
+  }

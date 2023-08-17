@@ -19,3 +19,9 @@ function litres(time) {
 function litres(time) {
     return Math.floor(time * 0.5);
 }
+
+//Lesia
+function litres(time) {
+  const liter = parseInt(time * 0.5);
+  return liter;
+}

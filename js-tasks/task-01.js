@@ -20,3 +20,9 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
+
+//Lesia
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  const sumGoals = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+  return sumGoals;
+}

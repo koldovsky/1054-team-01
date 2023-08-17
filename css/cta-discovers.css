@@ -18,7 +18,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 761px;
   background-image: url(../img/discover-people-drink-wine.jpeg);
   background-size: cover;
   background-position: center;
@@ -98,6 +98,7 @@
   }
 
   .discover__title {
+    font-family: var(--font-h);
     font-size: 71px;
   }
 
