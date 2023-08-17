@@ -17,3 +17,11 @@ function greet (name, owner) {
       return "Hello guest";
     }
   }
+
+//Olesia
+function greet (name, owner) {
+  if (name === owner) {
+    return 'Hello boss';
+  }
+  return 'Hello guest';
+}
