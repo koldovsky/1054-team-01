@@ -9,3 +9,8 @@ function move (position, roll) {
 function move (position, roll) {
     return position + roll*2;
   }
+
+//Olesia
+function move (position, roll) {
+    return position + (roll * 2);
+  }
