@@ -45,3 +45,7 @@ function makeNegative(num) {
 function makeNegative(num) {
  return -Math.abs(num);
 } 
+
+function makeNegative(num) {
+  return -Math.abs(num);
+} 
