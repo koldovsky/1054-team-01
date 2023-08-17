@@ -20,4 +20,10 @@ function litres(time) {
   const litresPerHour = 0.5;
   const litres = Math.floor(time * litresPerHour);
   return litres;
+  return (time / 2) | 0;
+}
+
+//Yuliia
+function litres(time) {
+  return Math.floor(time * 0.5);
 }

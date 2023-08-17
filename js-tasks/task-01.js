@@ -21,3 +21,8 @@ function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   const goals = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
   return goals;
 }
+
+//Yuliia
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
