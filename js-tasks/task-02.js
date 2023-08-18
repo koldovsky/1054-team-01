@@ -18,6 +18,19 @@ var max = function (list) {
 
 // https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 
+// Yuliia
+function min(arr, toReturn) {
+  for (const i of arr) {
+    if (toReturn === "value") {
+      return Math.min(...arr);
+    }
+    if (toReturn === "index") {
+      minNumber = Math.min(...arr);
+      return arr.indexOf(minNumber);
+    }
+  }
+}
+
 
 // https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
 
