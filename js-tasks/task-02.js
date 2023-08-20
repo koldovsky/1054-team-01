@@ -5,12 +5,21 @@ function stringToArray(string) {
   return string.split(" ");
 }
 
+// Shchyrba
+function stringToArray(string){
+  return string.split(' ');
+}
 
 // https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 
 // Yuliia
 function DNAtoRNA(dna) {
   return dna.replace(/T/g, "U");
+}
+
+// Shchyrba
+function DNAtoRNA(dna) {
+  return dna.replace(/T/g, 'U')
 }
 
 // https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
@@ -24,6 +33,16 @@ var max = function (list) {
   return Math.max(...list);
 };
 
+// Shchyrba
+var min = function(list){
+  const minimum = Math.min.apply(null, list);
+  return minimum;
+}
+
+var max = function(list){
+  const maximum = Math.max.apply(null, list);
+  return maximum;
+}
 
 // https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 
@@ -37,6 +56,15 @@ function min(arr, toReturn) {
       minNumber = Math.min(...arr);
       return arr.indexOf(minNumber);
     }
+  }
+}
+
+// Shchyrba
+function min(arr, toReturn) {
+  if (toReturn === 'value') {
+    return Math.min.apply(null, arr);
+  } else if (toReturn === 'index') {
+    return arr.indexOf(Math.min.apply(null, arr));
   }
 }
 
