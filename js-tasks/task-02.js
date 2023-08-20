@@ -1,6 +1,6 @@
 // https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 
-// Yuliia, Lesia, Shchyrba, Slava, Olesia, Mariia
+// Yuliia, Lesia, Shchyrba, Slava, Olesia, Mariia, Vatrych
 function stringToArray(string) {
   return string.split(" ");
 }
