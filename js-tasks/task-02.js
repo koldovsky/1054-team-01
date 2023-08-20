@@ -8,7 +8,7 @@ function stringToArray(string) {
 // ============================================================================================
 // https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 
-// Yuliia, Lesia, Shchyrba, Slava, Mariia
+// Yuliia, Lesia, Shchyrba, Slava, Mariia, Vatrych
 function DNAtoRNA(dna) {
   return dna.replace(/T/g, "U");
 }
@@ -21,7 +21,7 @@ function DNAtoRNA(dna) {
 // ============================================================================================
 // https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 
-// Yuliia, Slava, Mariia
+// Yuliia, Slava, Mariia, Vatrych
 var min = function (list) {
   return Math.min(...list);
 };
