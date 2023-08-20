@@ -1,10 +1,9 @@
 // https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 
-// Yuliia, Lesia, Shchyrba, Slava
+// Yuliia, Lesia, Shchyrba, Slava, Olesia
 function stringToArray(string) {
   return string.split(" ");
 }
-
 
 // ============================================================================================
 // https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
@@ -14,6 +13,10 @@ function DNAtoRNA(dna) {
   return dna.replace(/T/g, "U");
 }
 
+// Olesia
+function DNAtoRNA(dna) {
+  return dna.replaceAll("T", "U");
+}
 
 // ============================================================================================
 // https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
@@ -58,6 +61,16 @@ var max = function(list){
   return maximum;
 }
 
+// Olesia
+var min = function(list){
+  list.sort((a, b) => a - b);
+  return list[0];
+}
+
+var max = function(list){
+  list.sort((a, b) => b - a);
+  return list[0];
+}
 
 // ============================================================================================
 // https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
@@ -100,7 +113,19 @@ function min(arr, toReturn) {
   return toReturn === 'value' ? Math.min(...arr) : arr.indexOf(Math.min(...arr));
 }
 
-
+// Olesia
+function min(arr, toReturn) {
+  for ( let i in arr) {
+     if (toReturn === 'value') {
+        return Math.min(...arr);
+     }
+    if (toReturn === 'index') {
+        if (arr[i] === Math.min(...arr)) {
+          return i * 1;
+        }
+     }
+  }
+}
 
 // ============================================================================================
 // https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
