@@ -88,7 +88,7 @@ function min(arr, toReturn) {
   }
 }
 
-//Lesia
+//Lesia, Vatrych
 function min(arr, toReturn) {
   if (toReturn === 'value') {
       const minValue = Math.min(...arr);
