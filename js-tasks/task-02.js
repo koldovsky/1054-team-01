@@ -1,6 +1,6 @@
 // https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 
-// Yuliia, Lesia, Shchyrba, Slava, Olesia
+// Yuliia, Lesia, Shchyrba, Slava, Olesia, Mariia
 function stringToArray(string) {
   return string.split(" ");
 }
@@ -8,7 +8,7 @@ function stringToArray(string) {
 // ============================================================================================
 // https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 
-// Yuliia, Lesia, Shchyrba, Slava
+// Yuliia, Lesia, Shchyrba, Slava, Mariia
 function DNAtoRNA(dna) {
   return dna.replace(/T/g, "U");
 }
@@ -21,7 +21,7 @@ function DNAtoRNA(dna) {
 // ============================================================================================
 // https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 
-// Yuliia, Slava
+// Yuliia, Slava, Mariia
 var min = function (list) {
   return Math.min(...list);
 };
@@ -126,7 +126,14 @@ function min(arr, toReturn) {
      }
   }
 }
-
+//Mariia
+function min(arr, toReturn) {
+  let res = Math.min(...arr);      
+     if(toReturn=="value"){
+       return res
+     }
+     return arr.indexOf(res);
+}
 // ============================================================================================
 // https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
 
