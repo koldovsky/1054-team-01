@@ -189,6 +189,17 @@ function warnTheSheep(queue) {
     return `Oi! Sheep number ${sheepAhead}! You are about to be eaten by a wolf!`;
   }
 }
+// Samokhvalov 
+function warnTheSheep(queue) {
+  const wolfDetector = queue.indexOf('wolf');
+  const sheepInDanger = queue.length - wolfDetector -1;
+  if (wolfDetector === queue.length -1) {
+    return "Pls go away and stop eating my sheep";
+  } else {
+   return  `Oi! Sheep number ${sheepInDanger}! You are about to be eaten by a wolf!`
+  }
+}
+
 // ============================================================================================
 // https://www.codewars.com/kata/beginner-lost-without-a-map
 
