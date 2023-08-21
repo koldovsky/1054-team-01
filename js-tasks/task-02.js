@@ -264,7 +264,7 @@ function firstNonConsecutive (arr) {
       if (arr[arr.indexOf(x) + 1] - x > 1) return arr[arr.indexOf(x) + 1]
   }
 }
-//Olesia, Lesia, Samokhvalov
+//Olesia, Lesia, Samokhvalov, Mariia
 function firstNonConsecutive(arr) {
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] !== arr[i - 1] + 1) {
@@ -273,4 +273,3 @@ function firstNonConsecutive(arr) {
   }
   return null;
 }
-
