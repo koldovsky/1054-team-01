@@ -186,6 +186,27 @@ function warnTheSheep(queue) {
   let w = queue.length - queue.indexOf("wolf") - 1;
   return "Oi! Sheep number " + w + "! You are about to be eaten by a wolf!";
 
+
+// Yuliia
+function warnTheSheep(queue) {
+  let wolfPosition = queue.indexOf("wolf");
+  let sheepAhead = queue.length - 1 - wolfPosition;
+
+  if (sheepAhead === 0) {
+    return "Pls go away and stop eating my sheep";
+  } else {
+    return `Oi! Sheep number ${sheepAhead}! You are about to be eaten by a wolf!`;
+  }
+}
+// Samokhvalov 
+function warnTheSheep(queue) {
+  const wolfDetector = queue.indexOf('wolf');
+  const sheepInDanger = queue.length - wolfDetector -1;
+  if (wolfDetector === queue.length -1) {
+    return "Pls go away and stop eating my sheep";
+  } else {
+   return  `Oi! Sheep number ${sheepInDanger}! You are about to be eaten by a wolf!`
+  }
 }
 
 // ============================================================================================
@@ -220,6 +241,19 @@ function maps(x){
   return x.map((y) => y * 2);
 }
 
+//Samokhvalov 
+function maps(x){
+ return x.map(n => n*2);
+}
+
+// Yuliia
+function maps(x) {
+  let dubleNumbers = x.map(function (i) {
+    return i * 2;
+  });
+  return dubleNumbers;
+}
+
 // ============================================================================================
 // https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
 
@@ -230,7 +264,7 @@ function firstNonConsecutive (arr) {
       if (arr[arr.indexOf(x) + 1] - x > 1) return arr[arr.indexOf(x) + 1]
   }
 }
-//Olesia, Lesia
+//Olesia, Lesia, Samokhvalov
 function firstNonConsecutive(arr) {
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] !== arr[i - 1] + 1) {
@@ -239,3 +273,4 @@ function firstNonConsecutive(arr) {
   }
   return null;
 }
+
