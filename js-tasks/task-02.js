@@ -154,6 +154,15 @@ function warnTheSheep(queue) {
      const sheepIndex = reversedList.indexOf("wolf");
   return "Oi! Sheep number " + sheepIndex + "! You are about to be eaten by a wolf!";
 }
+
+// Lesia
+function warnTheSheep(queue) {
+  const wolfIndex = queue.findIndex(animal => animal === "wolf");
+  if (wolfIndex === queue.length - 1) {
+    return "Pls go away and stop eating my sheep";
+  }
+  return `Oi! Sheep number ${queue.length - wolfIndex - 1}! You are about to be eaten by a wolf!`;
+}
 // ============================================================================================
 // https://www.codewars.com/kata/beginner-lost-without-a-map
 
