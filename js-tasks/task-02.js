@@ -177,6 +177,18 @@ function warnTheSheep(queue) {
   }
   return `Oi! Sheep number ${queue.length - wolfIndex - 1}! You are about to be eaten by a wolf!`;
 }
+
+// Yuliia
+function warnTheSheep(queue) {
+  let wolfPosition = queue.indexOf("wolf");
+  let sheepAhead = queue.length - 1 - wolfPosition;
+
+  if (sheepAhead === 0) {
+    return "Pls go away and stop eating my sheep";
+  } else {
+    return `Oi! Sheep number ${sheepAhead}! You are about to be eaten by a wolf!`;
+  }
+}
 // ============================================================================================
 // https://www.codewars.com/kata/beginner-lost-without-a-map
 
@@ -207,6 +219,14 @@ function maps(x) {
 //Samokhvalov 
 function maps(x){
  return x.map(n => n*2);
+}
+
+// Yuliia
+function maps(x) {
+  let dubleNumbers = x.map(function (i) {
+    return i * 2;
+  });
+  return dubleNumbers;
 }
 // ============================================================================================
 // https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
