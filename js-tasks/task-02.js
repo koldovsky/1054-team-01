@@ -1,6 +1,6 @@
 // https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 
-// Yuliia, Lesia, Shchyrba, Slava, Olesia, Mariia, Vatrych, Vysokovskiy
+// Yuliia, Lesia, Shchyrba, Slava, Olesia, Mariia, Vatrych, Samokhvalov, Vysokovskiy
 function stringToArray(string) {
   return string.split(" ");
 }
@@ -8,7 +8,8 @@ function stringToArray(string) {
 // ============================================================================================
 // https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 
-// Yuliia, Lesia, Shchyrba, Slava, Mariia, Vatrych, Vysokovskiy
+
+// Yuliia, Lesia, Shchyrba, Slava, Mariia, Vatrych, Samokhvalov, Vysokovskiy
 function DNAtoRNA(dna) {
   return dna.replace(/T/g, "U");
 }
@@ -21,7 +22,7 @@ function DNAtoRNA(dna) {
 // ============================================================================================
 // https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 
-// Yuliia, Slava, Mariia, Vatrych
+// Yuliia, Slava, Mariia, Vatrych, Samokhvalov
 var min = function (list) {
   return Math.min(...list);
 };
@@ -142,6 +143,7 @@ function min(arr, toReturn) {
      return arr.indexOf(res);
 }
 
+
 //Vysokovskiy
 function min(arr, toReturn) {
   if (toReturn === 'value') {
@@ -150,6 +152,21 @@ function min(arr, toReturn) {
       return arr.indexOf(Math.min(...arr));
   } 
 }
+
+// Samokhvalov 
+{
+   if (arr.length === 0) {
+    return null;
+  }
+  const minNumber = Math.min(...arr);
+  if (toReturn === "value") {
+    return minNumber;
+  }
+  if (toReturn === "index") {
+    return arr.indexOf(minNumber);
+  }
+}
+
 // ============================================================================================
 // https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
 
@@ -170,6 +187,47 @@ function warnTheSheep(queue) {
      const sheepIndex = reversedList.indexOf("wolf");
   return "Oi! Sheep number " + sheepIndex + "! You are about to be eaten by a wolf!";
 }
+
+// Lesia
+function warnTheSheep(queue) {
+  const wolfIndex = queue.findIndex(animal => animal === "wolf");
+  if (wolfIndex === queue.length - 1) {
+    return "Pls go away and stop eating my sheep";
+  }
+  return `Oi! Sheep number ${queue.length - wolfIndex - 1}! You are about to be eaten by a wolf!`;
+}
+
+//Mariia
+function warnTheSheep(queue) {
+  if (queue[queue.length - 1] === "wolf"){
+    return "Pls go away and stop eating my sheep";
+  } 
+  let w = queue.length - queue.indexOf("wolf") - 1;
+  return "Oi! Sheep number " + w + "! You are about to be eaten by a wolf!";
+
+
+// Yuliia
+function warnTheSheep(queue) {
+  let wolfPosition = queue.indexOf("wolf");
+  let sheepAhead = queue.length - 1 - wolfPosition;
+
+  if (sheepAhead === 0) {
+    return "Pls go away and stop eating my sheep";
+  } else {
+    return `Oi! Sheep number ${sheepAhead}! You are about to be eaten by a wolf!`;
+  }
+}
+// Samokhvalov 
+function warnTheSheep(queue) {
+  const wolfDetector = queue.indexOf('wolf');
+  const sheepInDanger = queue.length - wolfDetector -1;
+  if (wolfDetector === queue.length -1) {
+    return "Pls go away and stop eating my sheep";
+  } else {
+   return  `Oi! Sheep number ${sheepInDanger}! You are about to be eaten by a wolf!`
+  }
+}
+
 // ============================================================================================
 // https://www.codewars.com/kata/beginner-lost-without-a-map
 
@@ -190,6 +248,31 @@ function maps(x){
  }
   return new_x;
 }
+
+//Lesia
+function maps(x) {
+  const doubledArray = x.map(num => num * 2);
+  return doubledArray;
+}
+
+//Mariia
+function maps(x){
+  return x.map((y) => y * 2);
+}
+
+//Samokhvalov 
+function maps(x){
+ return x.map(n => n*2);
+}
+
+// Yuliia
+function maps(x) {
+  let dubleNumbers = x.map(function (i) {
+    return i * 2;
+  });
+  return dubleNumbers;
+}
+
 // ============================================================================================
 // https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
 
@@ -200,7 +283,7 @@ function firstNonConsecutive (arr) {
       if (arr[arr.indexOf(x) + 1] - x > 1) return arr[arr.indexOf(x) + 1]
   }
 }
-//Olesia
+//Olesia, Lesia, Samokhvalov, Mariia
 function firstNonConsecutive(arr) {
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] !== arr[i - 1] + 1) {
