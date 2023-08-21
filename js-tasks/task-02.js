@@ -203,6 +203,11 @@ function maps(x) {
   const doubledArray = x.map(num => num * 2);
   return doubledArray;
 }
+
+//Samokhvalov 
+function maps(x){
+ return x.map(n => n*2);
+}
 // ============================================================================================
 // https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
 
