@@ -14,7 +14,6 @@ function DNAtoRNA(dna) {
 // ============================================================================================
 // https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 
-// Yuliia, Slava, Mariia, Vatrych, Samokhvalov
 var min = function (list) {
   return Math.min(...list);
 };
@@ -51,7 +50,6 @@ function maps(x) {
 // ============================================================================================
 // https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
 
-//Olesia, Lesia, Samokhvalov, Mariia
 function firstNonConsecutive(arr) {
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] !== arr[i - 1] + 1) {
