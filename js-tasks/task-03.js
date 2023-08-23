@@ -54,6 +54,15 @@ function buildFun(n) {
   return res
 }
 
+// Slava 
+function buildFun(n){
+	const res = []
+	for (let i = 0; i < n; i++){
+		res.push(() => i)
+	}
+	return res
+}
+
 // =============================================================================================================
 // https://www.codewars.com/kata/fun-with-es6-classes-number-2-animals-and-inheritance/train/javascript
 //Mariia
