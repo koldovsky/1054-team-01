@@ -20,7 +20,7 @@ function circleCircumference(circle) {
 
 // =============================================================================================================
 // https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
-//Mariia
+//Mariia, Yuliia
 function giveMeFive(obj) {
   const arr = []
   for (let key in obj) {
