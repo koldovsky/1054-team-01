@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
-//Mariia, Vatrych, Samokhvalov, Slava
+//Mariia, Vatrych, Samokhvalov, Slava, Yuliia
 class SmallestIntegerFinder {
   findSmallestInt(args) {
     return Math.min(...args)
@@ -11,6 +11,11 @@ class SmallestIntegerFinder {
 //Mariia, Slava
 function circleCircumference(circle) {
   return Number((Math.PI * 2 * circle.radius).toFixed(6))
+}
+
+// Yuliia
+function circleCircumference(circle) {
+  return 2 * Math.PI * circle.radius;
 }
 
 // =============================================================================================================
