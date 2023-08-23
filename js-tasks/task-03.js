@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
-//Mariia, Vatrych, Samokhvalov, Slava, Yuliia, Lesia, Olesia, Shchyrba
+//Mariia, Vatrych, Samokhvalov, Slava, Yuliia, Lesia, Olesia, Shchyrba, Vysokovskiy
 class SmallestIntegerFinder {
   findSmallestInt(args) {
     return Math.min(...args)
@@ -13,7 +13,7 @@ function circleCircumference(circle) {
   return Number((Math.PI * 2 * circle.radius).toFixed(6))
 }
 
-// Yuliia
+// Yuliia, Vysokovskiy
 function circleCircumference(circle) {
   return 2 * Math.PI * circle.radius;
 }
@@ -33,7 +33,7 @@ function circleCircumference(circle) {
 
 // =============================================================================================================
 // https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
-//Mariia, Yuliia, Lesia, Shchyrba
+//Mariia, Yuliia, Lesia, Shchyrba, Vysokovskiy
 function giveMeFive(obj) {
   const arr = []
   for (let key in obj) {
