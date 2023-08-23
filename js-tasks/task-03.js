@@ -83,8 +83,8 @@ function buildFun(n){
 
 //Olesia
 function buildFun(n) {
-  const res = [];
-  for (let i = 0; i < n; i++) {
+  var res = [];
+  for (var i = 0; i < n; i++) {
     (function(j) {
       res.push(function() {
        return j;
