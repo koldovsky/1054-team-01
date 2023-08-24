@@ -36,7 +36,7 @@ function renderProduct(products) {
     productsContainer.innerHTML = '';
     for (const product of products) {
         productsContainer.innerHTML +=
-            `<div class="best-deals__products">
+            `<div class="<div class="best-deals__product product">">
                 <div class="best-deals__product product">
                     <a href="store-product.html"><img src="${product.image}" alt="${product.name}"></img></a>
                     <a href="store-product.html" class="product__name">${product.name}</a>

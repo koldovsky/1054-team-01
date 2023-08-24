@@ -48,7 +48,7 @@
     line-height: 30.4px;
 }
 
-.best-deals__products {
+.products__list.best-deals__products {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
@@ -97,7 +97,7 @@
         font-size: 41px;
     }
 
-    .best-deals__products {
+    .products__list.best-deals__products {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -117,7 +117,7 @@
         font-size: 48px;
     }
 
-    .best-deals__products {
+    .products__list.best-deals__products {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
