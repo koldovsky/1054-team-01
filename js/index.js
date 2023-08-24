@@ -1,6 +1,7 @@
 document.addEventListener('partialsLoaded', () => {
-    import('./product-list.js');
+    import('./best-deals-list.js');
     import('./products-carousel.js');
+    import('./shop-list.js');
     import('./contact-form.js');
     import('./products-catalogue.js');
 });
