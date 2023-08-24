@@ -2,6 +2,7 @@ class Product {
   constructor(
     name,
     type,
+    bestDeal,
     code,
     price,
     currency,
@@ -11,6 +12,7 @@ class Product {
   ) {
     this.name = name
     this.type = type
+    this.bestDeal = bestDeal
     this.code = code
     this.price = price
     this.currency = currency
@@ -23,6 +25,7 @@ class Product {
 const cabernet = new Product(
   'Cabernet',
   'red',
+  true,
   18,
   17,
   'USD',
@@ -34,6 +37,7 @@ const cabernet = new Product(
 const pinotGrigio = new Product(
   'Pinot Grigio',
   'white',
+  true,
   23,
   10,
   'USD',
@@ -45,6 +49,7 @@ const pinotGrigio = new Product(
 const pinotNoir = new Product(
   'PinotNoir',
   'red',
+  false,
   20,
   12,
   'USD',
@@ -56,6 +61,7 @@ const pinotNoir = new Product(
 const riesling = new Product(
   'Riesling',
   'white',
+  false,
   24,
   16,
   'USD',
@@ -67,6 +73,7 @@ const riesling = new Product(
 const sauvignonBlanc = new Product(
   'Sauvignon Blanc',
   'white',
+  true,
   22,
   12,
   'USD',
@@ -78,6 +85,7 @@ const sauvignonBlanc = new Product(
 const soave = new Product(
   'Soave',
   'white',
+  false,
   25,
   12,
   'USD',
@@ -89,6 +97,7 @@ const soave = new Product(
 const syrah = new Product(
   'Syrah',
   'red',
+  true,
   19,
   13,
   'USD',
@@ -100,6 +109,7 @@ const syrah = new Product(
 const zifandel = new Product(
   'Zifandel',
   'red',
+  false,
   21,
   14,
   'USD',
