@@ -32,11 +32,11 @@ const products = [
 renderProduct(products);
 
 function renderProduct(products) {
-    const productsContainer = document.querySelector('.products__list');
+    const productsContainer = document.querySelector('.best-deals__products');
     productsContainer.innerHTML = '';
     for (const product of products) {
         productsContainer.innerHTML +=
-            `<div class="<div class="best-deals__product product">">
+            `<div class="<div class="best-deals__product product">
                 <div class="best-deals__product product">
                     <a href="store-product.html"><img src="${product.image}" alt="${product.name}"></img></a>
                     <a href="store-product.html" class="product__name">${product.name}</a>
