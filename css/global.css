@@ -11,14 +11,15 @@
 }
 
 :root {
-  --header--container--color:rgba(0, 0, 0, 0.5);
-  --burger--menu--color:#FFFFFF;
-  --header--nav--links--first--color:#FFFFFF;
+  --header--container--color: rgba(0, 0, 0, 0.5);
+  --header--container--non-transparent--color: #1a1512;
+  --burger--menu--color: #ffffff;
+  --header--nav--links--first--color: #ffffff;
   --header--nav--links--second--color: #c8693a;
   --cover--button--shop--first--color: #c8693a;
-  --cover--button--shop--second--color:#ad5d35;
-  --button--learn--frame: #FFFFFF;
-  --button--learn--color: #FFFFFF;
+  --cover--button--shop--second--color: #ad5d35;
+  --button--learn--frame: #ffffff;
+  --button--learn--color: #ffffff;
   --button--learn--text--color: #000000;
   --ui-brand-color: #c8693a;
   --background-color: #261e1c;
@@ -35,8 +36,8 @@
   --cart-header-background-color: rgb(247, 248, 250);
   --cart-buyers-input-color: rgb(38, 30, 28);
   --cart-buyers-background-color: rgba(38, 30, 28, 0.12);
-  --email-input-background-color: #4949493D;
-  --contact-form-divider-color: #FFFFFF24;
+  --email-input-background-color: #4949493d;
+  --contact-form-divider-color: #ffffff24;
   --font-h: 'Prata', serif;
   --font-p: 'Rubik', sans-serif;
   --font-cursive: 'Great Vibes', cursive;

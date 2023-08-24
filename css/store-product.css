@@ -5,6 +5,7 @@
 
 header {
   position: initial;
+  background-color: var(--header--container--non-transparent--color) !important;
 }
 
 .store-product__main {
