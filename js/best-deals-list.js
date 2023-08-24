@@ -9,7 +9,7 @@ function renderProduct(products) {
     for (const product of products) {
         if (product.bestDeal) {
             productsContainer.innerHTML +=
-                `<div class="<div class="best-deals__product product">
+                `<div class="best-deals__product product">
                 <div class="best-deals__product product">
                     <a href="store-product.html"><img src="${product.images[0]}" alt="${product.name}"></img></a>
                     <a href="store-product.html" class="product__name">${product.name}</a>
@@ -20,3 +20,4 @@ function renderProduct(products) {
         }
     }
 }
+

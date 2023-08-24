@@ -1,9 +1,15 @@
-const slides = [
-    '<div><img src="img/best-deals-cabernet.jpeg" alt="Cabernet"></div>',
-    '<div><img src="img/best-deals-pinotgrigio.jpeg" alt="Pinot Grigio"></div>',
-    '<div><img src="img/best-deals-sauvignonblanc.jpeg" alt="Sauvignon Blanc"></div>',
-    '<div><img src="img/best-deals-syrah.jpeg" alt="Syrah"></div>',
-];
+import * as catalogue from './products-catalogue.js';
+
+const slides = catalogue.products
+    .filter(product => product.bestDeal)
+    .map(product => `
+        <div class="best-deals__product product">
+        <a href="store-product.html"><img src="${product.images[0]}" alt="${product.name}"></a>
+        <a href="store-product.html" class="product__name">${product.name}</a>
+        <p class="product__price">${product.price.toFixed(2)}${product.currency}</p>
+        <a class="button" href="#"><strong>Add to cart</strong></a>
+        </div>
+    `);
 
 let currentSlide = 0;
 

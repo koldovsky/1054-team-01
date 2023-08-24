@@ -8,7 +8,7 @@ function renderProduct(products) {
     productsContainer.innerHTML = '';
     for (const product of products) {
             productsContainer.innerHTML +=
-                `<div class="<div class="shop__product product">
+                `<div class="shop__product product">
                 <div class="shop__product product">
                     <a href="store-product.html"><img src="${product.images[0]}" alt="${product.name}"></img></a>
                     <a href="store-product.html" class="product__name">${product.name}</a>
