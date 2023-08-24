@@ -89,3 +89,53 @@ const zifandel = new Product(
   'img/best-deals-zifandel.jpeg',
   'This wine is produced from more ripened berries than usual. Core flavors are rich, with jammy blackberries and mocha. You can pair this wine with braised ribs, chicken enchiladas, or dark chocolate.'
 )
+
+const products = [
+  cabernet,
+  pinotGrigio,
+  pinotNoir,
+  riesling,
+  sauvignonBlanc,
+  soave,
+  syrah,
+  zifandel,
+]
+
+// const productName = document.querySelector('.storehome__caption')
+// productName.innerHTML = cabernet.name
+
+// const price = document.querySelector('.storehome__price span')
+// price.innerHTML = cabernet.price
+
+// const mainImg = document.querySelector('.storehome__img')
+// mainImg.src = 'img/best-deals-cabernet.jpeg'
+
+// const productName = document.querySelector('.storehome__caption')
+// productName.innerHTML = cabernet.name
+
+// const price = document.querySelector('.storehome__price span')
+// price.innerHTML = cabernet.price
+
+// const mainImg = document.querySelector('.storehome__img')
+// mainImg.src = 'img/best-deals-cabernet.jpeg'
+
+const productsArea = document.querySelector('.storehome__products-container')
+
+for (const item of products) {
+  productsArea.innerHTML += `
+    <div class="storehome__productcard">
+        <a class="storehome__link" id=${item.name} href="store-product.html">
+        <figure class="storehome__figure">
+            <img class="storehome__img" src=${item.images[0]} alt="Bottle of ${
+    item.name
+  }" />
+            <figcaption class="storehome__caption" src=${
+              item.name
+            }></figcaption>
+        </figure>
+        </a>
+        <p class="storehome__price"><span>${item.price + ',00'}</span> USD</p>
+        <button class="button storehome__button">Buy</button>
+    </div>
+    `
+}
