@@ -48,6 +48,10 @@
     line-height: 30.4px;
 }
 
+.best-deals__outercontainer {
+    display: flex;
+    align-items: center;
+}
 .best-deals__products {
     display: grid;
     grid-template-columns: 1fr;
