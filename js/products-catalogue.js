@@ -19,14 +19,16 @@ class Product {
     this.inStock = inStock
     this.images = [mainImageSrc]
     this.description = description
+    this.selected = false
   }
+  select() {this.selected = true}
 }
 
 const cabernet = new Product(
   'Cabernet',
   'red',
   true,
-  18,
+  '18',
   17,
   'USD',
   true,
@@ -38,7 +40,7 @@ const pinotGrigio = new Product(
   'Pinot Grigio',
   'white',
   true,
-  23,
+  '23',
   10,
   'USD',
   true,
@@ -50,7 +52,7 @@ const pinotNoir = new Product(
   'PinotNoir',
   'red',
   false,
-  20,
+  '20',
   12,
   'USD',
   true,
@@ -62,7 +64,7 @@ const riesling = new Product(
   'Riesling',
   'white',
   false,
-  24,
+  '24',
   16,
   'USD',
   true,
@@ -74,7 +76,7 @@ const sauvignonBlanc = new Product(
   'Sauvignon Blanc',
   'white',
   true,
-  22,
+  '22',
   12,
   'USD',
   true,
@@ -86,7 +88,7 @@ const soave = new Product(
   'Soave',
   'white',
   false,
-  25,
+  '25',
   12,
   'USD',
   true,
@@ -98,7 +100,7 @@ const syrah = new Product(
   'Syrah',
   'red',
   true,
-  19,
+  '19',
   13,
   'USD',
   true,
@@ -110,7 +112,7 @@ const zifandel = new Product(
   'Zifandel',
   'red',
   false,
-  21,
+  '21',
   14,
   'USD',
   true,
