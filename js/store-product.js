@@ -2,7 +2,7 @@ import * as catalogue from './products-catalogue.js'
 
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
-    const productIdentifier = urlParams.get('link');
+    const productIdentifier = urlParams.get('id');
 
     const selectedProduct = catalogue.products.find( (product) => product.code === productIdentifier)
 
