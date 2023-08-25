@@ -55,7 +55,7 @@
 .shop__products {
     display: grid;
     grid-template-columns: 1fr;
-    /* gap: 16px; */
+    gap: 16px;
     text-align: center;
 }
 
