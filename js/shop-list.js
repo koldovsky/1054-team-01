@@ -28,16 +28,17 @@ function renderProduct(products) {
 }
 
 function renderSlide() {
-    const productsContainer = document.querySelector('.shop__products')
-    productsContainer.innerHTML = ''
-    productsContainer.innerHTML += slides[currentSlide]
-    if (window.matchMedia('(min-height: 242px)').matches) {
-        const secondSlide = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1
-        productsContainer.innerHTML += slides[secondSlide]
-        if (window.matchMedia('(min-width: 1024px)').matches) {
-            const thirdSlide = secondSlide + 1 >= slides.length ? 0 : secondSlide + 1
-            productsContainer.innerHTML += slides[thirdSlide]
-        }
+    const productsContainer = document.querySelector('.shop__products');
+    productsContainer.innerHTML = slides[currentSlide];
+
+    if (window.matchMedia('(min-width: 768px)').matches) {
+        const secondSlide = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1;
+        productsContainer.innerHTML += slides[secondSlide];
+    }
+
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+        const thirdSlide = currentSlide + 2 >= slides.length ? currentSlide + 2 - slides.length : currentSlide + 2;
+        productsContainer.innerHTML += slides[thirdSlide];
     }
 }
 

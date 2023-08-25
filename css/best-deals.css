@@ -106,7 +106,7 @@
     background: var(--background-color);
     color: var(--button--learn--color);
     border: none;
-    font-size: 40px;
+    font-size: 12px;
     padding: 10px 20px;
     cursor: pointer;
 }
@@ -141,6 +141,11 @@
         font-size: 19px;
         margin-top: 20px;
     }
+
+    .best-deals__arrowL,
+    .best-deals__arrowR {
+        font-size: 20px;
+    }
 }
 
 
@@ -159,6 +164,11 @@
 
     .best-deals__product .product__name {
         margin-top: 24px;
+        font-size: 20px;
+    }
+
+    .best-deals__arrowL,
+    .best-deals__arrowR {
         font-size: 20px;
     }
 }
