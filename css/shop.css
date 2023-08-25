@@ -110,7 +110,7 @@
     background: var(--background-color);
     color: var(--button--learn--color);
     border: none;
-    font-size: 40px;
+    font-size: 12px;
     padding: 10px 20px;
     cursor: pointer;
 }
@@ -144,6 +144,11 @@
     .shop__product .product__name {
         font-size: 19px;
     }
+
+    .shop__arrowL,
+    .shop__arrowR {
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -162,5 +167,10 @@
     .shop__product .product__name {
         margin-top: 24px;
         font-size: 20px;
+    }
+
+    .shop__arrowL,
+    .shop__arrowR {
+        font-size: 30px;
     }
 }
