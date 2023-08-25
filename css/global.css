@@ -38,6 +38,8 @@
   --cart-buyers-background-color: rgba(38, 30, 28, 0.12);
   --email-input-background-color: #4949493d;
   --contact-form-divider-color: #ffffff24;
+  --indicator-background-color: #ccc;
+  --indicator-active-background-color: #333;
   --font-h: 'Prata', serif;
   --font-p: 'Rubik', sans-serif;
   --font-cursive: 'Great Vibes', cursive;
