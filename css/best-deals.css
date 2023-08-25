@@ -99,17 +99,7 @@
     margin-top: 10px;
 }
 
-.best-deals__arrowL {
-    top: 50%;
-    transform: translateY(-50%);
-    background: var(--background-color);
-    color: var(--button--learn--color);
-    border: none;
-    font-size: 40px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
+.best-deals__arrowL,
 .best-deals__arrowR {
     top: 50%;
     transform: translateY(-50%);

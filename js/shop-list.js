@@ -2,9 +2,9 @@ import * as catalogue from './products-catalogue.js'
 
 const slides = []
 let currentSlide = 0
-const nextButton = document.querySelector('.shop__arrowL')
-nextButton.addEventListener('click', nextSlide)
-const prevButton = document.querySelector('.shop__arrowR')
+const nextButton = document.querySelector('.shop__arrowR');
+nextButton.addEventListener('click', nextSlide);
+const prevButton = document.querySelector('.shop__arrowL');
 prevButton.addEventListener('click', prevSlide)
 
 renderProduct(catalogue.products)
