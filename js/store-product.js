@@ -27,13 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.storeproduct__form-uparrow').addEventListener('click', () => {
         quantity = Number(document.querySelector('.storeproduct__form-input').value) + 1
         document.querySelector('.storeproduct__form-input').value = quantity
-        console.log(quantity)
     })
 
     document.querySelector('.storeproduct__form-downarrow').addEventListener('click', () => {
         quantity = Math.max(1, document.querySelector('.storeproduct__form-input').value - 1)
         document.querySelector('.storeproduct__form-input').value = quantity
-        console.log(quantity)
     })
 
     document.addEventListener('partialsLoaded', () => {
