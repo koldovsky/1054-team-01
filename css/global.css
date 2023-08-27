@@ -44,6 +44,7 @@
   --font-p: 'Rubik', sans-serif;
   --font-cursive: 'Great Vibes', cursive;
   --section-divider-light-color: lightgray;
+  --celebration-background-color: rgba(38, 30, 28, 0.95);
   --semi-opaque-background-color: linear-gradient(
     rgba(255, 255, 255, 0.6),
     rgba(255, 255, 255, 0.6)
