@@ -32,17 +32,17 @@ window.addEventListener('resize', renderSlide);
 
 function renderIndicators() {
     const indicatorsContainer = document.querySelector('.indicator-nav');
-    indicatorsContainer.innerHTML ='';
+    indicatorsContainer.innerHTML = '';
     for (let i = 0; i < slides.length; i++) {
         indicatorsContainer.innerHTML += `<div class="indicator-nav__button ${i === currentSlide ? 'indicator-nav__button--active' : ''}"></div>`;
     }
-const indicators = document.querySelectorAll('.indicator-nav__button');
-indicators.forEach((indicator, index) => {
-    indicator.addEventListener('click', () => {
-        currentSlide = index;
-        renderSlide();
-        renderIndicators(slides,currentSlide);
+    const indicators = document.querySelectorAll('.indicator-nav__button');
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            currentSlide = index;
+            renderSlide();
+            renderIndicators(slides, currentSlide);
+        });
     });
-});
 }
 renderIndicators();
