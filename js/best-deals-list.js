@@ -42,7 +42,11 @@ function renderSlide() {
         const thirdSlide = currentSlide + 2 >= slides.length ? currentSlide + 2 - slides.length : currentSlide + 2;
         productsContainer.innerHTML += slides[thirdSlide];
     }
+
+    renderIndicators();
 }
+
+
 
 
 function prevSlide() {
@@ -58,3 +62,21 @@ function nextSlide() {
 
 
 window.addEventListener('resize', renderProduct)
+
+function renderIndicators() {
+    const indicatorsContainer = document.querySelector('.best-deals__carousel-indicators');
+    indicatorsContainer.innerHTML = '';
+    for (let i = 0; i < slides.length; i++) {
+        indicatorsContainer.innerHTML += `<button class="best-deals__carousel-indicator ${i === currentSlide ? 'best-deals__carousel-indicator--active' : ''}"></button>`;
+    }
+    const indicators = document.querySelectorAll('.best-deals__carousel-indicator');
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            currentSlide = index;
+            renderSlide();
+            renderIndicators(slides, currentSlide);
+        });
+    });
+}
+
+renderIndicators();
