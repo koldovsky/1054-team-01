@@ -11,6 +11,11 @@
 }
 
 :root {
+  --social--logo--second--color:rgba(0, 0, 0, 0);
+  --social--logo--first--color:#ad5d35;
+  --social--frame--color:#ad5d35;
+  --social--background--second--color:#ad5d35;
+  --social--background--first--color:rgba(0, 0, 0, 0);
   --header--container--color: rgba(0, 0, 0, 0.5);
   --header--container--non-transparent--color: #1a1512;
   --burger--menu--color: #ffffff;
