@@ -44,6 +44,8 @@
     grid-template-columns: 20px 1fr 20px;
     align-items: center;
     min-height: 300px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .testimonials__button-testimonials__button-next,
