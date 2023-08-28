@@ -82,12 +82,16 @@
 .indicator-nav__button {
     width: 10px;
     height: 10px;
-    background-color: var(--header--nav--links--second--color);
+    background-color: var(--feautures-background-icon);
     border: none;
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
     align-items: center;
+}
+
+.indicator-nav__button--active {
+    background-color:var(--header--nav--links--second--color);
 }
 
 @media (min-width: 768px) {
