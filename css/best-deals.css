@@ -105,7 +105,7 @@
     transform: translateY(-50%);
     background: var(--background-color);
     fill: var(--header--nav--links--first--color);
-    font-size: 10px;
+    font-size: 12px;
     cursor: pointer;
     width: 24px;
     height: 24px;
