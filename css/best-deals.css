@@ -104,11 +104,17 @@
     top: 50%;
     transform: translateY(-50%);
     background: var(--background-color);
-    color: var(--button--learn--color);
-    border: none;
+    fill: var(--header--nav--links--first--color);
     font-size: 12px;
-    padding: 10px 20px;
     cursor: pointer;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+}
+
+.best-deals__arrowL {
+    transform: rotate(360deg) scaleX(-1);
 }
 
 .indicator {

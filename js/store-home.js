@@ -1,5 +1,11 @@
 import * as catalogue from './products-catalogue.js'
 
+document.addEventListener('partialsLoaded', () => {
+  const websiteLogo = document.querySelector('.websiteLogo')
+  websiteLogo.style.cursor = 'pointer'
+  websiteLogo.addEventListener('click', () => window.location.href = "index.html")
+})
+
 const productsArea = document.querySelector('.storehome__products-container')
 
 function showAllProducts() {
