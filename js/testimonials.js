@@ -31,8 +31,8 @@ renderSlide();
 window.addEventListener('resize', renderSlide);
 
 function renderIndicators() {
-    const indicatorsContainer = document.querySelector('.indicator-nav__buttons');
-    indicatorsContainer.innerHTML = '';
+    const indicatorsContainer = document.querySelector('.indicator-nav');
+    indicatorsContainer.innerHTML ='';
     for (let i = 0; i < slides.length; i++) {
         indicatorsContainer.innerHTML += `<div class="indicator-nav__button ${i === currentSlide ? 'indicator-nav__button--active' : ''}"></div>`;
     }
