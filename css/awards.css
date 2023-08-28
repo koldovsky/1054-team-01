@@ -33,7 +33,7 @@
 }
 
 .awards__prizes {
-    margin-top: 45px;
+    margin-top: 20px;
     line-height: 26px;
 }
 
@@ -44,19 +44,19 @@
 }
 
 .awards__award-name {
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 18px;
     font-family: var(--font-p);
 }
 
 .awards__year-take-award {
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 22px;
     font-family: var(--font-h);
 }
 
 .awards__text-about-award {
-    margin: 50px 0 50px 0;
+    margin: 20px 0 20px 0;
     font-size: 16px;
     font-family: var(--font-p);
     color: var(--text-color-dark);
