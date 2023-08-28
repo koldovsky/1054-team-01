@@ -111,8 +111,9 @@
     border: none;
 }
 
-
-
+.best-deals__arrowL {
+    transform: rotate(360deg) scaleX(-1);
+}
 
 .indicator {
     width: 10px;
