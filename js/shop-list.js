@@ -40,6 +40,8 @@ function renderSlide() {
         const thirdSlide = currentSlide + 2 >= slides.length ? currentSlide + 2 - slides.length : currentSlide + 2;
         productsContainer.innerHTML += slides[thirdSlide];
     }
+
+    renderIndicators();
 }
 
 function nextSlide() {
@@ -55,3 +57,22 @@ function prevSlide() {
 
 
 window.addEventListener('resize', renderProduct)
+
+
+function renderIndicators() {
+    const indicatorsContainer = document.querySelector('.shop__carousel-indicators');
+    indicatorsContainer.innerHTML = '';
+    for (let i = 0; i < slides.length; i++) {
+        indicatorsContainer.innerHTML += `<button class="shop__carousel-indicator ${i === currentSlide ? 'shop__carousel-indicator--active' : ''}"></button>`;
+    }
+    const indicators = document.querySelectorAll('.shop__carousel-indicator');
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            currentSlide = index;
+            renderSlide();
+            renderIndicators(slides, currentSlide);
+        });
+    });
+}
+
+renderIndicators();

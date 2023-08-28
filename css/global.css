@@ -11,6 +11,11 @@
 }
 
 :root {
+  --social--logo--second--color:rgba(0, 0, 0, 0);
+  --social--logo--first--color:#ad5d35;
+  --social--frame--color:#ad5d35;
+  --social--background--second--color:#ad5d35;
+  --social--background--first--color:rgba(0, 0, 0, 0);
   --header--container--color: rgba(0, 0, 0, 0.5);
   --header--container--non-transparent--color: #1a1512;
   --burger--menu--color: #ffffff;
@@ -38,8 +43,8 @@
   --cart-buyers-background-color: rgba(38, 30, 28, 0.12);
   --email-input-background-color: #4949493d;
   --contact-form-divider-color: #ffffff24;
-  --indicator-background-color: #ccc;
-  --indicator-active-background-color: #333;
+  --indicator-background-color: #ffffff24;
+  --indicator-active-background-color: #ffffff;
   --font-h: 'Prata', serif;
   --font-p: 'Rubik', sans-serif;
   --font-cursive: 'Great Vibes', cursive;

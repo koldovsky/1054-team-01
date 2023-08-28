@@ -127,18 +127,26 @@
     transform: rotate(360deg) scaleX(-1);
 }
 
-
-
-.indicator {
-    width: 10px;
-    height: 10px;
-    background-color: var(--indicator-background-color);
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
+.shop__carousel-indicators {
+    margin: 20px;
+    padding: 5px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }
 
-.indicator.active {
+.shop__carousel-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--indicator-background-color);
+    cursor: pointer;
+    border: none;
+}
+
+.shop__carousel-indicator--active {
     background-color: var(--indicator-active-background-color);
 }
 

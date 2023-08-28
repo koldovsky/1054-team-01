@@ -117,16 +117,26 @@
     transform: rotate(360deg) scaleX(-1);
 }
 
-.indicator {
-    width: 10px;
-    height: 10px;
-    background-color: var(--indicator-background-color);
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
+.best-deals__carousel-indicators {
+    margin: 20px;
+    padding: 5px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }
 
-.indicator.active {
+.best-deals__carousel-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--indicator-background-color);
+    cursor: pointer;
+    border: none;
+}
+
+.best-deals__carousel-indicator--active {
     background-color: var(--indicator-active-background-color);
 }
 
