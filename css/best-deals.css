@@ -101,15 +101,18 @@
 
 .best-deals__arrowL,
 .best-deals__arrowR {
-    top: 50%;
-    transform: translateY(-50%);
     background: var(--background-color);
-    color: var(--button--learn--color);
-    border: none;
-    font-size: 12px;
-    padding: 10px 20px;
+    fill: var(--header--nav--links--first--color);
+    font-size: 10px;
     cursor: pointer;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
 }
+
+
+
 
 .indicator {
     width: 10px;
