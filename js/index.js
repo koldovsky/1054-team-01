@@ -4,4 +4,5 @@ document.addEventListener('partialsLoaded', () => {
     import('./contact-form.js');
     import('./products-catalogue.js');
     import('./testimonials.js');
+    import('./awards.js');
 });
