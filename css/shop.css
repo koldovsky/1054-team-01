@@ -150,6 +150,10 @@
     background-color: var(--indicator-active-background-color);
 }
 
+.shop__button--hover {
+    background-color: var(--indicator-active-background-color);
+}
+
 @media (min-width: 768px) {
     .shop__header-title {
         font-size: 21px;

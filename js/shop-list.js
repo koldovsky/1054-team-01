@@ -72,6 +72,13 @@ function renderIndicators() {
             renderSlide();
             renderIndicators(slides, currentSlide);
         });
+        indicator.addEventListener('mouseover', () => {
+            indicator.classList.add('shop__button--hover');
+        });
+        
+        indicator.addEventListener('mouseout', () => {
+            indicator.classList.remove('shop__button--hover');
+        });
     });
 }
 
