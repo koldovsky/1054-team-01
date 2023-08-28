@@ -16,7 +16,7 @@ function renderProduct(products) {
         const content =
             `<div class="shop__product product">
                 <div class="shop__product product">
-                <a href="store-product.html"><img src="${products[i].images[0]}" alt="${products[i].name}"></img></a>
+                <a href="store-product.html?id=${products[i].code}"><img src="${products[i].images[0]}" alt="${products[i].name}"></img></a>
                 <a href="store-product.html" class="product__name">${products[i].name}</a>
                 <p class="product__price">${products[i].price.toFixed(2)}${products[i].currency}</p>
                 <a class="button" href="#"><strong>Add to cart</strong></a>

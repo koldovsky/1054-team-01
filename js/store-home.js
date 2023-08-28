@@ -1,15 +1,19 @@
 import * as catalogue from './products-catalogue.js'
 
-const productsArea = document.querySelector('.storehome__products-container')
+document.addEventListener('partialsLoaded', () => {
+  const websiteLogo = document.querySelector('.websiteLogo')
+  websiteLogo.style.cursor = 'pointer'
+  websiteLogo.addEventListener('click', () => window.location.href = "index.html")
+})
 
-let productIdentifier = 0
+const productsArea = document.querySelector('.storehome__products-container')
 
 function showAllProducts() {
   productsArea.innerHTML = ''
   for (const item of catalogue.products) {
     productsArea.innerHTML += `
       <div class="storehome__productcard">
-          <a class="storehome__link" id=${item.code} href="store-product.html?link=${item.code}">
+          <a class="storehome__link" href="store-product.html?id=${item.code}">
           <figure class="storehome__figure">
               <img class="storehome__img" src=${item.images[0]} alt="Bottle of ${
       item.name
@@ -27,4 +31,3 @@ function showAllProducts() {
 }
 
 showAllProducts()
-// localStorage.setItem("productIdentifier", productIdentifier)
