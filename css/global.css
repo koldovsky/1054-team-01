@@ -11,6 +11,21 @@
 }
 
 :root {
+  --social--logo--second--color:rgba(0, 0, 0, 0);
+  --social--logo--first--color:#ad5d35;
+  --social--frame--color:#ad5d35;
+  --social--background--second--color:#ad5d35;
+  --social--background--first--color:rgba(0, 0, 0, 0);
+  --header--container--color: rgba(0, 0, 0, 0.5);
+  --header--container--non-transparent--color: #1a1512;
+  --burger--menu--color: #ffffff;
+  --header--nav--links--first--color: #ffffff;
+  --header--nav--links--second--color: #c8693a;
+  --cover--button--shop--first--color: #c8693a;
+  --cover--button--shop--second--color: #ad5d35;
+  --button--learn--frame: #ffffff;
+  --button--learn--color: #ffffff;
+  --button--learn--text--color: #000000;
   --ui-brand-color: #c8693a;
   --background-color: #261e1c;
   --copyright-background-color: #130f0e;
@@ -26,12 +41,15 @@
   --cart-header-background-color: rgb(247, 248, 250);
   --cart-buyers-input-color: rgb(38, 30, 28);
   --cart-buyers-background-color: rgba(38, 30, 28, 0.12);
-  --email-input-background-color: #4949493D;
-  --contact-form-divider-color: #FFFFFF24;
+  --email-input-background-color: #4949493d;
+  --contact-form-divider-color: #ffffff24;
+  --indicator-background-color: #ffffff24;
+  --indicator-active-background-color: #ffffff;
   --font-h: 'Prata', serif;
   --font-p: 'Rubik', sans-serif;
   --font-cursive: 'Great Vibes', cursive;
   --section-divider-light-color: lightgray;
+  --celebration-background-color: rgba(38, 30, 28, 0.95);
   --semi-opaque-background-color: linear-gradient(
     rgba(255, 255, 255, 0.6),
     rgba(255, 255, 255, 0.6)

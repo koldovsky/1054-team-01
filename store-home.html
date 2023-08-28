@@ -1,120 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CaliWines - store</title>
-        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-        <link rel="stylesheet" href="css/store-home.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CaliWines - store</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/store-home.css" />
+  </head>
 
-    <body>
-        <header data-include="partials/header.partial.html"></header>
-        <main class="store-home__main">
-            <div class="storehome__titles">
-                <h3 class="storehome__title">Store homepage (<span class="storehome__title-span">8</span>)</h3>
-                <h3 class="storehome__subtitle">Products (<span class="storehome__subtitle-span">8</span>)</h3>
-            </div>
-            <div class="storehome__products-container">
-                <div class="storehome__productcard">
-                    <a class="storehome__link" href="store-product.html">
-                        <figure class="storehome__figure">
-                            <img class="storehome__img" src="img/best-deals-cabernet.jpeg" alt="Bottle of Cabernet">
-                            <figcaption class="storehome__caption">Cabernet</figcaption>
-                        </figure>
-                    </a>
-                    <p class="storehome__price"><span>17,00</span>USD</p>
-                    <button class="button storehome__button">Buy</button>
-                </div>
-                <div class="storehome__productcard">
-                    <a class="storehome__link" href="store-product.html">
-                        <figure class="storehome__figure">
-                            <img class="storehome__img" src="img/best-deals-pinotgrigio.jpeg" alt="Bottle of Pinot Grigio">
-                            <figcaption class="storehome__caption">Pinot Grigio</figcaption>
-                        </figure>
-                    </a>
-                    <p class="storehome__price"><span>10,00</span>USD</p>
-                    <button class="button storehome__button">Buy</button>
-                </div>
-                <div class="storehome__productcard">
-                    <a class="storehome__link" href="store-product.html">
-                        <figure class="storehome__figure">
-                            <img class="storehome__img" src="img/best-deals-pinotnoir.jpeg" alt="Bottle of Pinot Noir">
-                            <figcaption class="storehome__caption">Pinot Noir</figcaption>
-                        </figure>
-                    </a>
-                    <p class="storehome__price"><span>12,00</span>USD</p>
-                    <button class="button storehome__button">Buy</button>
-                </div>
-                <div class="storehome__productcard">
-                    <a class="storehome__link" href="store-product.html">
-                        <figure class="storehome__figure">
-                            <img class="storehome__img" src="img/best-deals-riesling.jpeg" alt="Bottle of Riesling">
-                            <figcaption class="storehome__caption">Riesling</figcaption>
-                        </figure>
-                    </a>
-                    <p class="storehome__price"><span>16,00</span>USD</p>
-                    <button class="button storehome__button">Buy</button>
-                </div>
-                <div class="storehome__productcard">
-                    <a class="storehome__link" href="store-product.html">
-                        <figure class="storehome__figure">
-                            <img class="storehome__img" src="img/best-deals-sauvignonblanc.jpeg" alt="Bottle of Sauvignon Blanc">
-                            <figcaption class="storehome__caption">Sauvignon Blanc</figcaption>
-                        </figure>
-                    </a>
-                    <p class="storehome__price"><span>12,00</span>USD</p>
-                    <button class="button storehome__button">Buy</button>
-                </div>
-                <div class="storehome__productcard">
-                    <a class="storehome__link" href="store-product.html">
-                        <figure class="storehome__figure">
-                            <img class="storehome__img" src="img/best-deals-soave.jpeg" alt="Bottle of Soave">
-                            <figcaption class="storehome__caption">Soave</figcaption>
-                        </figure>
-                    </a>
-                    <p class="storehome__price"><span>12,00</span>USD</p>
-                    <button class="button storehome__button">Buy</button>
-                </div>
-                <div class="storehome__productcard">
-                    <a class="storehome__link" href="store-product.html">
-                        <figure class="storehome__figure">
-                            <img class="storehome__img" src="img/best-deals-syrah.jpeg" alt="Bottle of Syrah">
-                            <figcaption class="storehome__caption">Syrah</figcaption>
-                        </figure>
-                    </a>
-                    <p class="storehome__price"><span>13,00</span>USD</p>
-                    <button class="button storehome__button">Buy</button>
-                </div>
-                <div class="storehome__productcard">
-                    <a class="storehome__link" href="store-product.html">
-                        <figure class="storehome__figure">
-                            <img class="storehome__img" src="img/best-deals-zifandel.jpeg" alt="Bottle of Zifandel">
-                            <figcaption class="storehome__caption">Zifandel</figcaption>
-                        </figure>
-                    </a>
-                    <p class="storehome__price"><span>14,00</span>USD</p>
-                    <button class="button storehome__button">Buy</button>
-                </div>
-            </div>
-            <div class="storehome__storenav-container">
-                <div class="storehome__pagestyle-container">
-                    <p class="storehome__pagestyle-text">Products per page</p>
-                    <select class="storehome__pagestyle-selector">
-                        <option value="20">20</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                    </select>
-                </div>
-                <div class="storehome__pagenav-container">
-                    <img class="storehome__pagenav-leftarrow" src="img/storehome-leftarrow.svg" alt="Left arrow">
-                    <span class="button storehome__pageindex">1</span>
-                    <img class="storehome__pagenav-rightarrow" src="img/storehome-leftarrow.svg" alt="Right arrow">
-                </div>
-            </div>
-        </main>
-        <footer data-include="partials/footer.partial.html"></footer>
-        <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
-    </body>
+  <body>
+    <header data-include="partials/header.partial.html"></header>
+    <main class="store-home__main">
+      <div class="storehome__titles">
+        <h3 class="storehome__title">
+          Store homepage (<span class="storehome__title-span">8</span>)
+        </h3>
+        <h3 class="storehome__subtitle">
+          Products (<span class="storehome__subtitle-span">8</span>)
+        </h3>
+      </div>
+      <div class="storehome__products-container"></div>
+      <div class="storehome__storenav-container">
+        <div class="storehome__pagestyle-container">
+          <p class="storehome__pagestyle-text">Products per page</p>
+          <select class="storehome__pagestyle-selector">
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+        <div class="storehome__pagenav-container">
+          <img
+            class="storehome__pagenav-leftarrow"
+            src="img/storehome-leftarrow.svg"
+            alt="Left arrow"
+          />
+          <span class="button storehome__pageindex">1</span>
+          <img
+            class="storehome__pagenav-rightarrow"
+            src="img/storehome-leftarrow.svg"
+            alt="Right arrow"
+          />
+        </div>
+      </div>
+    </main>
+    <footer data-include="partials/footer.partial.html"></footer>
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    <script type="module" src="js/store-home.js"></script>
+  </body>
 </html>

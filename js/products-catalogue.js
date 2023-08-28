@@ -1,0 +1,108 @@
+const cabernet = {
+  name: 'Cabernet',
+  type: 'red',
+  bestDeal: true,
+  code: '18',
+  price: 17,
+  currency: 'USD',
+  inStock: true,
+  images: ['img/best-deals-cabernet.jpeg'],
+  description: "If you don't want which red wine to buy, think of this Cabernet. It has a very deep dark purple color and opens with boysenberry, bourbon, and vanilla aromas. Then you'll feel brown sugar, cocoa, spices, and currants. It's a wine with a really rich taste.",
+}
+
+const pinotGrigio = {
+  name: 'Pinot Grigio',
+  type: 'white',
+  bestDeal: true,
+  code: '23',
+  price: 10,
+  currency: 'USD',
+  inStock: true,
+  images: ['img/best-deals-pinotgrigio.jpeg'],
+  description: 'Bright golden color. Gentle aromas and flavors of peach cobbler, honeydew, and apple with a silky, fruity-yet-dry medium body, and lemon and nut in the finish.',
+}
+
+const pinotNoir = {
+  name: 'PinotNoir',
+  type: 'red',
+  bestDeal: false,
+  code: '20',
+  price: 12,
+  currency: 'USD',
+  inStock: true,
+  images: ['img/best-deals-pinotnoir.jpeg'],
+  description: 'It is one of the lightest red wines. Pinot Noir is easy to drink, it won\'t punch you in the face like some reds can and is perfect for romantic evenings and meetings with friends. Our Pinot Noir has a "light body" and feels silky to the tongue. You might taste bright berries like raspberry and cranberry.',
+}
+
+const riesling = {
+  name: 'Riesling',
+  type: 'white',
+  bestDeal: false,
+  code: '24',
+  price: 16,
+  currency: 'USD',
+  inStock: true,
+  images: ['img/best-deals-riesling.jpeg'],
+  description: 'Dazzling silver-gold in color, with intense mineral aromas of shale, gravel, and limestone, combined with notes of white flower, green apple, peach, and lemon oil. You can smell the flavors of fresh apricot, lime, and grapefruit pith.',
+}
+
+const sauvignonBlanc = {
+  name: 'Sauvignon Blanc',
+  type: 'white',
+  bestDeal: true,
+  code: '22',
+  price: 12,
+  currency: 'USD',
+  inStock: true,
+  images: ['img/best-deals-sauvignonblanc.jpeg'],
+  description: 'Light yet unique in character, this Sauvignon Blanc by CaliWines is filled with aromas of apple, grapefruit, gooseberry, and guava. This wine is light bodied with a fresh finish and a light yellow color.',
+}
+
+const soave = {
+  name: 'Soave',
+  type: 'white',
+  bestDeal: false,
+  code: '25',
+  price: 12,
+  currency: 'USD',
+  inStock: true,
+  images: ['img/best-deals-soave.jpeg'],
+  description: 'Our Californian tribute to Italian wine varieties.<br>Light straw color. Delicate and gentle aroma of sweet field flowers: camomile, elder, and iris. Minced palate with almond aftertaste. Pairs with steamed fish, fresh cheese, and mussels.',
+}
+
+const syrah = {
+  name: 'Syrah',
+  type: 'red',
+  bestDeal: true,
+  code: '19',
+  price: 13,
+  currency: 'USD',
+  inStock: true,
+  images: ['img/best-deals-syrah.jpeg'],
+  description: 'This intense wine has aromas of violets, red fruit, cherry, blackberry, and vanilla. It also features rich flavors of blackberry, black cherry, plum, and vanilla with silky tannins and a rich finish.',
+}
+
+const zifandel = {
+  name: 'Zifandel',
+  type: 'red',
+  bestDeal: false,
+  code: '21',
+  price: 14,
+  currency: 'USD',
+  inStock: true,
+  images: ['img/best-deals-zifandel.jpeg'],
+  description: 'This wine is produced from more ripened berries than usual. Core flavors are rich, with jammy blackberries and mocha. You can pair this wine with braised ribs, chicken enchiladas, or dark chocolate.',
+}
+
+const products = [
+  cabernet,
+  pinotGrigio,
+  pinotNoir,
+  riesling,
+  sauvignonBlanc,
+  soave,
+  syrah,
+  zifandel,
+]
+
+export { products }

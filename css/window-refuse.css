@@ -2,7 +2,6 @@
 
 .forbiddance {
   background-color: var(--background-color);
-  width: 320px;
   height: 582px;
   padding: 150px 0;
 }
@@ -18,7 +17,6 @@
   transform: scale(1.2083);
   font-weight: lighter;
   transform-origin: top center;
-  width: 255px;
   height: 427px;
   margin: 0 15px 0 17px;
   padding: 0 10px;
@@ -34,6 +32,23 @@
   text-align: center;
   line-height: 1.5;
   color: var(--text-color-dark);
-  width: 235px;
   margin: auto;
+}
+
+@media (min-width: 768px) {
+  .forbiddance__container-title {
+    font-size: 71px;
+    height: 256px;
+    margin: revert;
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .forbiddance__container-title {
+    font-size: 84px;
+    height: 256px;
+    margin: revert;
+    padding: 0 100px;
+  }
 }

@@ -1,0 +1,61 @@
+.celebration {
+    min-width: 320px;
+    height: 600px;
+    background-image: linear-gradient(to right, var(--celebration-background-color), var(--celebration-background-color)), url('../img/celebration.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.celebration__title {
+    font-size: 34px;
+}
+
+.celebration__data {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+    padding: 10px;
+}
+
+.celebration__data-box {
+    border: 2px solid var(--cart-background-color);
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.celebration__promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 420px;
+    margin: 20px auto;
+}
+
+.celebration__promo-faq{
+    border: 2px solid var(--cart-background-color);
+}
+
+.celebration__promo-fqa-summary {
+    font-family: var(--font-p);
+    font-size: 24px;
+    font-weight: lighter;
+    border-bottom: solid 1px var(--text-color-dark);
+  }
+
+  .celebration__promo-button {
+    margin: 40px 0;
+  }

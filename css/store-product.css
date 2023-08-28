@@ -5,10 +5,11 @@
 
 header {
   position: initial;
+  background-color: var(--header--container--non-transparent--color) !important;
 }
 
 .store-product__main {
-  padding: 90px 7.5%;
+  padding: 130px 7.5%;
   background-color: var(--text-color);
 }
 
@@ -84,7 +85,7 @@ header {
   margin-top: 50px;
 }
 
-.storeproduct__instokindicator {
+.storeproduct__instockindicator {
   color: var(--text-color-instock-indicator);
   font-weight: 600;
   padding-bottom: 10px;
@@ -105,10 +106,18 @@ header {
   font-size: 0.875rem;
   font-weight: 400;
 }
+
 .storeproduct__pricetext {
   padding: 24px 0 48px 0;
   border-bottom: 1px solid var(--section-divider-light-color);
   color: var(--background-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.product__currency {
+  font-family: var(--font-p);
+  border: none;
   font-size: 1.25rem;
   font-weight: 600;
 }
