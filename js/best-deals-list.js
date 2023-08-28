@@ -76,7 +76,16 @@ function renderIndicators() {
             renderSlide();
             renderIndicators(slides, currentSlide);
         });
+        indicator.addEventListener('mouseover', () => {
+            indicator.classList.add('best-deals__button--hover');
+        });
+        
+        indicator.addEventListener('mouseout', () => {
+            indicator.classList.remove('best-deals__button--hover');
+        });
     });
+
+    
 }
 
 renderIndicators();

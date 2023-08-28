@@ -82,9 +82,7 @@
   gap: 20px;
 }
 
-.header__instagram {
-  margin-left: 15px;
-}
+
 
 @media screen and (max-width: 991px) {
   .header__nav__links li a {

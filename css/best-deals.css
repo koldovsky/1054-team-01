@@ -140,6 +140,10 @@
     background-color: var(--indicator-active-background-color);
 }
 
+.best-deals__button--hover {
+    background-color: var(--indicator-active-background-color);
+}
+
 @media (min-width: 767px) {
     .best-deals__header-title {
         font-size: 21px;
