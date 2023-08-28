@@ -39,9 +39,9 @@
 }
 
 .testimonials__carrousel {
-    padding: 20px -25px 0 0;
+    padding: 20px 20px 0 20px;
     display: grid;
-    grid-template-columns: 25px 1fr 25px;
+    grid-template-columns: 20px 1fr 20px;
     align-items: center;
     min-height: 300px;
 }

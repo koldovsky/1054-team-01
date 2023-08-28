@@ -9,6 +9,7 @@ let currentSlide = 0;
 const slideContainer = document.querySelector('.testimonials__list')
 function renderSlide() {
     slideContainer.innerHTML = slides[currentSlide];
+    renderIndicators();
 }
 renderIndicators
 
