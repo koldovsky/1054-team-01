@@ -101,6 +101,8 @@
 
 .best-deals__arrowL,
 .best-deals__arrowR {
+    top: 50%;
+    transform: translateY(-50%);
     background: var(--background-color);
     fill: var(--header--nav--links--first--color);
     font-size: 10px;
@@ -111,8 +113,9 @@
     border: none;
 }
 
-
-
+.best-deals__arrowL {
+    transform: rotate(360deg) scaleX(-1);
+}
 
 .indicator {
     width: 10px;
