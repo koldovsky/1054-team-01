@@ -51,13 +51,17 @@
 .testimonials__button-testimonials__button-next,
 .testimonials__button-testimonials__button-prev {
     background: var(--header--nav--links--second--color);
-    color: var(--header--nav--links--first--color);
+    fill: var(--header--nav--links--first--color);
     font-size: 14px;
     cursor: pointer;
     width: 24px;
     height: 24px;
     border-radius: 50%;
     border: none;
+}
+
+.testimonials__button-testimonials__button-prev {
+    transform: rotate(360deg) scaleX(-1);
 }
 
 .testimonials__list {
@@ -96,6 +100,7 @@
 .indicator-nav__button:hover {
     background-color: var(--header--nav--links--second--color);
 }
+
 .indicator-nav__button--active {
     background-color: var(--header--nav--links--second--color);
 }
