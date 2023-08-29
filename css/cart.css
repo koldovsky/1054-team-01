@@ -1,3 +1,7 @@
+.cart__hidden {
+    display: none;
+}
+
 .cart h3,
 .cart h4 {
     font-family: var(--font-p);

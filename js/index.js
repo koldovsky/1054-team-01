@@ -5,4 +5,6 @@ document.addEventListener('partialsLoaded', () => {
     import('./products-catalogue.js');
     import('./testimonials.js');
     import('./awards.js');
+    import('./cart.js');
+    import('./footer.js');
 });
