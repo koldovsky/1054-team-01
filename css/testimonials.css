@@ -90,8 +90,12 @@
     margin: 0 5px;
     cursor: pointer;
     align-items: center;
+    transition: background-color 0.3s ease;
 }
 
+.indicator-nav__button:hover {
+    background-color: var(--header--nav--links--second--color);
+}
 .indicator-nav__button--active {
     background-color: var(--header--nav--links--second--color);
 }
