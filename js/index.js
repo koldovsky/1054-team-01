@@ -6,4 +6,5 @@ document.addEventListener('partialsLoaded', () => {
     import('./testimonials.js');
     import('./awards.js');
     import('./cart.js');
+    import('./footer.js');
 });
