@@ -1,0 +1,35 @@
+.cart-badge {
+    position: fixed;
+    right: 30px;
+    top: calc(80px);
+}
+
+.modal__button {
+    display: flex;
+    background-color: var(--cart-badge-background-color);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.packet {
+    stroke: black;
+    display: block;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+}
+
+.modal__cart-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: var(--cart-badge-conter-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    right: -2px;
+    top: -2px;
+}
