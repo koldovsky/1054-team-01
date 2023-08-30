@@ -55,24 +55,21 @@ function scrollLeft() {
     newPhoto.alt = 'Large Instagram photo'
     newPhoto.className = 'footer__instagram-large-img'
     newPhoto.style.transform = 'translateX(100%)'
-    
-    largePhotosContainer.appendChild(newPhoto)
-    
-    // setTimeout( () => {
-    //     newPhoto.style.transform = 'translateX(0%)'
-    // },1000)
-
-    // setTimeout( () => {
-    //     largePhotosContainer.removeChild(largePhotosContainer.firstChild)
-    // }, 1000)
+    newPhoto.style.display = 'none'
 
     setTimeout( () => {
         largePhotosContainer.removeChild(largePhotosContainer.firstChild)
+        largePhotosContainer.appendChild(newPhoto)
+        newPhoto.style.display = 'initial'
         setTimeout( () => {
-            // largePhotosContainer.appendChild(newPhoto)
             newPhoto.style.transform = 'translateX(0%)'
-        }, 50)
-    }, 200)
+        }, 10)
+        // newPhoto.addEventListener('wheel', (e) => {
+        //     e.preventDefault()
+        //     newPhoto.style.maxHeight = 'none'
+        //     this.width += Math.floor(e.deltaY)
+        // })
+    }, 300)
 
 }
 
@@ -89,20 +86,18 @@ function scrollRight() {
     newPhoto.style.transform = 'translateX(-100%)'
     newPhoto.style.display = 'none'
     
-    // largePhotosContainer.appendChild(newPhoto)
-    // largePhotosContainer.append(newPhoto)
-    
-    // setTimeout( () => {
-    //     newPhoto.style.display = 'initial'
-    //     newPhoto.style.transform = 'translateX(0%)'
-    // },1000)
-
     setTimeout( () => {
         largePhotosContainer.removeChild(largePhotosContainer.firstChild)
         largePhotosContainer.append(newPhoto)
         newPhoto.style.display = 'initial'
         setTimeout( () => {
             newPhoto.style.transform = 'translateX(0%)'
-        }, 100)    
-    }, 200)
+        }, 10)    
+        // newPhoto.addEventListener('wheel', (e) => {
+        //     e.preventDefault()
+        //     newPhoto.style.maxHeight = 'none'
+        //     newPhoto.width -= Math.floor(e.deltaY)
+        //     newPhoto.height -= Math.floor(e.deltaY)
+        // })
+    }, 300)
 }
