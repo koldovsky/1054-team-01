@@ -48,13 +48,13 @@ function renderSlide() {
     renderIndicators();
 }
 
-function nextSlide() {
+function prevSlide() {
     currentSlide = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1
     renderSlide()
 }
 
 
-function prevSlide() {
+function nextSlide() {
     currentSlide = currentSlide - 1 < 0 ? slides.length - 1 : currentSlide - 1
     renderSlide()
 }
