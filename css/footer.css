@@ -56,7 +56,7 @@
   border: none;
 }
 
-.footer article:last-of-type {
+.footer__copyright-wrapper {
   background-color: var(--copyright-background-color);
 }
 
@@ -107,8 +107,9 @@
   top: 0;
   width: 100%;
   z-index: 9999;
-  background:none;
+  background-color: rgba(0, 0, 0, 0.7);
   transition: opacity 1s;
+  user-select: none;
 }
 
 .footer__instagram-expanded-wrapper {
@@ -123,6 +124,7 @@
   justify-content: end;
   opacity: 0.5;
   background:none;
+  padding: 10px;
 }
 
 .footer__instagram-zoomin-btn, 
@@ -130,6 +132,17 @@
 .footer__instagram-close-btn {
   width: 25px;
   height: 25px;
+  margin: 10px;
+}
+
+.footer__instagram-close-btn:hover {
+  opacity: 1 !important;
+  background: none;
+  fill: red
+}
+
+.footer__instagram-close-btn {
+  cursor: pointer;
 }
 
 .footer__instagram-expanded-images {
@@ -146,27 +159,41 @@
   cursor: pointer;
   border-radius: 5px;
   padding: 3%;
-  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+}
+
+.footer__instagram-expanded-left {
+  position: fixed;
+  left: 0;
+  z-index: 9995;
+}
+.footer__instagram-expanded-right {
+  position: fixed;
+  right: 0;
+  z-index: 9995;
 }
 
 .footer__instagram-left-arrow, 
 .footer__instagram-right-arrow {
   width: 25px;
-  height: 25px;
-  z-index: 9500;
+  height: 35px;
+  margin: 15px;
 }
 
 .footer__instagram-large-image {
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  opacity: 1 !important;
 }
 
 .footer__instagram-large-img {
-  height: min(100vh, 80vw);
+  height: min(100vh, 100vw);
+  max-height: 100vh;
   padding: 10px;
-  transition: all 100ms;
-  z-index: 9000;
+  transition: all 200ms;
+  opacity: 1 !important;
+  z-index: 9990;
 }
 
 @media screen and (min-width: 768px) {

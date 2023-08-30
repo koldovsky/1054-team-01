@@ -58,13 +58,22 @@ function scrollLeft() {
     
     largePhotosContainer.appendChild(newPhoto)
     
-    setTimeout( () => {
-        newPhoto.style.transform = 'translateX(0%)'
-    },100)
+    // setTimeout( () => {
+    //     newPhoto.style.transform = 'translateX(0%)'
+    // },1000)
+
+    // setTimeout( () => {
+    //     largePhotosContainer.removeChild(largePhotosContainer.firstChild)
+    // }, 1000)
 
     setTimeout( () => {
         largePhotosContainer.removeChild(largePhotosContainer.firstChild)
-    }, 100)
+        setTimeout( () => {
+            // largePhotosContainer.appendChild(newPhoto)
+            newPhoto.style.transform = 'translateX(0%)'
+        }, 50)
+    }, 200)
+
 }
 
 function scrollRight() {
@@ -78,15 +87,22 @@ function scrollRight() {
     newPhoto.alt = 'Large Instagram photo'
     newPhoto.className = 'footer__instagram-large-img'
     newPhoto.style.transform = 'translateX(-100%)'
+    newPhoto.style.display = 'none'
     
     // largePhotosContainer.appendChild(newPhoto)
-    largePhotosContainer.prepend(newPhoto)
+    // largePhotosContainer.append(newPhoto)
     
-    setTimeout( () => {
-        newPhoto.style.transform = 'translateX(0%)'
-    },100)
+    // setTimeout( () => {
+    //     newPhoto.style.display = 'initial'
+    //     newPhoto.style.transform = 'translateX(0%)'
+    // },1000)
 
     setTimeout( () => {
-        largePhotosContainer.removeChild(largePhotosContainer.lastChild)
-    }, 100)
+        largePhotosContainer.removeChild(largePhotosContainer.firstChild)
+        largePhotosContainer.append(newPhoto)
+        newPhoto.style.display = 'initial'
+        setTimeout( () => {
+            newPhoto.style.transform = 'translateX(0%)'
+        }, 100)    
+    }, 200)
 }
