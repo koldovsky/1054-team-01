@@ -20,7 +20,7 @@
     height: 40px;
 }
 
-.modal__cart-counter {
+.cart-badge__counter {
     display: flex;
     align-items: center;
     justify-content: center;

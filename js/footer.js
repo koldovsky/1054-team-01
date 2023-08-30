@@ -7,31 +7,102 @@ const instagramPhotos = [
     'img/footer-photogallery-wine.png'
 ]
 
-const leftArrow = document.querySelector('.footer__instagram-left-arrow')
-const rightArrow = document.querySelector('.footer__instagram-right-arrow')
-// finish here regarding scrolling images
 
-
-const instragramPhotoContainer = document.querySelector('.footer__instagram-expanded-outer')
-const instagramLargePhoto = document.querySelector('.footer__instagram-large-img')
+const instragramOuterContainer = document.querySelector('.footer__instagram-expanded-outer')
 const instagramThumbnails = document.querySelectorAll('.footer__thumbnail')
-
 
 const closeWindowBtn = document.querySelector('.footer_instagram-expanded-close')
 
 closeWindowBtn.addEventListener('click', () => {
     setTimeout( () => {
-        instragramPhotoContainer.style.visibility = 'hidden'
+        instragramOuterContainer.style.visibility = 'hidden'
+        while(largePhotosContainer.firstChild) {
+            largePhotosContainer.removeChild(largePhotosContainer.firstChild)
+        }
     }, 1000)
-    instragramPhotoContainer.style.opacity = '0'
-    instragramPhotoContainer.style.transition = 'opacity 1s'
+    instragramOuterContainer.style.opacity = '0'
+    instragramOuterContainer.style.transition = 'opacity 1s'
 })
+
+const largePhotosContainer = document.querySelector('.footer__instagram-large-image')
 
 for (let i = 0; i < instagramThumbnails.length; i++) {
     instagramThumbnails[i].addEventListener('click', () => {
-        instagramLargePhoto.src = instagramPhotos[i]
-        instragramPhotoContainer.style.visibility = 'visible'
-        instragramPhotoContainer.style.opacity = '1'
-        instagramThumbnails[i].className += '.footer__thumbnal-expanded'
+        const largePhotoSrc = instagramThumbnails[i].src
+        const largePhoto = document.createElement('img')
+        largePhoto.src = largePhotoSrc
+        largePhoto.alt = 'Large Instagram photo'
+        largePhoto.className = 'footer__instagram-large-img'
+        largePhotosContainer.appendChild(largePhoto)
+        instragramOuterContainer.style.visibility = 'visible'
+        instragramOuterContainer.style.opacity = '1'
     })
+}
+
+const leftArrow = document.querySelector('.footer__instagram-expanded-left')
+const rightArrow = document.querySelector('.footer__instagram-expanded-right')
+leftArrow.addEventListener('click', scrollLeft)
+rightArrow.addEventListener('click', scrollRight)
+
+function scrollLeft() {
+    const currentPhoto = document.querySelector('.footer__instagram-large-img')
+    currentPhoto.style.transform = 'translateX(-100%)'
+    const currentSrc = currentPhoto.src.substr(currentPhoto.src.search('img/footer-'))
+
+    const newSrc = instagramPhotos.indexOf(currentSrc) === instagramPhotos.length - 1 ? instagramPhotos[0] : instagramPhotos[instagramPhotos.indexOf(currentSrc) + 1]
+    const newPhoto = document.createElement('img')
+    newPhoto.src = newSrc
+    newPhoto.alt = 'Large Instagram photo'
+    newPhoto.className = 'footer__instagram-large-img'
+    newPhoto.style.transform = 'translateX(100%)'
+    
+    largePhotosContainer.appendChild(newPhoto)
+    
+    // setTimeout( () => {
+    //     newPhoto.style.transform = 'translateX(0%)'
+    // },1000)
+
+    // setTimeout( () => {
+    //     largePhotosContainer.removeChild(largePhotosContainer.firstChild)
+    // }, 1000)
+
+    setTimeout( () => {
+        largePhotosContainer.removeChild(largePhotosContainer.firstChild)
+        setTimeout( () => {
+            // largePhotosContainer.appendChild(newPhoto)
+            newPhoto.style.transform = 'translateX(0%)'
+        }, 50)
+    }, 200)
+
+}
+
+function scrollRight() {
+    const currentPhoto = document.querySelector('.footer__instagram-large-img')
+    currentPhoto.style.transform = 'translateX(110%)'
+    const currentSrc = currentPhoto.src.substr(currentPhoto.src.search('img/footer-'))
+
+    const newSrc = instagramPhotos.indexOf(currentSrc) === 0 ? instagramPhotos[instagramPhotos.length - 1] : instagramPhotos[instagramPhotos.indexOf(currentSrc) - 1]
+    const newPhoto = document.createElement('img')
+    newPhoto.src = newSrc
+    newPhoto.alt = 'Large Instagram photo'
+    newPhoto.className = 'footer__instagram-large-img'
+    newPhoto.style.transform = 'translateX(-100%)'
+    newPhoto.style.display = 'none'
+    
+    // largePhotosContainer.appendChild(newPhoto)
+    // largePhotosContainer.append(newPhoto)
+    
+    // setTimeout( () => {
+    //     newPhoto.style.display = 'initial'
+    //     newPhoto.style.transform = 'translateX(0%)'
+    // },1000)
+
+    setTimeout( () => {
+        largePhotosContainer.removeChild(largePhotosContainer.firstChild)
+        largePhotosContainer.append(newPhoto)
+        newPhoto.style.display = 'initial'
+        setTimeout( () => {
+            newPhoto.style.transform = 'translateX(0%)'
+        }, 100)    
+    }, 200)
 }
