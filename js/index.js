@@ -8,4 +8,5 @@ document.addEventListener('partialsLoaded', () => {
     import('./cart-badge.js');
     import('./cart.js');
     import('./footer.js');
+    import('./cart-badge.js');
 });
