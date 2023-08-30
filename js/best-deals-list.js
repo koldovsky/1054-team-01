@@ -20,7 +20,7 @@ function renderProduct(products) {
                 <a href="store-product.html?id=${products[i].code}"><img src="${products[i].images[0]}" alt="${products[i].name}"></img></a>
                 <a href="store-product.html" class="product__name">${products[i].name}</a>
                 <p class="product__price">${products[i].price.toFixed(2)}${products[i].currency}</p>
-                <a class="button" href="#"><strong>Add to cart</strong></a>
+                <a class="button add-btn" href="#cart-badge"><strong>Add to cart</strong></a>
             </div>
         </div>`
             slides.push(content)
@@ -31,20 +31,26 @@ function renderProduct(products) {
 
 function renderSlide() {
     const productsContainer = document.querySelector('.best-deals__products');
-    productsContainer.innerHTML = slides[currentSlide];
+    productsContainer.innerHTML = '';
 
-    if (window.matchMedia('(min-width: 768px)').matches) {
-        const secondSlide = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1;
-        productsContainer.innerHTML += slides[secondSlide];
-    }
-
-    if (window.matchMedia('(min-width: 1024px)').matches) {
-        const thirdSlide = currentSlide + 2 >= slides.length ? currentSlide + 2 - slides.length : currentSlide + 2;
-        productsContainer.innerHTML += slides[thirdSlide];
+    if (window.matchMedia('(min-width: 990px)').matches) {
+        for (let i = currentSlide; i < currentSlide + 3; i++) {
+            const slideIndex = i >= slides.length ? i - slides.length : i;
+            productsContainer.innerHTML += slides[slideIndex];
+        }
+    } else if (window.matchMedia('(min-width: 767px)').matches) {
+        for (let i = currentSlide; i < currentSlide + 2; i++) {
+            const slideIndex = i >= slides.length ? i - slides.length : i;
+            productsContainer.innerHTML += slides[slideIndex];
+        }
+    } else {
+        productsContainer.innerHTML = slides[currentSlide];
     }
 
     renderIndicators();
 }
+
+
 
 
 

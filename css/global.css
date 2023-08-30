@@ -36,6 +36,8 @@
   --text-color-dark: rgb(137, 128, 130);
   --text-color-darker: #1f1917;
   --text-color-instock-indicator: #61a854;
+  --cart-badge-background-color: rgb(255, 255, 255);
+  --cart-badge-conter-color: rgb(200, 105, 58);
   --cart-background-color: rgb(255, 255, 255);
   --cart-text-color: #261e1c;
   --cart-header-background-color: rgb(247, 248, 250);
@@ -43,6 +45,8 @@
   --cart-buyers-background-color: rgba(38, 30, 28, 0.12);
   --email-input-background-color: #4949493d;
   --contact-form-divider-color: #ffffff24;
+  --arrow--background--color: #000000;
+  --arrow--color: #ffffff;
   --indicator-background-color: #ffffff24;
   --indicator-active-background-color: #ffffff;
   --font-h: 'Prata', serif;
@@ -62,6 +66,10 @@
 .container {
   max-width: 1200px;
   margin: auto;
+}
+
+.hidden {
+  display: none;
 }
 
 img {

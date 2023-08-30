@@ -127,10 +127,13 @@ header {
   rotate: 180deg;
 }
 
+.storehome__pageindex-container {
+  display: flex;
+}
+
 @media screen and (min-width: 768px) {
   .storehome__products-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
   }
 
   .storehome__products-container .storehome__productcard {
@@ -162,7 +165,6 @@ header {
 
 @media screen and (min-width: 992px) {
   .storehome__products-container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 }
