@@ -7,31 +7,56 @@ const instagramPhotos = [
     'img/footer-photogallery-wine.png'
 ]
 
-const leftArrow = document.querySelector('.footer__instagram-left-arrow')
-const rightArrow = document.querySelector('.footer__instagram-right-arrow')
-// finish here regarding scrolling images
 
-
-const instragramPhotoContainer = document.querySelector('.footer__instagram-expanded-outer')
+const instragramOuterContainer = document.querySelector('.footer__instagram-expanded-outer')
 const instagramLargePhoto = document.querySelector('.footer__instagram-large-img')
 const instagramThumbnails = document.querySelectorAll('.footer__thumbnail')
-
+// let nextPhotoSrc
+// let previousPhotoSrc
 
 const closeWindowBtn = document.querySelector('.footer_instagram-expanded-close')
 
 closeWindowBtn.addEventListener('click', () => {
     setTimeout( () => {
-        instragramPhotoContainer.style.visibility = 'hidden'
+        instragramOuterContainer.style.visibility = 'hidden'
     }, 1000)
-    instragramPhotoContainer.style.opacity = '0'
-    instragramPhotoContainer.style.transition = 'opacity 1s'
+    instragramOuterContainer.style.opacity = '0'
+    instragramOuterContainer.style.transition = 'opacity 1s'
 })
 
 for (let i = 0; i < instagramThumbnails.length; i++) {
     instagramThumbnails[i].addEventListener('click', () => {
         instagramLargePhoto.src = instagramPhotos[i]
-        instragramPhotoContainer.style.visibility = 'visible'
-        instragramPhotoContainer.style.opacity = '1'
+        instragramOuterContainer.style.visibility = 'visible'
+        instragramOuterContainer.style.opacity = '1'
         instagramThumbnails[i].className += '.footer__thumbnal-expanded'
     })
+}
+
+const leftArrow = document.querySelector('.footer__instagram-left-arrow')
+const rightArrow = document.querySelector('.footer__instagram-right-arrow')
+const instagramPhotosContainer = document.querySelector('.footer__instagram-large-image')
+leftArrow.addEventListener('click', scrollLeft)
+
+function scrollLeft() {
+    const currentPhoto = document.querySelector('.footer__instagram-large-img')
+    const currentSrc = currentPhoto.getAttribute('src')
+    console.log('currentSrc ', currentSrc)
+    const indexOfcurrentPhoto = instagramPhotos.indexOf(currentSrc)
+    const nextPhotoSrc = indexOfcurrentPhoto === instagramPhotos.length - 1 ? instagramPhotos[0] : instagramPhotos[indexOfcurrentPhoto + 1]
+    console.log('indexOfcurrentPhoto ', indexOfcurrentPhoto)
+    console.log('instagramPhotos.length ', instagramPhotos.length)
+    console.log('nextPhotoSrc ', nextPhotoSrc)
+
+    const nextImgNode = document.createElement('img')
+    instagramPhotosContainer.appendChild(nextImgNode)
+    nextImgNode.src = nextPhotoSrc
+    nextImgNode.alt = 'Large Instagram photo'
+    nextImgNode.className = 'footer__instagram-large-img'   
+    instagramPhotosContainer.removeChild(instagramPhotosContainer.firstChild)
+    // nextImgNode.style.transform = 'translate(100%)'
+    currentPhoto.style.transform = 'translate(-100%)'
+    nextImgNode.style.transform = 'translate(-100%)'
+
+    console.log('testScroll left ============================================')
 }
