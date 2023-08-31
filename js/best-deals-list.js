@@ -71,7 +71,7 @@ window.addEventListener('resize', renderProduct)
 
 function renderIndicators() {
     const indicatorsContainer = document.querySelector('.best-deals__carousel-indicators');
-    indicatorsContainer.innerHTML = ' ';
+    indicatorsContainer.innerHTML = '';
     for (let i = 0; i < slides.length; i++) {
         indicatorsContainer.innerHTML += `<button class="best-deals__carousel-indicator ${i === currentSlide ? 'best-deals__carousel-indicator--active' : ''}"></button>`;
     }
@@ -94,4 +94,7 @@ function renderIndicators() {
     
 }
 
-renderIndicators();
+document.addEventListener('DOMContentLoaded', function() {
+    // Тут ви можете викликати вашу функцію renderIndicators()
+    renderIndicators();
+});
