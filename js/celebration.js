@@ -17,3 +17,15 @@ function updateCountdown() {
   setInterval(updateCountdown, 1000);
   
   updateCountdown();
+
+
+  setTimeout(function() {
+    const modal = document.querySelector('.celebration');
+    modal.classList.remove('hidden-celebr');
+  }, 10000)
+
+  document.querySelector('.celebration__promo-button')
+  .addEventListener('click', () => {
+    const modal = document.querySelector('.celebration');
+    modal.classList.add('hidden-celebr');
+  })
