@@ -45,24 +45,19 @@
           <p class="storeproduct__pricetext">
             <span class="storeproduct__price"></span>
           </p>
-          <form action="" class="storeproduct__form">
+
+          <div action="" class="storeproduct__form">
             <div class="storeproduct__form-inputcontainer">
-              <input
-                class="storeproduct__form-input"
-                type="text"
-                name="quantity"
-                value=1
-                required
-              />
+              <input class="storeproduct__form-input" type="text" name="quantity" value=1 required/>
               <div class="storeproduct__input-arrows-box">
                 <img class="storeproduct__form-uparrow" src="img/storeproduct-uparrow.svg" alt="Up arrow"/>
                 <img class="storeproduct__form-downarrow" src="img/storeproduct-uparrow.svg" alt="Down arrow"/>
               </div>
             </div>
             <div class="storeproduct__form-submitcontainer">
-              <input class="button storeproduct__form-submit" type="submit" value="Add to cart"/>
+              <a class="button storeproduct__form-submit add-btn" href="#cart-badge">Add to cart</a>
             </div>
-          </form>
+          </div>
           <div class="storeproduct__subtitle-container">
             <p class="storeproduct__subtitle">DESCRIPTION</p>
             <hr class="storeproduct__divider" />

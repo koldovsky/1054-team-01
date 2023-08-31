@@ -62,7 +62,7 @@ function showProductsByPage(currentPage, productsPerPage) {
           </figure>
           </a>
           <p class="storehome__price"><span>${item.price + ',00'}</span> ${item.currency}</p>
-          <button class="button storehome__button">Buy</button>
+          <a class="button storehome__button add-btn" href="#cart-badge"">Buy</a>
       </div>
     `;
   }
