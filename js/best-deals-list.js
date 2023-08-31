@@ -10,8 +10,8 @@ prevButton.addEventListener('click', prevSlide)
 renderProduct(catalogue.products)
 
 function renderProduct(products) {
-    const productsContainer = document.querySelector('.best-deals__products')
-    productsContainer.innerHTML = ''
+    const productsContainer = document.querySelector('.best-deals__products');
+    productsContainer.innerHTML = '';
     for (let i = 0; i < products.length; i++) {
         if (products[i].bestDeal) {
             const content =
@@ -71,7 +71,7 @@ window.addEventListener('resize', renderProduct)
 
 function renderIndicators() {
     const indicatorsContainer = document.querySelector('.best-deals__carousel-indicators');
-    indicatorsContainer.innerHTML = '';
+    indicatorsContainer.innerHTML = ' ';
     for (let i = 0; i < slides.length; i++) {
         indicatorsContainer.innerHTML += `<button class="best-deals__carousel-indicator ${i === currentSlide ? 'best-deals__carousel-indicator--active' : ''}"></button>`;
     }
