@@ -131,6 +131,10 @@ header {
   display: flex;
 }
 
+.storehome__pageindex.selected  {
+  border: 2px solid var(--header--container--color);
+}
+
 @media screen and (min-width: 768px) {
   .storehome__products-container {
     grid-template-columns: 1fr 1fr;
