@@ -6,7 +6,11 @@ document.addEventListener('partialsLoaded', async () => {
     await import('./testimonials.js');
     await import('./awards.js');
     await import('./cart.js');
-    await import('./footer.js');
+    // await import('./footer.js');
     await import('./celebration.js');
     await import('./cart-badge.js');
+});
+
+document.addEventListener('partialsLoaded', () => {
+    import('./footer.js');
 });
