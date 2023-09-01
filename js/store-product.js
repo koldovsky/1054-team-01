@@ -1,5 +1,9 @@
 import * as catalogue from './products-catalogue.js'
 
+document.addEventListener('partialsLoaded', async () => {
+    await import('./cart.js');
+    await import('./cart-badge.js');
+});
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const productIdentifier = urlParams.get('id');
@@ -44,6 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const websiteLogo = document.querySelector('.websiteLogo')
     websiteLogo.style.cursor = 'pointer'
     websiteLogo.addEventListener('click', () => window.location.href = "index.html")
+
+    const cartButton = document.querySelector('.add-btn')
+    cartButton.href = `store-product.html?id=${productIdentifier}#cart-badge`
     })
 
     let currencies
