@@ -2,10 +2,22 @@
 @import url(header.css);
 @import url(footer.css);
 @import url(controls.css);
+@import url(cart.css);
+@import url(cart-badge.css);
+
+body {
+  user-select: none;
+}
 
 header {
   position: initial;
   background-color: var(--header--container--non-transparent--color) !important;
+}
+
+.cart-badge {
+  border-radius: 50%;
+  box-shadow: -1px 1px 4px #888888;
+  z-index: 9999;
 }
 
 .store-product__main {
