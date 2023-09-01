@@ -1,5 +1,10 @@
 import * as catalogue from './products-catalogue.js';
 
+document.addEventListener('partialsLoaded', async () => {
+  await import('./cart.js');
+  await import('./cart-badge.js');
+});
+
 document.addEventListener('partialsLoaded', () => {
   const websiteLogo = document.querySelector('.websiteLogo');
   websiteLogo.style.cursor = 'pointer';
@@ -61,8 +66,8 @@ function showProductsByPage(currentPage, productsPerPage) {
               <figcaption class="storehome__caption">${item.name}</figcaption>
           </figure>
           </a>
-          <p class="storehome__price"><span>${item.price + ',00'}</span> ${item.currency}</p>
-          <a class="button storehome__button add-btn" href="#cart-badge"">Buy</a>
+          <p class="storehome__price">${item.price + ',00 ' + item.currency}</p>
+          <div class="button storehome__button add-btn">Buy</div>
       </div>
     `;
   }
