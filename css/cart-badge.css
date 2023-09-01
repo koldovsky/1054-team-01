@@ -2,6 +2,9 @@
     position: fixed;
     right: 30px;
     top: calc(80px);
+    border-radius: 50%;
+    box-shadow: -1px 1px 4px #888888;
+    z-index: 9999;
 }
 
 .modal__button {
