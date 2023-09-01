@@ -70,6 +70,15 @@ document.addEventListener('partialsLoaded', () => {
         </div>
       `;
     }
+    const buyBtns = document.querySelectorAll('.add-btn');
+    const cartCounter = document.querySelector('.cart-badge__counter');
+    let itemCount = Number(cartCounter.textContent);
+    buyBtns.forEach(btn => {
+      btn.addEventListener('click', () => { // Збільшуємо лічильник при кожному кліку
+          itemCount++; // Збільшуємо лічильник
+          cartCounter.textContent = itemCount; // Оновлюємо значок корзини
+      });
+  }); 
   }
 
 
