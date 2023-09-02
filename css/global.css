@@ -59,6 +59,7 @@
     rgba(255, 255, 255, 0.6),
     rgba(255, 255, 255, 0.6)
   );
+  --border-animation-color: #630a1d;
   scroll-behavior: smooth;
   color: var(--text-color);
   background-color: var(--background-color);
