@@ -78,12 +78,10 @@ window.addEventListener('resize', renderProduct)
 
 function renderIndicators() {
     const indicatorsContainer = document.querySelector('.best-deals__carousel-indicators');
-    document.addEventListener('DOMContentLoaded', function() {
-        indicatorsContainer.innerHTML = '';
-        for (let i = 0; i < slides.length; i++) {
-            indicatorsContainer.innerHTML += `<button class="best-deals__carousel-indicator ${i === currentSlide ? 'best-deals__carousel-indicator--active' : ''}"></button>`;
-        }
-    });
+    indicatorsContainer.innerHTML = '';
+    for (let i = 0; i < slides.length; i++) {
+        indicatorsContainer.innerHTML += `<button class="best-deals__carousel-indicator ${i === currentSlide ? 'best-deals__carousel-indicator--active' : ''}"></button>`;
+    }
     const indicators = document.querySelectorAll('.best-deals__carousel-indicator');
     indicators.forEach((indicator, index) => {
         indicator.addEventListener('click', () => {
