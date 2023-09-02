@@ -1,5 +1,3 @@
-import * as catalogue from './products-catalogue.js'
-
 document.addEventListener('partialsLoaded', async () => {
     await import('./cart.js');
     await import('./cart-badge.js');
@@ -8,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const productIdentifier = urlParams.get('id');
 
-    const selectedProduct = catalogue.products.find( (product) => product.code === productIdentifier)
+    const selectedProduct = JSON.parse(localStorage.getItem('selectedProductData'))
 
     document.querySelector('.storeproduct__image').src = selectedProduct.images[0]
     document.querySelector('.storeproduct__image').alt = `Bottle of ${selectedProduct.name}`
@@ -59,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!currencies) {
             const response = await fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json')
             currencies = await response.json()
-    
         }
         const rate = currencies.usd[convertTo]
         document.querySelector('.storeproduct__price').innerHTML = (selectedProduct.price * rate).toFixed(2)

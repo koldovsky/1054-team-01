@@ -14,21 +14,33 @@ function renderProduct(products) {
     productsContainer.innerHTML = '';
     for (let i = 0; i < products.length; i++) {
         if (products[i].bestDeal) {
-            const content =
-                `<div class="best-deals__product product">
+            const content = `
             <div class="best-deals__product product">
-                <a href="store-product.html?id=${products[i].code}"><img src="${products[i].images[0]}" alt="${products[i].name}"></img></a>
-                <a href="store-product.html" class="product__name">${products[i].name}</a>
+                <a class="id-${products[i].code}" href="store-product.html"><img src="${products[i].images[0]}" alt="${products[i].name}"></img></a>
+                <a href="store-product.html" class="product__name id-${products[i].code}">${products[i].name}</a>
                 <p class="product__price">${products[i].price.toFixed(2)}${products[i].currency}</p>
                 <a class="button add-btn" href="#cart-badge"><strong>Add to cart</strong></a>
-            </div>
-        </div>`
+            </div>`
             slides.push(content)
         }
     }
     renderSlide()
 }
 
+function localStorageHandler() {
+    for (let i = 0; i < catalogue.products.length; i++) {
+        const selectedProductNodes = document.querySelectorAll(`.id-${catalogue.products[i].code}`)
+        selectedProductNodes.forEach(el => {
+            el.addEventListener('click', () => {
+                const selectedProduct = catalogue.products[i]
+                if (JSON.parse(localStorage.getItem('selectedProductData'))) {
+                    localStorage.removeItem('selectedProductData')
+                }
+                localStorage.setItem('selectedProductData', JSON.stringify(selectedProduct))
+            })
+        })
+    }
+}
 function renderSlide() {
     const productsContainer = document.querySelector('.best-deals__products');
     productsContainer.innerHTML = '';
@@ -46,14 +58,9 @@ function renderSlide() {
     } else {
         productsContainer.innerHTML = slides[currentSlide];
     }
-
+    localStorageHandler();
     renderIndicators();
 }
-
-
-
-
-
 
 function prevSlide() {
     currentSlide = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1
@@ -71,10 +78,12 @@ window.addEventListener('resize', renderProduct)
 
 function renderIndicators() {
     const indicatorsContainer = document.querySelector('.best-deals__carousel-indicators');
-    indicatorsContainer.innerHTML = '';
-    for (let i = 0; i < slides.length; i++) {
-        indicatorsContainer.innerHTML += `<button class="best-deals__carousel-indicator ${i === currentSlide ? 'best-deals__carousel-indicator--active' : ''}"></button>`;
-    }
+    document.addEventListener('DOMContentLoaded', function() {
+        indicatorsContainer.innerHTML = '';
+        for (let i = 0; i < slides.length; i++) {
+            indicatorsContainer.innerHTML += `<button class="best-deals__carousel-indicator ${i === currentSlide ? 'best-deals__carousel-indicator--active' : ''}"></button>`;
+        }
+    });
     const indicators = document.querySelectorAll('.best-deals__carousel-indicator');
     indicators.forEach((indicator, index) => {
         indicator.addEventListener('click', () => {
