@@ -14,12 +14,6 @@ header {
   background-color: var(--header--container--non-transparent--color) !important;
 }
 
-.cart-badge {
-  border-radius: 50%;
-  box-shadow: -1px 1px 4px #888888;
-  z-index: 9999;
-}
-
 .store-product__main {
   padding: 130px 7.5%;
   background-color: var(--text-color);
