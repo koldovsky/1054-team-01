@@ -22,7 +22,7 @@ function updateCountdown() {
   setTimeout(function() {
     const modal = document.querySelector('.celebration');
     modal.classList.remove('hidden-celebr');
-  }, 10000)
+  }, 1000)
 
   document.querySelector('.celebration__promo-button')
   .addEventListener('click', () => {
