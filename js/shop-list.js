@@ -1,5 +1,6 @@
 import * as catalogue from './products-catalogue.js'
 
+
 const slides = []
 let currentSlide = 0
 const nextButton = document.querySelector('.shop__arrowR');
@@ -19,7 +20,7 @@ function renderProduct(products) {
                 <a href="store-product.html?id=${products[i].code}"><img src="${products[i].images[0]}" alt="${products[i].name}"></img></a>
                 <a href="store-product.html" class="product__name">${products[i].name}</a>
                 <p class="product__price">${products[i].price.toFixed(2)}${products[i].currency}</p>
-                <a class="button" href="#cart-badge"><strong>Add to cart</strong></a>
+                <a class="button add-btn" href="#cart-badge"><strong>Add to cart</strong></a>
                 </div>
             </div>`;
         slides.push(content)

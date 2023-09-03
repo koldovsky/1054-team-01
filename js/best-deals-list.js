@@ -10,25 +10,37 @@ prevButton.addEventListener('click', prevSlide)
 renderProduct(catalogue.products)
 
 function renderProduct(products) {
-    const productsContainer = document.querySelector('.best-deals__products')
-    productsContainer.innerHTML = ''
+    const productsContainer = document.querySelector('.best-deals__products');
+    productsContainer.innerHTML = '';
     for (let i = 0; i < products.length; i++) {
         if (products[i].bestDeal) {
-            const content =
-                `<div class="best-deals__product product">
+            const content = `
             <div class="best-deals__product product">
-                <a href="store-product.html?id=${products[i].code}"><img src="${products[i].images[0]}" alt="${products[i].name}"></img></a>
-                <a href="store-product.html" class="product__name">${products[i].name}</a>
+                <a class="id-${products[i].code}" href="store-product.html"><img src="${products[i].images[0]}" alt="${products[i].name}"></img></a>
+                <a href="store-product.html" class="product__name id-${products[i].code}">${products[i].name}</a>
                 <p class="product__price">${products[i].price.toFixed(2)}${products[i].currency}</p>
                 <a class="button add-btn" href="#cart-badge"><strong>Add to cart</strong></a>
-            </div>
-        </div>`
+            </div>`
             slides.push(content)
         }
     }
     renderSlide()
 }
 
+function localStorageHandler() {
+    for (let i = 0; i < catalogue.products.length; i++) {
+        const selectedProductNodes = document.querySelectorAll(`.id-${catalogue.products[i].code}`)
+        selectedProductNodes.forEach(el => {
+            el.addEventListener('click', () => {
+                const selectedProduct = catalogue.products[i]
+                if (JSON.parse(localStorage.getItem('selectedProductData'))) {
+                    localStorage.removeItem('selectedProductData')
+                }
+                localStorage.setItem('selectedProductData', JSON.stringify(selectedProduct))
+            })
+        })
+    }
+}
 function renderSlide() {
     const productsContainer = document.querySelector('.best-deals__products');
     productsContainer.innerHTML = '';
@@ -46,14 +58,9 @@ function renderSlide() {
     } else {
         productsContainer.innerHTML = slides[currentSlide];
     }
-
+    localStorageHandler();
     renderIndicators();
 }
-
-
-
-
-
 
 function prevSlide() {
     currentSlide = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1
@@ -94,4 +101,7 @@ function renderIndicators() {
     
 }
 
-renderIndicators();
+document.addEventListener('DOMContentLoaded', function() {
+    // Тут ви можете викликати вашу функцію renderIndicators()
+    renderIndicators();
+});

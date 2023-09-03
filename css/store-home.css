@@ -2,6 +2,12 @@
 @import url(header.css);
 @import url(footer.css);
 @import url(controls.css);
+@import url(cart.css);
+@import url(cart-badge.css);
+
+body {
+  user-select: none;
+}
 
 header {
   position: initial;
@@ -129,6 +135,10 @@ header {
 
 .storehome__pageindex-container {
   display: flex;
+}
+
+.storehome__pageindex.selected  {
+  border: 2px solid var(--header--container--color);
 }
 
 @media screen and (min-width: 768px) {

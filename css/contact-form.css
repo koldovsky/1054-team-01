@@ -82,7 +82,7 @@
     background-color: var(--contact-form-divider-color);
 }
 
-@media (min-width: 770px) {
+@media (min-width: 768px) {
     .contact-form__cont {
         display: grid;
         grid-template-columns: 1fr 1fr;

@@ -1,13 +1,13 @@
-document.addEventListener('partialsLoaded', () => {
-    import('./best-deals-list.js');
-    import('./shop-list.js');
-    import('./contact-form.js');
-    import('./products-catalogue.js');
-    import('./testimonials.js');
-    import('./awards.js');
-    import('./cart-badge.js');
-    import('./cart.js');
-    import('./footer.js');
-    import('./celebration.js');
-    import('./cart-badge.js');
+document.addEventListener('partialsLoaded', async () => {
+    await import('./best-deals-list.js');
+    await import('./shop-list.js');
+    await import('./contact-form.js');
+    // await import('./products-service.js');
+    await import('./products-catalogue.js');
+    await import('./testimonials.js');
+    await import('./awards.js');
+    await import('./cart.js');
+    await import('./footer.js');
+    await import('./celebration.js');
+    await import('./cart-badge.js');
 });

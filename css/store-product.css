@@ -2,6 +2,12 @@
 @import url(header.css);
 @import url(footer.css);
 @import url(controls.css);
+@import url(cart.css);
+@import url(cart-badge.css);
+
+body {
+  user-select: none;
+}
 
 header {
   position: initial;
@@ -130,6 +136,7 @@ header {
 .storeproduct__form-inputcontainer {
   display: flex;
   justify-content: space-between;
+  gap: 0;
   margin-right: 10px;
   padding: 8px 0;
   width: 20%;
@@ -141,7 +148,7 @@ header {
 }
 
 .storeproduct__form-input {
-  width: 20px;
+  width: 40px;
   min-width: auto;
   border: none;
   padding-left: 10px;

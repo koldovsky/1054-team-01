@@ -12,8 +12,24 @@ function updateCountdown() {
     document.getElementById('countdown-seconds').innerHTML = seconds;
   }
   
-  let deadline = new Date("sep 07, 2023 20:00:00").getTime();
+let deadline = new Date("sep 07, 2023 20:00:00").getTime();
   
-  setInterval(updateCountdown, 1000);
+setInterval(updateCountdown, 5000);
   
-  updateCountdown();
+updateCountdown();
+
+
+document.querySelector('.confirm__window-button').addEventListener('click', () => {
+  setTimeout(function() {
+  const modal = document.querySelector('.celebration');
+  modal.classList.remove('hidden-celebr');
+}, 5000)
+})
+
+
+
+document.querySelector('.celebration__promo-button')
+.addEventListener('click', () => {
+  const modal = document.querySelector('.celebration');
+  modal.classList.add('hidden-celebr');
+})
