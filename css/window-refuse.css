@@ -14,9 +14,12 @@
 .forbiddance__container-title {
   font-family: --font-h;
   font-size: 57px;
-  transform: scale(1.2083);
+  font-weight: bold;
+  width: 80%;
+  transform: scale(1.3083);
   font-weight: lighter;
   transform-origin: top center;
+  transform-origin: left center;
   height: 427px;
   margin: 0 15px 0 17px;
   padding: 0 10px;
@@ -24,7 +27,7 @@
 }
 
 .forbiddance-decor {
-  margin: 30px auto 20px;
+  margin: 10px auto 20px;
 }
 
 .forbiddance__container-description {

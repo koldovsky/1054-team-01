@@ -73,7 +73,7 @@
   }
 
   .confirm__window {
-    width: 90%;
+    width: auto;
     height: auto;
     padding: 0 32px;
     margin: auto;
@@ -122,6 +122,13 @@
     padding-top: 60px;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .confirm__window {
+    width: 70%;
+    height: auto;
+    padding: 0 32px;
+    margin: auto;
   }
 
   .confirm__window-title {
