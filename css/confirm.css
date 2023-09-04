@@ -12,7 +12,7 @@
 }
 
 .hidden-confirm{
-  display: none;
+  display: block;
 }
 
 .confirm__window {
