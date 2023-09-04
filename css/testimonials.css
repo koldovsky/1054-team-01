@@ -51,8 +51,8 @@
 .testimonials__button-testimonials__button-next,
 .testimonials__button-testimonials__button-prev {
     background: var(--header--nav--links--second--color);
+    fill: var(--header--nav--links--first--color);
     font-size: 12px;
-    fill: var(--header--nav--links--first--color); 
     cursor: pointer;
     width: 24px;
     height: 24px;
@@ -120,18 +120,14 @@
     .testimonials__list {
         max-width: 460px;
     }
-
-    .testimonials__arrow {
-        width: 20px; 
-        height: 20px;
 }
 
 .testimonials__button-testimonials__button-next,
 .testimonials__button-testimonials__button-prev {
-    width: 32px;
-    height: 32px
+    width: 30px;
+    height: 30px
 }
-}
+
 
 @media (min-width: 1024px) {
     .testimonials__part-name {
@@ -145,19 +141,4 @@
     .testimonials__list {
         max-width: 770px;
     }
-}
-
-@media (min-width: 1200px) {
-
-    .testimonials__button-testimonials__button-next,
-    .testimonials__button-testimonials__button-prev {
-        background: var(--background-color);
-        margin: 0;
-    }
-
-    .testimonials__arrow {
-    width: 30px; 
-    height: 30px;
-    fill: var(--header--nav--links--second--color);
-}
 }

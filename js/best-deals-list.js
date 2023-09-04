@@ -67,12 +67,10 @@ function prevSlide() {
     renderSlide()
 }
 
-
 function nextSlide() {
     currentSlide = currentSlide - 1 < 0 ? slides.length - 1 : currentSlide - 1
     renderSlide()
 }
-
 
 window.addEventListener('resize', renderProduct)
 
@@ -92,16 +90,13 @@ function renderIndicators() {
         indicator.addEventListener('mouseover', () => {
             indicator.classList.add('best-deals__button--hover');
         });
-        
+
         indicator.addEventListener('mouseout', () => {
             indicator.classList.remove('best-deals__button--hover');
         });
     });
-
-    
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Тут ви можете викликати вашу функцію renderIndicators()
+document.addEventListener('DOMContentLoaded', function () {
     renderIndicators();
 });
