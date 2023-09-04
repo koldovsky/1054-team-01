@@ -11,6 +11,10 @@
   transform: translate(-50%, -50%);
 }
 
+.hidden-confirm{
+  display: none;
+}
+
 .confirm__window {
   height: auto;
   padding: 0 24px;
