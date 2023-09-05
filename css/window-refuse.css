@@ -1,9 +1,12 @@
 @import url(global.css);
 
+
 .forbiddance {
+  display: block;
+  align-items: center;
   background-color: var(--background-color);
   height: 582px;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 .forbiddance__container {
@@ -12,22 +15,20 @@
 }
 
 .forbiddance__container-title {
+  display: inline-block;
+  text-align: center;
   font-family: --font-h;
-  font-size: 57px;
-  font-weight: bold;
-  width: 80%;
+  font-size: 37px;
+  width: 70%;
   transform: scale(1.3083);
   font-weight: lighter;
-  transform-origin: top center;
-  transform-origin: left center;
-  height: 427px;
-  margin: 0 15px 0 17px;
-  padding: 0 10px;
-  line-height: 1;
+  height: auto;
+  padding: 50px 10px;
+  line-height: 1.2;
 }
 
 .forbiddance-decor {
-  margin: 10px auto 20px;
+  margin: 30px auto 20px;
 }
 
 .forbiddance__container-description {
@@ -41,8 +42,8 @@
 @media (min-width: 768px) {
   .forbiddance__container-title {
     font-size: 71px;
-    height: 256px;
-    margin: revert;
+    height: auto;
+    margin: 40px 0;
     padding: 0 70px;
   }
 }
@@ -50,8 +51,6 @@
 @media (min-width: 1200px) {
   .forbiddance__container-title {
     font-size: 84px;
-    height: 256px;
-    margin: revert;
-    padding: 0 100px;
+    height: auto;
   }
 }
