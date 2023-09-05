@@ -7,6 +7,11 @@
   padding: 30px 40px;
   background-color: var(--header--container--color);
 }
+.websiteLogo{
+  display: block;
+  position: relative;
+  z-index: 5;
+}
 
 .header__container {
   width: 100%;
@@ -83,12 +88,36 @@
 }
 
 
-
 @media screen and (max-width: 991px) {
-  .header__nav__links li a {
+  .active ~ .header__nav__links{
+    position: fixed;
+    background-color: var(--heard--burger--color);
+    width: 100vw;
+    height: 100vh;
+    margin:  0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start !important;
+    gap: 20px;
+    top: 0;
+    left: 0;
+  }
+  /* .active ~ .social{
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  gap: 20px;
+  z-index: 5;
+  } */
+  .header__nav__links {
     display: none;
   }
-
+.header{
+  background-color: var(--social--background--first--color);
+}
   .social {
     display: none;
   }
@@ -97,40 +126,37 @@
     background-color: transparent;
   }
 
-  .burger-menu {
+  .burger {
     width: 24px;
     height: 15px;
     display: flex;
     position: relative;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 5;
   }
-  .burger-menu span {
-    position: absolute;
-    width: 100%;
-    background-color: var(--burger--menu--color);
-    height: 2px;
-    top: 7px;
-  }
-  .burger-menu::before,
-  .burger-menu::after {
-    content: '';
-    position: absolute;
-    background-color: var(--burger--menu--color);
+  .top, .middle, .bottom {
     width: 100%;
     height: 2px;
-  }
-  /* .header__container{
-        position: fixed;
-        align-items: baseline;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(26, 21, 18);
-    }*/
-  .burger-menu::before {
-    top: 0;
-  }
-  .burger-menu::after {
-    bottom: 0;
-  }
+    background-color: var(--burger--menu--color);
+    transition: 0.3s;
+    transform-origin: center center;
+}
+.active > div{
+position: absolute;
+top: 50%;
+left: 0;
+transform: translate(-50%, -50%);
+}
+.burger.active .top {
+    transform: rotate(45deg);
+}
+
+.burger.active .middle {
+    opacity: 0;
+}
+
+.burger.active .bottom {
+    transform: rotate(-45deg);
+}
 }
