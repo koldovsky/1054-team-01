@@ -43,5 +43,4 @@ function renderPrize(prizes) {
         <p class="awards__text-about-award">${prize.description}</p>
         </li>`;
     }
-
 }
