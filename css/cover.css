@@ -43,6 +43,8 @@
 }
 .cover__button{
     margin: 40px 0 0;
+    display: flex;
+    gap: 20px;
 }
 #button__shop {
 
@@ -65,7 +67,6 @@
 }
 
 #button__learn {
-
     font-size: 16.5px;
     font-family: Rubik, sans-serif;
     text-decoration: none;
