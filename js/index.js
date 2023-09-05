@@ -11,5 +11,5 @@ document.addEventListener('partialsLoaded', async () => {
     await import('./footer.js');
     await import('./celebration.js');
     await import('./cart-badge.js');
-    await import('./burger.js')
+    await import('./burger.js');
 });
