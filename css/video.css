@@ -72,12 +72,15 @@
 .play__icon {
     display: grid;
     min-height: 50px;
+    text-decoration: none !important;
+    text-decoration-line: none !important;
 }
 
 .play__text {
     font-weight: 700;
     font-family: var(--font-p);
     padding-top: 31px;
+    color: var(--text-color);
 }
 
 @media (min-width: 768px) {
