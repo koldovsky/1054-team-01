@@ -14,7 +14,12 @@
     position: relative;
     flex-basis: 100%;
 }
-
+.text-cover img{
+    margin: 40px 0 0;
+}
+.text-cover p{
+    margin: 20px 0 0;
+}
 .text-cover {
     padding: 15px;
 }
@@ -34,8 +39,13 @@
 .cover h1 {
     font-family: "Prata", serif;
     font-size: 84px;
+    margin: 20px 0 0;
 }
-
+.cover__button{
+    margin: 40px 0 0;
+    display: flex;
+    gap: 20px;
+}
 #button__shop {
 
     font-size: 16.5px;
@@ -57,7 +67,6 @@
 }
 
 #button__learn {
-
     font-size: 16.5px;
     font-family: Rubik, sans-serif;
     text-decoration: none;

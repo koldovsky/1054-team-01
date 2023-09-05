@@ -51,8 +51,8 @@
 .testimonials__button-testimonials__button-next,
 .testimonials__button-testimonials__button-prev {
     background: var(--header--nav--links--second--color);
-    font-size: 12px;
     fill: var(--header--nav--links--first--color);
+    font-size: 12px;
     cursor: pointer;
     width: 24px;
     height: 24px;

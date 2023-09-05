@@ -14,12 +14,13 @@ function updateCountdown() {
   
 let deadline = new Date("sep 07, 2023 20:00:00").getTime();
   
-setInterval(updateCountdown, 5000);
+setInterval(updateCountdown, 1000);
   
 updateCountdown();
 
 
-document.querySelector('.confirm__window-button').addEventListener('click', () => {
+document.querySelector('.button-pr').addEventListener('click', (event) => {
+  event.preventDefault();
   setTimeout(function() {
   const modal = document.querySelector('.celebration');
   modal.classList.remove('hidden-celebr');
@@ -29,7 +30,8 @@ document.querySelector('.confirm__window-button').addEventListener('click', () =
 
 
 document.querySelector('.celebration__promo-button')
-.addEventListener('click', () => {
+.addEventListener('click', (event) => {
+  event.preventDefault();
   const modal = document.querySelector('.celebration');
   modal.classList.add('hidden-celebr');
 })

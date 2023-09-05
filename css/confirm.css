@@ -1,11 +1,22 @@
 .confirm {
   background-color: var(--background-color);
-  height: 561px;
-  padding: 80px 0;
+  padding: 40px 0;
+  position: fixed;
+  border: 1px solid black;
+  width: 80%;
+  height: auto;
+  max-height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden-confirm{
+  display: block;
 }
 
 .confirm__window {
-  height: 428px;
+  height: auto;
   padding: 0 24px;
   text-align: center;
 }
@@ -48,18 +59,22 @@
 
 @media (min-width: 768px) {
   .confirm {
-    width: 670px;
-    height: 570px;
-    padding: auto;
+    width: 90%;
+    height: auto;
+    padding-top: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .confirm__window-title {
     font-size: 41px;
+    padding-top: 40px;
   }
 
   .confirm__window {
-    width: 670px;
-    height: 274px;
+    width: auto;
+    height: auto;
     padding: 0 32px;
     margin: auto;
   }
@@ -70,5 +85,78 @@
 
   .confirm-button {
     margin: 0 20px;
+  }
+}
+
+@media (min-width: 880px) {
+  .confirm {
+    margin-top: 50px;
+    width: 60%;
+    height: auto;
+    padding-top: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .confirm__window-title {
+    font-size: 50px;
+    padding-top: 40px;
+  }
+
+  .confirm__window-description {
+    margin-bottom: 18px;
+    font-size: 20px;
+  }
+
+  .confirm-button {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .confirm {
+    margin-top: 50px;
+    width: 50%;
+    height: auto;
+    padding-top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .confirm__window {
+    width: 70%;
+    height: auto;
+    padding: 0 32px;
+    margin: auto;
+  }
+
+  .confirm__window-title {
+    font-size: 50px;
+    padding-top: 30px;
+  }
+
+  .confirm__window-description {
+    margin-bottom: 18px;
+    font-size: 20px;
+  }
+
+  .confirm-button {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .confirm {
+    width: 50%;
+    height: auto;
+    padding-top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .confirm__window-title {
+    font-size: 70px;
+    padding-top: 30px;
   }
 }
