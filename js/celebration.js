@@ -14,7 +14,7 @@ function updateCountdown() {
   
 let deadline = new Date("sep 07, 2023 20:00:00").getTime();
   
-setInterval(updateCountdown, 5000);
+setInterval(updateCountdown, 1000);
   
 updateCountdown();
 
