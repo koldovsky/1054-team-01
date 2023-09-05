@@ -19,7 +19,8 @@ setInterval(updateCountdown, 1000);
 updateCountdown();
 
 
-document.querySelector('.confirm__window-button').addEventListener('click', () => {
+document.querySelector('.button-pr').addEventListener('click', (event) => {
+  event.preventDefault();
   setTimeout(function() {
   const modal = document.querySelector('.celebration');
   modal.classList.remove('hidden-celebr');
