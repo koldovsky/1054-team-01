@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const productIdentifier = urlParams.get('id');
 
-    const selectedProduct = catalogue.products[productIdentifier]
+    const selectedProduct = catalogue.products.find( (product) => product.code === productIdentifier)
 
     document.querySelector('.storeproduct__image').src = selectedProduct.images[0]
     document.querySelector('.storeproduct__image').alt = `Bottle of ${selectedProduct.name}`
