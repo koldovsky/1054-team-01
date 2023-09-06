@@ -30,8 +30,7 @@
 }
 
 @media (min-width: 1024px) {
-    .about__background-image
-     {
+    .about__background-image {
         background: url("../img/about-background.jpg") no-repeat 82.12% 43.66% / cover;
     }
 }

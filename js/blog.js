@@ -1,13 +1,15 @@
 const slides = [
-  '<div> No blog posts yet... </div>',
-  '<div> Grapevine cultivation in Europe is diverse, spanning various climates and regions. </div>',
-  '<div> European vineyards produce a wide range of grape varieties, resulting in diverse wine types. </div>',
-  '<div> The terroir of each region influences grape quality and flavor profiles. </div>',
-  '<div> Prominent European wine-producing countries include France, Italy, Spain, and Germany. </div>',
-  '<div> European vineyards often have centuries-old traditions, contributing to wine heritage. </div>',
+  '<div> Grape cultivation in Europe is incredibly diverse, spanning a wide range of climates and regions. </div>',
+  '<div> European vineyards cultivate numerous grape varieties, resulting in a rich diversity of wine styles. </div>',
+  '<div> The unique terroir of each region plays a significant role in influencing grape quality and flavor profiles. </div>',
+  '<div> Prominent European countries known for wine production include France, Italy, Spain, and Germany. </div>',
+  '<div> Many European vineyards have a rich heritage with centuries-old traditions contributing to their winemaking legacy. </div>',
 ];
 
 let currentSlide = 0;
+let autoScrollInterval = 3000; 
+let autoScrollTimer;
+let resumeAutoScrollTimer;
 
 const slideContainer = document.querySelector('.blog__slider-container');
 
@@ -17,18 +19,20 @@ function renderSlide() {
 }
 
 function nextSlide() {
+  stopAutoScroll(); 
   currentSlide = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1;
   renderSlide();
+  resumeAutoScroll(); 
 }
-
-renderSlide();
 
 const nextButton = document.querySelector('.blog__slider-button-next');
 nextButton.addEventListener('click', nextSlide);
 
 function prevSlide() {
+  stopAutoScroll(); 
   currentSlide = currentSlide - 1 < 0 ? slides.length - 1 : currentSlide - 1;
   renderSlide();
+  resumeAutoScroll(); 
 }
 
 const prevButton = document.querySelector('.blog__slider-button-prev');
@@ -45,11 +49,27 @@ function renderIndicators() {
   const indicators = document.querySelectorAll('.blog__slider-indicator');
   indicators.forEach((indicator, index) => {
     indicator.addEventListener('click', () => {
+      stopAutoScroll(); 
       currentSlide = index;
       renderSlide();
       renderIndicators(slides, currentSlide);
+      resumeAutoScroll(); 
     });
   });
 }
 
-renderIndicators();
+function startAutoScroll() {
+  autoScrollTimer = setInterval(nextSlide, autoScrollInterval);
+}
+
+function stopAutoScroll() {
+  clearInterval(autoScrollTimer);
+  clearTimeout(resumeAutoScrollTimer); 
+}
+
+function resumeAutoScroll() {
+  clearTimeout(resumeAutoScrollTimer); 
+  resumeAutoScrollTimer = setTimeout(startAutoScroll, 10000); 
+}
+
+startAutoScroll(); 
