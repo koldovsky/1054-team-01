@@ -82,13 +82,7 @@ function scrollLeft() {
         setTimeout( () => {
             newPhoto.style.transform = 'translateX(0%)'
         }, 10)
-        // newPhoto.addEventListener('wheel', (e) => {
-        //     e.preventDefault()
-        //     newPhoto.style.maxHeight = 'none'
-        //     this.width += Math.floor(e.deltaY)
-        // })
     }, 300)
-
 }
 
 function scrollRight() {
@@ -111,11 +105,5 @@ function scrollRight() {
         setTimeout( () => {
             newPhoto.style.transform = 'translateX(0%)'
         }, 10)    
-        // newPhoto.addEventListener('wheel', (e) => {
-        //     e.preventDefault()
-        //     newPhoto.style.maxHeight = 'none'
-        //     newPhoto.width -= Math.floor(e.deltaY)
-        //     newPhoto.height -= Math.floor(e.deltaY)
-        // })
     }, 300)
 }
