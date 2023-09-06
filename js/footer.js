@@ -1,3 +1,22 @@
+const url = window.location.href
+console.log('window.location.href: ', window.location.href)
+
+const footerLinks = document.querySelectorAll('.footer__info-menuitem .footer__link, .footer__shop-menuitem .footer__link')
+
+if (!url.includes('store')) {
+    for (let i = 0; i < footerLinks.length; i++) {
+        const hrefWithoutIndex = footerLinks[i].href.replace('index.html', '')
+        footerLinks[i].href = hrefWithoutIndex
+    }
+} else {
+    for (let i = 0; i < footerLinks.length; i++) {
+        const hashCharPosition = footerLinks[i].href.indexOf('#')
+        const startOfPageHref = url.lastIndexOf('/') + 1
+        const hrefWithIndex = footerLinks[i].href.slice(0, startOfPageHref) + 'index.html' + footerLinks[i].href.slice(hashCharPosition)
+        footerLinks[i].href = hrefWithIndex
+    }
+}
+
 const instagramPhotos = [
     'img/footer-photogallery-corks.png',
     'img/footer-photogallery-drinking.png',

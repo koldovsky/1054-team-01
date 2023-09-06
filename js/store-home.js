@@ -19,6 +19,7 @@ const catalogue = loadProductsData()
 
     import('./cart.js');
     import('./cart-badge.js');
+    import('./footer.js');
 
     const websiteLogo = document.querySelector('.websiteLogo');
     websiteLogo.style.cursor = 'pointer';
