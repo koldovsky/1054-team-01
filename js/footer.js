@@ -1,5 +1,4 @@
 const url = window.location.href
-console.log('window.location.href: ', window.location.href)
 
 const footerLinks = document.querySelectorAll('.footer__info-menuitem .footer__link, .footer__shop-menuitem .footer__link')
 

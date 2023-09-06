@@ -1,6 +1,7 @@
 document.addEventListener('partialsLoaded', async () => {
     await import('./cart.js');
     await import('./cart-badge.js');
+    await import('./header.js');
     await import('./footer.js');
 });
 document.addEventListener('DOMContentLoaded', () => {

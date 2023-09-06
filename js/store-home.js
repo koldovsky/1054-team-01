@@ -19,6 +19,7 @@ const catalogue = loadProductsData()
 
     import('./cart.js');
     import('./cart-badge.js');
+    import('./header.js');
     import('./footer.js');
 
     const websiteLogo = document.querySelector('.websiteLogo');
@@ -72,7 +73,6 @@ const catalogue = loadProductsData()
   
       for (let i = startIndex; i < endIndex && i < catalogue.products.length; i++) {
         const item = catalogue.products[i];
-        console.log(item)
         productsArea.innerHTML += `
           <div class="storehome__productcard">
               <a class="storehome__link" href="store-product.html?id=${item.code}">

@@ -1,4 +1,5 @@
 document.addEventListener('partialsLoaded', async () => {
+    await import('./header.js');
     await import('./confirm.js');
     await import('./best-deals-list.js');
     await import('./blog.js');
