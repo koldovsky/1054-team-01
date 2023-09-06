@@ -1,46 +1,113 @@
-.blog-section {
-    padding-top: 50px;
-    padding-bottom: 60px;
-    padding-left: 24px;
-    padding-right: 24px;
+.blog__slider {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
 }
 
-.blog-text__header {
+.blog__slider-container {
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog__slider-button-prev {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ui-brand-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+}
+
+.blog__slider-button-next {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(360deg) scaleX(-1);
+    background-color: var(--ui-brand-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+}
+
+.blog__slider-indicators {
+    padding: 15px 0;
+    display: flex;
+    gap: 10px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog__slider-indicator {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    cursor: pointer;
+}
+
+.blog__slider-indicator--active {
+    background-color: var(--ui-brand-color);
+}
+
+.blog__section {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.blog__text-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.blog-text-header_p {
+.blog__text-header-p {
     font-size: 14px;
     color: var(--ui-brand-color);
     font-family: var(--font-cursive);
 }
 
-.blog-text__h2 {
+.blog__text__h2 {
     margin-top: 20px;
     font-size: 34px;
 }
 
-.blog-img-vine {
+.blog__img-vine {
     margin-top: 25px;
 }
 
-.blog-text-after-img {
+.blog__text-after-img {
     text-align: center;
     margin-top: 20px;
     font-size: 18px;
 }
 
-.blog-text-write {
+.blog__slider-container {
     margin-top: 45px;
     display: flex;
     height: 450px;
     width: 100%;
     justify-content: center;
     font-family: var(--font-p);
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 32px;
     align-items: center;
@@ -48,32 +115,95 @@
 }
 
 @media (min-width: 768px) {
-    .blog-section {
+    .blog__slider {
+        gap: 30px;
+    }
+
+    .blog__slider-button-prev {
+        width: 32px;
+        height: 32px;
+    }
+
+    .blog__slider-button-next {
+        width: 32px;
+        height: 32px;
+    }
+
+    .blog__arrow {
+        width: 20px;
+        height: 20px;
+    }
+
+    .blog__section {
         padding-left: 32px;
         padding-right: 32px;
     }
 
-    .blog-text-header_p {
+    .blog__text-header-p {
         font-size: 21px;
     }
 
-    .blog-text__h2 {
+    .blog__text__h2 {
         font-size: 41px;
     }
-
 }
 
 @media (min-width: 1024px) {
-    .blog-section {
+    .blog__slider {
+        gap: 60px;
+    }
+
+    .blog__slider-button-prev {
+        width: 32px;
+        height: 32px;
+        background-color: none;
+    }
+
+    .blog__slider-button-next {
+        width: 32px;
+        height: 32px;
+        background-color: none;
+    }
+
+    .blog__arrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    .blog__section {
         padding-left: 40px;
         padding-right: 40px;
     }
 
-    .blog-text-header_p {
+    .blog__text-header-p {
         font-size: 28px;
     }
 
-    .blog-text__h2 {
+    .blog__text__h2 {
         font-size: 48px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .blog__slider {
+        gap: 5px;
+    }
+
+    .blog__slider-button-prev {
+        width: 48px;
+        height: 48px;
+        background-color: transparent;
+    }
+
+    .blog__slider-button-next {
+        width: 48px;
+        height: 48px;
+        background-color: transparent;
+    }
+
+    .blog__arrow {
+        width: 32px;
+        height: 32px;
     }
 }

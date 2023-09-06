@@ -1,12 +1,16 @@
+import * as catalogue from './products-catalogue.js';
+
 document.addEventListener('partialsLoaded', async () => {
     await import('./cart.js');
     await import('./cart-badge.js');
+    await import('./header.js');
+    await import('./footer.js');
 });
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const productIdentifier = urlParams.get('id');
 
-    const selectedProduct = JSON.parse(localStorage.getItem('selectedProductData'))
+    const selectedProduct = catalogue.products.find( (product) => product.code === productIdentifier)
 
     document.querySelector('.storeproduct__image').src = selectedProduct.images[0]
     document.querySelector('.storeproduct__image').alt = `Bottle of ${selectedProduct.name}`
